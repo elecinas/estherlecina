@@ -1,0 +1,55 @@
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
+.back {/*fondo de cada página por tema*/
+	background-image: url(img/comicf.jpg);
+	background-position: -30px -22px;			
+	background-repeat: repeat;
+	background-color: white;
+	background-attachment: fixed;
+	}
+
+.supertop {/*padding para alejarse de debajo de la navbar*/
+	padding-top: 20px !important;
+	}
+
+.fondo_modal{
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	}
+
+.img-modal{
+	/*position: relative;*/
+}
+
+.no_scroll{
+	overflow:hidden;
+	}
+
+.proua{
+	display: none;
+	position: absolute;
+	background-color: coral;
+	z-index: 500;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.mini-proua{
+	width: 100px;
+	height: 100px;
+	background-color: cyan;
+}
