@@ -1,10 +1,13 @@
-html{
-    min-height:100%;/* make sure it is at least as tall as the viewport */
+/* make sure it is at least as tall as the viewport */
+/*html{
+    min-height:100%;
     position:relative;
-}
-body{
-    height:100%; /* force the BODY element to match the height of the HTML element */
-}
+}*/
+
+/* force the BODY element to match the height of the HTML element */
+/*body{
+    height:100%; 
+}*/
 
 .back {/*fondo de cada página por tema*/
 	background-image: url(img/comicf.jpg);
@@ -18,8 +21,11 @@ body{
 	padding-top: 20px !important;
 	}
 
-.fondo_modal{
+#modal1{
 	display: none;
+}
+
+.fondo_modal{
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 100;
 	position: absolute;
@@ -36,20 +42,3 @@ body{
 .no_scroll{
 	overflow:hidden;
 	}
-
-.proua{
-	display: none;
-	position: absolute;
-	background-color: coral;
-	z-index: 500;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
-
-.mini-proua{
-	width: 100px;
-	height: 100px;
-	background-color: cyan;
-}

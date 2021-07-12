@@ -47,13 +47,13 @@
         </nav>
         <!-- ENDS Navbar-->
 
-        <button class="btn btn-secondary" onclick="showImg('img/ilustracion/xfrd_Luna_07_08.jpg')">Click Me</button>
+        <button class="btn btn-secondary" onclick="showImg()">Click Me</button>
 
         <div class="container supertop">
             <!-- STARTS Cards -->
             <div class="card-columns">
                 <div class="card">
-                    <a href="#" onclick="showImg('img/ilustracion/xfrd_Luna_07_08.jpg')">
+                    <a href="#" onclick="showImg()">
                         <img class="card-img-top" src="img/ilustracion/xfrd_Luna_07_08.jpg" alt="Card image cap">
                     </a>
                     <div class="card-body">
@@ -411,12 +411,16 @@
         </div>
     </div>
     <!-- MODALES -->
-    <div id="modal1" class="fondo_modal align-items-center vh-100" onclick="showImg('img/ilustracion/xfrd_Luna_07_08.jpg')">
-        <!--<span class="close cursor" onclick="showImg('img/ilustracion/xfrd_Luna_07_08.jpg')">&times;</span>-->
+    <!--
+    <div id="modal1" class="fondo_modal align-items-center vh-100" onclick="showImg()">
+        <span class="close cursor" onclick="showImg()">&times;</span>
         <img class="img-fluid mx-auto d-block img-modal" src="img/ilustracion/xfrd_Luna_07_08.jpg">
     </div>
-    <div class="proua d-flex justify-content-center align-items-center">
-        <div class="mini-proua"></div>
+    -->
+    <div id="modal1">
+        <div class="fondo_modal d-flex justify-content-center align-items-center" onclick="showImg()">
+            <img class="img-fluid" src="img/ilustracion/xfrd_Luna_07_08.jpg">
+        </div>
     </div>
     <!-- ENDS MODALES-->
 
