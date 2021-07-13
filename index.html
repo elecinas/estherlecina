@@ -15,7 +15,6 @@
 
     <title>Esther Lecina</title>
 </head>
-
 <body>
     <div class="back">
         <!-- STARTS Navbar -->
@@ -46,11 +45,13 @@
             </div>
         </nav>
         <!-- ENDS Navbar-->
+        <button class="btn btn-primary" onclick="moversenn()">moversenn</button>
+        <!--<div id="y">0</div>-->
         <div class="container supertop">
             <!-- STARTS Cards -->
             <div class="card-columns">
                 <div class="card">
-                    <a href="#" onclick="showImg('xfrd_Luna_07_08')">
+                    <a href="#" onclick="event.preventDefault(); showImg('xfrd_Luna_07_08')">
                         <img class="card-img-top" src="img/ilustracion/xfrd_Luna_07_08.jpg" alt="Card image cap">
                     </a>
                     <div class="card-body">
@@ -62,7 +63,9 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="img/ilustracion/xfrd_Luna_07_07.jpg" alt="Card image cap">
+                    <a href="#" onclick="event.preventDefault(); showImg('xfrd_Luna_07_07')">
+                        <img class="card-img-top" src="img/ilustracion/xfrd_Luna_07_07.jpg" alt="Card image cap">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">Card title that wraps to a new line</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
@@ -409,8 +412,13 @@
     </div>
     <!-- MODALES -->
     <div id="xfrd_Luna_07_08">
-        <div class="fondo_modal d-flex justify-content-center align-items-center" onclick="showImg()">
+        <div class="fondo_modal d-flex justify-content-center align-items-center" onclick="showImg('xfrd_Luna_07_08')">
             <img class="img-fluid" src="img/ilustracion/xfrd_Luna_07_08.jpg">
+        </div>
+    </div>
+    <div id="xfrd_Luna_07_07">
+        <div class="fondo_modal d-flex justify-content-center align-items-center" onclick="showImg('xfrd_Luna_07_07')">
+            <img class="img-fluid" src="img/ilustracion/xfrd_Luna_07_07.jpg">
         </div>
     </div>
     <!-- ENDS MODALES-->

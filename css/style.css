@@ -1,13 +1,6 @@
-/* make sure it is at least as tall as the viewport */
-/*html{
-    min-height:100%;
-    position:relative;
-}*/
-
-/* force the BODY element to match the height of the HTML element */
-/*body{
-    height:100%; 
-}*/
+body{
+	scroll-behavior: smooth;
+}
 
 .back {/*fondo de cada página por tema*/
 	background-image: url(img/comicf.jpg);
@@ -21,7 +14,7 @@
 	padding-top: 20px !important;
 	}
 
-#xfrd_Luna_07_08{
+#xfrd_Luna_07_08, #xfrd_Luna_07_07{
 	display: none;
 }
 
@@ -38,3 +31,4 @@
 .no_scroll{
 	overflow:hidden;
 	}
+	
