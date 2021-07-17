@@ -1,6 +1,243 @@
 {
-    "illustration": [
+    "illustration": [{
+            "id": "xfrd_Luna_07_08",
+            "name": "Luna y el jugador de dados, ilustración 8",
+            "img_route": "img/ilustracion/xfrd_Luna_07_08.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "9/2/2019",
+            "editorial": "Oxford Editorial"
+        },
         {
+            "id": "xfrd_Luna_07_07",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_Luna_07_07.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_Luna_07_02",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_Luna_07_02.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_Luna_06_07",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_Luna_06_07.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_Luna_06_01",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_Luna_06_01.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_Luna_02_cover",
+            "name": "Luna y el jugador de dados, ilustración 8",
+            "img_route": "img/ilustracion/xfrd_Luna_02_cover.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "9/2/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_Luna_02_09",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_Luna_02_09.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_Luna_02_04",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_Luna_02_04.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_lang_s100",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_lang_s100.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_lang_s094",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_lang_s094.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_lang_s061",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_lang_s061.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_lang_s041",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_lang_s041.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "novios_MNG",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/novios_MNG.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "XPromo_Saskia_1",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/XPromo_Saskia_1.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "XPromo_saskia",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/XPromo_saskia.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "XPromo",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/XPromo.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_OR_HJulia_10",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_OR_HJulia_10.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_OR_HJulia_05",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/img/ilustracion/xfrd_OR_HJulia_05.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_OR_HJulia_03",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_OR_HJulia_03.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_OR_HAlan_02",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_OR_HAlan_02.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_OR_internet_Leila_gruta",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_OR_internet_Leila_gruta.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_OR_internet_kima_barco",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_OR_internet_kima_barco.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_OR_internet_DarkLeila_ruinas",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_OR_internet_DarkLeila_ruinas.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_OR_internet_dark_promontorio",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_OR_internet_dark_promontorio.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        }
+    ],
+
+    "comic": [{
+            "id": "xfrd_Luna_02_cover",
+            "name": "Luna y el jugador de dados, ilustración 8",
+            "img_route": "img/ilustracion/xfrd_Luna_02_cover.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "9/2/2019",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "xfrd_Luna_02_09",
+            "name": "Luna y la hija del mercader, ilustración 7",
+            "img_route": "img/ilustracion/xfrd_Luna_02_09.jpg",
+            "alt_description": "Luna y el jugador de dados, ilustración 9",
+            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
+            "img_date": "30/4/2019",
+            "editorial": "Oxford Editorial"
+        }
+    ],
+
+    "graphic_design": [{
             "id": "xfrd_Luna_07_08",
             "name": "Luna y el jugador de dados, ilustración 8",
             "img_route": "img/ilustracion/xfrd_Luna_07_08.jpg",
@@ -20,50 +257,7 @@
         }
     ],
 
-    "comic": [
-        {
-            "id": "xfrd_Luna_07_08",
-            "name": "Luna y el jugador de dados, ilustración 8",
-            "img_route": "img/ilustracion/xfrd_Luna_07_08.jpg",
-            "alt_description": "Luna y el jugador de dados, ilustración 9",
-            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
-            "img_date": "9/2/2019",
-            "editorial": "Oxford Editorial"
-        },
-        {
-            "id": "xfrd_Luna_07_07",
-            "name": "Luna y la hija del mercader, ilustración 7",
-            "img_route": "img/ilustracion/xfrd_Luna_07_07.jpg",
-            "alt_description": "Luna y el jugador de dados, ilustración 9",
-            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
-            "img_date": "30/4/2019",
-            "editorial": "Oxford Editorial"
-        }
-    ],
-
-    "graphic_design": [
-        {
-            "id": "xfrd_Luna_07_08",
-            "name": "Luna y el jugador de dados, ilustración 8",
-            "img_route": "img/ilustracion/xfrd_Luna_07_08.jpg",
-            "alt_description": "Luna y el jugador de dados, ilustración 9",
-            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
-            "img_date": "9/2/2019",
-            "editorial": "Oxford Editorial"
-        },
-        {
-            "id": "xfrd_Luna_07_07",
-            "name": "Luna y la hija del mercader, ilustración 7",
-            "img_route": "img/ilustracion/xfrd_Luna_07_07.jpg",
-            "alt_description": "Luna y el jugador de dados, ilustración 9",
-            "img_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, ac viverra laoreet ultricies erat luctus quisque, porta id semper imperdiet gravida netus a.",
-            "img_date": "30/4/2019",
-            "editorial": "Oxford Editorial"
-        }
-    ],
-
-    "web": [
-        {
+    "web": [{
             "id": "xfrd_Luna_07_08",
             "name": "Luna y el jugador de dados, ilustración 8",
             "img_route": "img/ilustracion/xfrd_Luna_07_08.jpg",
