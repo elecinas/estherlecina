@@ -135,4 +135,7 @@ function makeModal(ruta_img) {
     imgModal.setAttribute("class", "img-fluid");
     imgModal.setAttribute("src", ruta_img.img_route);
     divImg.appendChild(imgModal);
+
+    //OCULTARLO TODO MEDIANTE CSS
+    document.getElementById(ruta_img.id).style.display = "none";
 }

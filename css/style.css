@@ -16,45 +16,6 @@ body {
     padding-top: 80px !important;
 }
 
-#xfrd_Luna_07_08,
-#xfrd_Luna_07_07,
-#xfrd_Luna_07_02,
-#xfrd_Luna_06_07,
-#xfrd_Luna_06_01,
-#xfrd_Luna_02_cover,
-#xfrd_Luna_02_09,
-#xfrd_Luna_02_04,
-#xfrd_lang_s100,
-#xfrd_lang_s094,
-#xfrd_lang_s061,
-#xfrd_lang_s041,
-#xfrd_lang_s061,
-#xfrd_lang_s041,
-#novios_MNG,
-#XPromo_Saskia_1,
-#XPromo_saskia,
-#XPromo,
-#xfrd_OR_HJulia_10,
-#xfrd_OR_HJulia_05,
-#xfrd_OR_HJulia_03,
-#xfrd_OR_HAlan_02,
-#xfrd_OR_internet_Leila_gruta,
-#xfrd_OR_internet_kima_barco,
-#xfrd_OR_internet_DarkLeila_ruinas,
-#xfrd_OR_internet_dark_promontorio,
-#indio,
-#msn_Los_Otros_niebla,
-#msn_pinocho_mosquetero,
-#msn_pinocho_oliver_twist,
-#msn_pinocho_robespierre,
-#bcnv_borneo_1456122,
-#bcnv_granota_1456141,
-#xfrd_OR_internet_Dark_emboscada,
-#PRH_Raquel_01_cover,
-#PRH_Raquel_02_cover {
-    display: none;
-}
-
 .fondo_modal {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10000;
