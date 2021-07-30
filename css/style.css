@@ -2,6 +2,25 @@ body {
     scroll-behavior: smooth;
 }
 
+.carousel-inner>.item>img {
+    min-height: 100%;
+    height: 100%;
+}
+
+.img {
+    height: 100vh;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+
+/*
+.img-fluid {
+    max-height: 100% !important;
+    max-width: auto !important;
+}
+*/
+
 .stirlogo {
     /*font-family: 'Arvo', serif;*/
     /*font-family: 'Jockey One', sans-serif;*/
@@ -10,17 +29,8 @@ body {
     /*font-family: 'Amatic SC', cursive;*/
 }
 
-.colorlogo1 {
-    /*color: rgba(82, 220, 223, 1);*/
-    color: white;
-}
-
-.colorlogo2 {
+.colorlogo {
     /*color: rgba(255, 153, 51, 1);*/
-    color: white;
-}
-
-.colorlogo3 {
     /*color: rgba(102, 255, 102, 1);*/
     color: rgba(82, 220, 223, 1);
 }
@@ -32,6 +42,7 @@ body {
     background-repeat: repeat;
     background-color: white;
     background-attachment: fixed;
+    height: 100%;
 }
 
 .supertop {

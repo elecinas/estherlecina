@@ -307,41 +307,320 @@
         }
     ],
     "comic": [{
-            "id": "",
-            "name": "",
-            "img_route": "",
-            "alt_description": "",
-            "img_description": "",
-            "img_date": "",
-            "editorial": ""
+            "id": "comic_001_dimonis",
+            "name": "Demonios de dibujante",
+            "img_route": "img/comic/comic_001_dimonis.jpg",
+            "alt_description": "Demonios de dibujante.",
+            "img_description": "Primera página de prueba sobre los demonios que atormentan a una dibujante.",
+            "img_date": "2020",
+            "editorial": "Proyecto personal"
         },
         {
-            "id": "",
-            "name": "",
-            "img_route": "",
-            "alt_description": "",
-            "img_description": "",
-            "img_date": "",
-            "editorial": ""
+            "id": "comic_124_125_erin",
+            "name": "Manga Erin, páginas 124 y 125",
+            "img_route": "img/comic/comic_124_125_erin.jpg",
+            "alt_description": "Manga Erin, páginas 124 y 125.",
+            "img_description": "Página 124 y 125 del manga Erin.",
+            "img_date": "2019",
+            "editorial": "Ediciones Babylon"
+        },
+        {
+            "id": "comic_136_erin",
+            "name": "Manga Erin, página 136",
+            "img_route": "img/comic/comic_136_erin.jpg",
+            "alt_description": "Manga Erin, página 136.",
+            "img_description": "Página 136 del manga Erin.",
+            "img_date": "2019",
+            "editorial": "Ediciones Babylon"
+        },
+        {
+            "id": "comic_162_erin",
+            "name": "Manga Erin, página 162",
+            "img_route": "img/comic/comic_162_erin.jpg",
+            "alt_description": "Manga Erin, página 162.",
+            "img_description": "Página 162 del manga Erin.",
+            "img_date": "2019",
+            "editorial": "Ediciones Babylon"
+        },
+        {
+            "id": "comic_180_erin",
+            "name": "Manga Erin, página 180",
+            "img_route": "img/comic/comic_180_erin.jpg",
+            "alt_description": "Manga Erin, página 180.",
+            "img_description": "Página 180 del manga Erin.",
+            "img_date": "2019",
+            "editorial": "Ediciones Babylon"
+        },
+        {
+            "id": "comic_manon_18",
+            "name": "BD Manon, página 18",
+            "img_route": "img/comic/comic_manon_18.jpg",
+            "alt_description": "BD Manon, página 18.",
+            "img_description": "Decimooctava página de la BD de Manon para aprender francés, suplemento de la ESO.",
+            "img_date": "2018",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "comic_manon_28",
+            "name": "BD Manon, página 28",
+            "img_route": "img/comic/comic_manon_28.jpg",
+            "alt_description": "BD Manon, página 28.",
+            "img_description": "Vigésimooctava página de la BD de Manon para aprender francés, suplemento de la ESO.",
+            "img_date": "2018",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "comic_manon_30",
+            "name": "BD Manon, página 30",
+            "img_route": "img/comic/comic_manon_30.jpg",
+            "alt_description": "BD Manon, página 30.",
+            "img_description": "Octava página de la BD de Manon para aprender francés, suplemento de la ESO.",
+            "img_date": "2018",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "comic_parkour_08",
+            "name": "BD Parkour, página 8",
+            "img_route": "img/comic/comic_parkour_08.jpg",
+            "alt_description": "BD Parkour, página 8.",
+            "img_description": "Octava página de la BD sobre Parkour para aprender francés, suplemento de la ESO.",
+            "img_date": "2016",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "comic_parkour_24",
+            "name": "BD Parkour, página 24",
+            "img_route": "img/comic/comic_parkour_24.jpg",
+            "alt_description": "BD Parkour, página 24.",
+            "img_description": "Vigésimocuarta página de la BD sobre Parkour para aprender francés, suplemento de la ESO.",
+            "img_date": "2016",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "comic_parkour_25",
+            "name": "BD Parkour, página 25",
+            "img_route": "img/comic/comic_parkour_25.jpg",
+            "alt_description": "BD Parkour, página 25.",
+            "img_description": "Vigésimoquinta página de la BD sobre Parkour para aprender francés, suplemento de la ESO.",
+            "img_date": "2016",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "comic_parkour_26",
+            "name": "BD Parkour, página 26",
+            "img_route": "img/comic/comic_parkour_26.jpg",
+            "alt_description": "BD Parkour, página 26.",
+            "img_description": "Vigésimosexta página de la BD sobre Parkour para aprender francés, suplemento de la ESO.",
+            "img_date": "2016",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "comic_dark_04",
+            "name": "Manga Dark, página 4",
+            "img_route": "img/comic/comic_dark_04.jpg",
+            "alt_description": "Manga Dark, página 4.",
+            "img_description": "Cuarta página del suplemento manga de Dark perteneciente a la colección Odio el Rosa.",
+            "img_date": "2014",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "comic_dark_07",
+            "name": "Manga Dark, página 7",
+            "img_route": "img/comic/comic_dark_07.jpg",
+            "alt_description": "Manga Dark, página 7.",
+            "img_description": "Séptima página del suplemento manga de Dark perteneciente a la colección Odio el Rosa.",
+            "img_date": "2014",
+            "editorial": "Oxford Editorial"
+        },
+        {
+            "id": "comic_dark_05",
+            "name": "Manga Dark, página 5",
+            "img_route": "img/comic/comic_dark_05.jpg",
+            "alt_description": "Manga Dark, página 5.",
+            "img_description": "Quinta página del suplemento manga de Dark perteneciente a la colección Odio el Rosa.",
+            "img_date": "2014",
+            "editorial": "Oxford Editorial"
         }
     ],
     "graphic_design": [{
-            "id": "",
-            "name": "",
-            "img_route": "",
-            "alt_description": "",
-            "img_description": "",
-            "img_date": "",
-            "editorial": ""
+            "id": "gfc_PngnRndmHs_Lidr_cover",
+            "name": "Diseño exterior Las ideas de Raquel",
+            "img_route": "img/grafica/gfc_PngnRndmHs_Lidr_cover.jpg",
+            "alt_description": "Diseño exterior Las ideas de Raquel.",
+            "img_description": "Realización del diseño exterior de la colección de libros Las ideas de Raquel.",
+            "img_date": "2021",
+            "editorial": "Penguin Random House (Beascoa)"
         },
         {
-            "id": "",
-            "name": "",
-            "img_route": "",
-            "alt_description": "",
-            "img_description": "",
-            "img_date": "",
-            "editorial": ""
+            "id": "gfc_PngnRndmHs_Lidr_interior",
+            "name": "Diseño interior Las ideas de Raquel",
+            "img_route": "img/grafica/gfc_PngnRndmHs_Lidr_interior.jpg",
+            "alt_description": "Diseño interior Las ideas de Raquel.",
+            "img_description": "Realización del diseño y la maquetación del interior de la colección de libros Las ideas de Raquel.",
+            "img_date": "2021",
+            "editorial": "Penguin Random House (Beascoa)"
+        },
+        {
+            "id": "gfc_bcnv_maDeu",
+            "name": "Cubierta La mà de Déu",
+            "img_route": "img/grafica/gfc_bcnv_maDeu.jpg",
+            "alt_description": "Cubierta La mà de Déu.",
+            "img_description": "Cubierta para el libro La mà de Déu, de la colección Calam.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_miradavampir",
+            "name": "Cubierta La mirada del vampir",
+            "img_route": "img/grafica/gfc_bcnv_miradavampir.jpg",
+            "alt_description": "Cubierta La mirada del vampir.",
+            "img_description": "Cubierta para el libro La mirada del vampir, de la colección Calam.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_Xxino",
+            "name": "Cubierta Amb X de Xino",
+            "img_route": "img/grafica/gfc_bcnv_Xxino.jpg",
+            "alt_description": "Cubierta Amb X de Xino.",
+            "img_description": "Cubierta para el libro Amb X de Xino, de la colección Calam.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_abece",
+            "name": "Cubiertas colección ABC",
+            "img_route": "img/grafica/gfc_bcnv_abece.jpg",
+            "alt_description": "Cubiertas colección ABC.",
+            "img_description": "Diseño gráfico de las cubiertas para la colección de infantil ABC.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_cobcatalegmusica",
+            "name": "Catálogo de presentación de libros de texto",
+            "img_route": "img/grafica/gfc_bcnv_cobcatalegmusica.jpg",
+            "alt_description": "Catálogo de presentación de libros de texto.",
+            "img_description": "Diseño y maquetación de los catálogos que presentavan los libros de texto de primaria de la temporada.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_cobESO",
+            "name": "Diseño de todas las cubiertas de la ESO",
+            "img_route": "img/grafica/gfc_bcnv_cobESO.jpg",
+            "alt_description": "Diseño de todas las cubiertas de la ESO.",
+            "img_description": "Diseño de las cubiertas de libros y CDs de toda la línea deucativa ESO.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_saltamarti",
+            "name": "Readaptación de las cubiertas de educación primaria",
+            "img_route": "img/grafica/gfc_bcnv_saltamarti.jpg",
+            "alt_description": "Readaptación de las cubiertas de educación primaria.",
+            "img_description": "Readaptación de las antiguas cubiertas de educación primaria a una versión más actual.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_catalegmates",
+            "name": "Cubierta e interior de método matemático",
+            "img_route": "img/grafica/gfc_bcnv_catalegmates.jpg",
+            "alt_description": "Cubierta e interior de método matemático.",
+            "img_description": "Presentación de un proyecto para la adquisición de estrategias de cálculo.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_cobmedi",
+            "name": "Guías de asignaturas",
+            "img_route": "img/grafica/gfc_bcnv_cobmedi.jpg",
+            "alt_description": "Guías de asignaturas.",
+            "img_description": "Guías para profesores que resumen los contenidos de cada área.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_teatre",
+            "name": "Libro-teatro",
+            "img_route": "img/grafica/gfc_bcnv_teatre.jpg",
+            "alt_description": "Libro-teatro; Caperucita roja + Hansel y Grettel.",
+            "img_description": "Diseño y realización del libro teatro de las obras Caperucita roja y Hansel y Grettel.",
+            "img_date": "2007",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_catalegcalam",
+            "name": "Catálogo promocional de la colección Calam",
+            "img_route": "img/grafica/gfc_bcnv_catalegcalam.jpg",
+            "alt_description": "Catálogo promocional de la colección Calam.",
+            "img_description": "Catálogo para novedades de lecturas de la colección Calam. Imitando un diario de noticias.",
+            "img_date": "2006",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_bcnv_catalegsestacionals",
+            "name": "Catálogos de novedades editoriales",
+            "img_route": "img/grafica/gfc_bcnv_catalegsestacionals.jpg",
+            "alt_description": "Catálogos de novedades editoriales.",
+            "img_description": "Catálogos de novedades editoriales de las temporadas de primavera e invierno.",
+            "img_date": "2006",
+            "editorial": "Editorial Barcanova"
+        },
+        {
+            "id": "gfc_ict_poster",
+            "name": "Material promocional del ICT.",
+            "img_route": "img/grafica/gfc_ict_poster.jpg",
+            "alt_description": "Material promocional del ICT",
+            "img_description": "Pósters y tarjetas promocionales para el Institut Català de Tecnologia.",
+            "img_date": "2004",
+            "editorial": "Institut Català de Tecnologia (ICT)"
+        },
+        {
+            "id": "gfc_ing_coral",
+            "name": "Material promocional de la coral del EIC",
+            "img_route": "img/grafica/gfc_ing_coral.jpg",
+            "alt_description": "Material promocional de la coral del EIC",
+            "img_description": "Invitaciones y libreto informativo para la coral de la asociación de Enginyers Industrials de Catalunya.",
+            "img_date": "2004",
+            "editorial": "Enginyers Industrials de Catalunya (EIC)"
+        },
+        {
+            "id": "gfc_ing_quadript",
+            "name": "Material corporativo EIC",
+            "img_route": "img/grafica/gfc_ing_quadript.jpg",
+            "alt_description": "Material corporativo EIC.",
+            "img_description": "Libreto y cuadríptico corporativos para eventos de la asociación de Enginyers Industrials de Catalunya.",
+            "img_date": "2004",
+            "editorial": "Enginyers Industrials de Catalunya (EIC)"
+        },
+        {
+            "id": "gfc_ing_tripticcoral",
+            "name": "Tríptico de la coral del EIC",
+            "img_route": "img/grafica/gfc_ing_tripticcoral.jpg",
+            "alt_description": "Tríptico de la coral del EIC.",
+            "img_description": "Tríptico promocional de la coral de Enginyers Industrials de Catalunya.",
+            "img_date": "2004",
+            "editorial": "Enginyers Industrials de Catalunya (EIC)"
+        },
+        {
+            "id": "gfc_ict_graficas2",
+            "name": "Gráficas corporativas ICT",
+            "img_route": "img/grafica/gfc_ict_graficas2.jpg",
+            "alt_description": "Gráficas corporativas ICT.",
+            "img_description": "Gráficas corporativas realizadas para el Institut Català de Tecnologia (ICT).",
+            "img_date": "2004",
+            "editorial": "Institut Català de Tecnologia (ICT)"
+        },
+        {
+            "id": "gfc_ict_graficas1",
+            "name": "Gráficas corporativas ICT",
+            "img_route": "img/grafica/gfc_ict_graficas1.jpg",
+            "alt_description": "Gráficas corporativas ICT.",
+            "img_description": "Gráficas corporativas realizadas para el Institut Català de Tecnologia (ICT).",
+            "img_date": "2004",
+            "editorial": "Institut Català de Tecnologia (ICT)"
         }
     ],
     "web": [{

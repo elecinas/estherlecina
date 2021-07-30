@@ -119,7 +119,6 @@ function makeModal(ruta_img) {
     //<div id="xfrd_Luna_07_08">
     var divId = document.createElement('div');
     divId.setAttribute("id", ruta_img.id);
-    console.log(img_modales);
     img_modales.appendChild(divId);
 
     //2º METER DENTRO <div> QUE ENVUELVE LA IMAGEN
