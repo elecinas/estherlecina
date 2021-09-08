@@ -1,5 +1,17 @@
+html,
+body {
+    margin: 0px;
+    border: 0 none;
+    padding: 0px;
+}
+
 body {
     scroll-behavior: smooth;
+    /*background-image: url(img/comicf.jpg);
+    background-position: -30px -22px;
+    background-repeat: repeat;
+    background-attachment: fixed;*/
+    background-color: rgb(47, 47, 47);
 }
 
 .carousel-inner>.item>img {
@@ -13,20 +25,8 @@ body {
     background-color: cadetblue;
 }
 
-
-/*
-.img-fluid {
-    max-height: 100% !important;
-    max-width: auto !important;
-}
-*/
-
 .stirlogo {
-    /*font-family: 'Arvo', serif;*/
-    /*font-family: 'Jockey One', sans-serif;*/
     font-family: 'Barriecito', cursive;
-    /*font-family: 'Karantina', cursive;*/
-    /*font-family: 'Amatic SC', cursive;*/
 }
 
 .colorlogo {
@@ -37,12 +37,12 @@ body {
 
 .back {
     /*fondo de cada página por tema*/
+    /*
     background-image: url(img/comicf.jpg);
     background-position: -30px -22px;
     background-repeat: repeat;
-    background-color: white;
     background-attachment: fixed;
-    height: 100%;
+    */
 }
 
 .supertop {
@@ -62,4 +62,11 @@ body {
 
 .no_scroll {
     overflow: hidden;
+}
+
+
+/*reescribiendo BOOTSTRAP classes*/
+
+.bg-dark {
+    background-color: rgb(47, 47, 47) !important;
 }

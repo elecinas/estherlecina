@@ -66,7 +66,7 @@ function makeCard(card_data) {
     //1º CREAR <div> QUE LO ENVUELVE TODO
     //<div class="card">
     var divCard = document.createElement('div');
-    divCard.setAttribute("class", "card");
+    divCard.setAttribute("class", "card  text-white bg-dark mb-3");
     card_columns.appendChild(divCard);
 
     //2º METER DENTRO LOS ELEMENTOS HIJOS: <a> Y <div>

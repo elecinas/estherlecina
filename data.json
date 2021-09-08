@@ -443,6 +443,60 @@
         }
     ],
     "graphic_design": [{
+            "id": "gfc_UOC_webcorporativa",
+            "name": "Diseño corporativo de web",
+            "img_route": "img/grafica/gfc_UOC_webcorporativa.jpg",
+            "alt_description": "web corporativa",
+            "img_description": "Diseño corporativo de una web sobre formación a distancia.",
+            "img_date": "2014",
+            "editorial": "Proyecto formativo (UOC)"
+        },
+        {
+            "id": "gfc_UOC_interficie1",
+            "name": "Diseño de interficie web",
+            "img_route": "img/grafica/gfc_UOC_interficie1.jpg",
+            "alt_description": "Interficie web de tienda de zapatos artesanal",
+            "img_description": "Diseño de la interficie gráfica para una web de venta de zapatos artesanales.",
+            "img_date": "2018",
+            "editorial": "Proyecto formativo (UOC)"
+        },
+        {
+            "id": "gfc_UOC_3D",
+            "name": "Desarrollo barco vikingo 3D",
+            "img_route": "img/grafica/gfc_UOC_3D.jpg",
+            "alt_description": "Imagen 3D",
+            "img_description": "Creación en 3D Studio Max de un barco vikingo.",
+            "img_date": "2017",
+            "editorial": "Proyecto formativo (UOC)"
+        },
+        {
+            "id": "gfc_UOC_arcinfo",
+            "name": "Arquitectura de la información",
+            "img_route": "img/grafica/gfc_UOC_arcinfo.jpg",
+            "alt_description": "Árbol de contenidos",
+            "img_description": "Diseño de la arquitectura de la información de un sitio responsivo.",
+            "img_date": "2016",
+            "editorial": "Proyecto formativo (UOC)"
+        },
+        {
+            "id": "gfc_UOC_logo",
+            "name": "Diseño de logotipo y libro de estilo",
+            "img_route": "img/grafica/gfc_UOC_logo.jpg",
+            "alt_description": "Aplicaciones correctas del logotipo",
+            "img_description": "Diseño de logotipo y el correspondiente libro de estilo.",
+            "img_date": "2015",
+            "editorial": "Proyecto formativo (UOC)"
+        },
+        {
+            "id": "gfc_UOC_infografia",
+            "name": "Infografía",
+            "img_route": "img/grafica/gfc_UOC_infografia.svg",
+            "alt_description": "Infografía catástrofe Exxon Valdez",
+            "img_description": "Infografía que representa las consecuencias de la catástrofe de Exxon Valdez.",
+            "img_date": "2015",
+            "editorial": "Proyecto formativo (UOC)"
+        },
+        {
             "id": "gfc_PngnRndmHs_Lidr_cover",
             "name": "Diseño exterior Las ideas de Raquel",
             "img_route": "img/grafica/gfc_PngnRndmHs_Lidr_cover.jpg",
