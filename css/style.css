@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'KeepCalm';
+    src: url('fonts/KeepCalm.ttf') format('ttf');
+}
+
 html,
 body {
     margin: 0px;
@@ -26,7 +31,10 @@ body {
 }
 
 .stirlogo {
-    font-family: 'Barriecito', cursive;
+    /*font-family: 'Barriecito', cursive;*/
+    font-family: KeepCalm;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .colorlogo {
@@ -43,6 +51,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     */
+    background-color: rgb(60, 60, 60);
 }
 
 .supertop {
@@ -64,9 +73,96 @@ body {
     overflow: hidden;
 }
 
+.rejilla,
+.rejilla2,
+.rejilla3 {
+    height: 19rem;
+}
+
+.rejilla {
+    border-width: 4px;
+    border-style: dashed;
+    border-color: white;
+    padding-left: 25px;
+}
+
+.text-nombre1,
+.text-nombre2,
+.text-nombre3 {
+    font-family: KeepCalm;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 7vw;
+    line-height: 7vw;
+}
+
+.text-nombre1 {
+    color: rgba(82, 220, 223, 1) !important;
+}
+
+.text-nombre2 {
+    color: rgba(255, 153, 51, 1) !important;
+}
+
 
 /*reescribiendo BOOTSTRAP classes*/
 
 .bg-dark {
     background-color: rgb(47, 47, 47) !important;
+}
+
+.list-group-item-dark {
+    color: grey;
+    background-color: rgb(47, 47, 47);
+}
+
+
+/* media queries*/
+
+@media screen and (min-width: 1px) {
+    .text-nombre1,
+    .text-nombre2,
+    .text-nombre3 {
+        font-size: 92px;
+        line-height: 92px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    /*.rejilla3 {
+        display: none !important;
+    }*/
+    .text-nombre1,
+    .text-nombre2,
+    .text-nombre3 {
+        font-size: 92px;
+        line-height: 92px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .text-nombre1,
+    .text-nombre2,
+    .text-nombre3 {
+        font-size: 82px;
+        line-height: 82px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .text-nombre1,
+    .text-nombre2,
+    .text-nombre3 {
+        font-size: 102px;
+        line-height: 102px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .text-nombre1,
+    .text-nombre2,
+    .text-nombre3 {
+        font-size: 112px;
+        line-height: 112px;
+    }
 }
