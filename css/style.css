@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'KeepCalm';
-    src: url('fonts/KeepCalm.ttf') format('ttf');
+    src: url('http://www.estherlecina.es/fonts/KeepCalm.ttf') format('ttf');
 }
 
 html,
@@ -32,7 +32,7 @@ body {
 
 .stirlogo {
     /*font-family: 'Barriecito', cursive;*/
-    font-family: KeepCalm;
+    font-family: 'KeepCalm', 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -86,10 +86,74 @@ body {
     padding-left: 25px;
 }
 
+.c2,
+.c3,
+.c5,
+.c8,
+.c9 {
+    border-style: dashed;
+    border-color: white;
+    padding-left: 25px;
+}
+
+.c2 {
+    border-width: 0px 4px 4px 0px;
+}
+
+.c3,
+.c9 {
+    border-width: 4px 4px 4px 0px;
+}
+
+.c5 {
+    border-width: 0px 4px 0px 4px;
+}
+
+.fondo_comic {
+    background-image: url(img/div_comic_dark.jpg);
+}
+
+.fondo_comic:hover {
+    background-image: url(img/div_comic.jpg);
+}
+
+.fondo_ilustracion {
+    background-image: url(img/div_ilustracion_dark.jpg);
+}
+
+.fondo_ilustracion:hover {
+    background-image: url(img/div_ilustracion.jpg);
+}
+
+.fondo_grafica {
+    background-image: url(img/div_grafica_dark.jpg);
+}
+
+.fondo_grafica:hover {
+    background-image: url(img/div_grafica.jpg);
+}
+
+.fondo_programacion {
+    background-image: url(img/div_programacion_dark.jpg);
+}
+
+.fondo_programacion:hover {
+    background-image: url(img/div_programacion.jpg);
+}
+
+.vinculo_rejilla {
+    color: white;
+}
+
+.vinculo_rejilla:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .text-nombre1,
 .text-nombre2,
 .text-nombre3 {
-    font-family: KeepCalm;
+    font-family: 'KeepCalm', 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 7vw;
@@ -119,19 +183,39 @@ body {
 
 /* media queries*/
 
-@media screen and (min-width: 1px) {
+@media screen and (min-width: 150px) {
+    .c2 {
+        border-width: 0px;
+    }
+    .c3,
+    .c9 {
+        border-width: 4px;
+    }
+    .c5 {
+        border-width: 0px 4px 4px 4px;
+    }
     .text-nombre1,
     .text-nombre2,
     .text-nombre3 {
-        font-size: 92px;
-        line-height: 92px;
+        font-size: 55px;
+        line-height: 55px;
+    }
+    h2 {
+        font-size: 25px;
     }
 }
 
 @media screen and (min-width: 576px) {
-    /*.rejilla3 {
-        display: none !important;
-    }*/
+    .c2 {
+        border-width: 0px;
+    }
+    .c3,
+    .c9 {
+        border-width: 4px;
+    }
+    .c5 {
+        border-width: 0px 4px 4px 4px;
+    }
     .text-nombre1,
     .text-nombre2,
     .text-nombre3 {
@@ -141,6 +225,16 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .c2 {
+        border-width: 0px 4px 4px 0px;
+    }
+    .c3,
+    .c9 {
+        border-width: 4px 4px 4px 0px;
+    }
+    .c5 {
+        border-width: 0px 4px 0px 4px;
+    }
     .text-nombre1,
     .text-nombre2,
     .text-nombre3 {
@@ -150,6 +244,16 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+    .c2 {
+        border-width: 0px 4px 4px 0px;
+    }
+    .c3,
+    .c9 {
+        border-width: 4px 4px 4px 0px;
+    }
+    .c5 {
+        border-width: 0px 4px 0px 4px;
+    }
     .text-nombre1,
     .text-nombre2,
     .text-nombre3 {
@@ -159,6 +263,16 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+    .c2 {
+        border-width: 0px 4px 4px 0px;
+    }
+    .c3,
+    .c9 {
+        border-width: 4px 4px 4px 0px;
+    }
+    .c5 {
+        border-width: 0px 4px 0px 4px;
+    }
     .text-nombre1,
     .text-nombre2,
     .text-nombre3 {
