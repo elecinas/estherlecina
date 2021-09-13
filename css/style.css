@@ -115,6 +115,7 @@ body {
 
 .fondo_comic:hover {
     background-image: url(img/div_comic.jpg);
+    cursor: pointer;
 }
 
 .fondo_ilustracion {
@@ -123,6 +124,7 @@ body {
 
 .fondo_ilustracion:hover {
     background-image: url(img/div_ilustracion.jpg);
+    cursor: pointer;
 }
 
 .fondo_grafica {
@@ -131,6 +133,7 @@ body {
 
 .fondo_grafica:hover {
     background-image: url(img/div_grafica.jpg);
+    cursor: pointer;
 }
 
 .fondo_programacion {
@@ -139,6 +142,7 @@ body {
 
 .fondo_programacion:hover {
     background-image: url(img/div_programacion.jpg);
+    cursor: pointer;
 }
 
 .vinculo_rejilla {
