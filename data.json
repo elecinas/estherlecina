@@ -1,5 +1,51 @@
 {
-    "illustration": [{
+    "illustration": [
+        {
+            "id": "COLORS_cards_05_mimo",
+            "name": "Mimo",
+            "img_route": "img/ilustracion/COLORS_cards_05_mimo.jpg",
+            "alt_description": "Carta para actividad lúdica, Space.",
+            "img_description": "Carta para actividad lúdica, Space.",
+            "img_date": "2022",
+            "editorial": "Colors of Talent"
+        },
+        {
+            "id": "COLORS_cards_04_blackout",
+            "name": "Blackout",
+            "img_route": "img/ilustracion/COLORS_cards_04_blackout.jpg",
+            "alt_description": "Carta para actividad lúdica, Space.",
+            "img_description": "Carta para actividad lúdica, Space.",
+            "img_date": "2022",
+            "editorial": "Colors of Talent"
+        },
+        {
+            "id": "COLORS_cards_03_king_midas",
+            "name": "King Midas",
+            "img_route": "img/ilustracion/COLORS_cards_03_king_midas.jpg",
+            "alt_description": "Carta para actividad lúdica, Space.",
+            "img_description": "Carta para actividad lúdica, Space.",
+            "img_date": "2022",
+            "editorial": "Colors of Talent"
+        },
+        {
+            "id": "COLORS_cards_02_excalibur",
+            "name": "Excalibur",
+            "img_route": "img/ilustracion/COLORS_cards_02_excalibur.jpg",
+            "alt_description": "Carta para actividad lúdica, Space.",
+            "img_description": "Carta para actividad lúdica, Space.",
+            "img_date": "2022",
+            "editorial": "Colors of Talent"
+        },
+        {
+            "id": "COLORS_cards_01_shapeshifter",
+            "name": "Shape Shifter",
+            "img_route": "img/ilustracion/COLORS_cards_01_shapeshifter.jpg",
+            "alt_description": "Carta para actividad lúdica, Space.",
+            "img_description": "Carta para actividad lúdica, Space.",
+            "img_date": "2022",
+            "editorial": "Colors of Talent"
+        },
+        {
             "id": "PRH_Raquel_01_cover",
             "name": "Pide un deseo",
             "img_route": "img/ilustracion/PRH_Raquel_01_cover.jpg",
