@@ -105,7 +105,7 @@ function createGalleryCards(cardData, container) {
 
     //Creamos el elemento img
     const cardImg = document.createElement('img');
-    cardImg.setAttribute('src', cardData.img_card_route);
+    cardData.img_card_route && cardImg.setAttribute('src', cardData.img_card_route);
     cardImg.setAttribute('alt', cardData.alt_description);
     cardFrontFace.appendChild(cardImg);
 
