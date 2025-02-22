@@ -60,6 +60,7 @@ function createSvg({
 
 
 function createGalleryCards(cardData, container) {
+    console.log(cardData, "what?")
     const cardBox = document.createElement('div');
     cardBox.classList.add('card-box', 'gallery-item');
     container.appendChild(cardBox);
@@ -104,7 +105,7 @@ function createGalleryCards(cardData, container) {
 
     //Creamos el elemento img
     const cardImg = document.createElement('img');
-    cardImg.setAttribute('src', cardData.img_route);
+    cardImg.setAttribute('src', cardData.img_card_route);
     cardImg.setAttribute('alt', cardData.alt_description);
     cardFrontFace.appendChild(cardImg);
 
