@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'KeepCalm';
-    src: url('http://www.estherlecina.es/fonts/KeepCalm.ttf') format('ttf');
+    src: url('../fonts/KeepCalm.ttf') format('truetype');
 }
 
 html,
@@ -52,6 +52,9 @@ body {
     background-attachment: fixed;
     */
     background-color: rgb(60, 60, 60);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .supertop {
