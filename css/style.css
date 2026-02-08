@@ -12,16 +12,109 @@ body {
 
 body {
     scroll-behavior: smooth;
-    /*background-image: url(img/comicf.jpg);
-    background-position: -30px -22px;
-    background-repeat: repeat;
-    background-attachment: fixed;*/
     background-color: rgb(47, 47, 47);
 }
 
-.navbar {
+header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* --- CONFIGURACIÓN DE NAVBAR GLOBAL (SIEMPRE MÓVIL) --- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: rgb(47, 47, 47);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* El botón hamburguesa siempre visible */
+.navbar-toggler {
+    display: block !important;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* El menú lateral siempre oculto a la derecha por defecto */
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 100%;
+    height: 100vh;
+    background: rgba(30, 30, 30, 0.98);
+    display: flex !important; /* Usamos flex para centrar contenido */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 2000;
+}
+
+/* Clase para abrir el menú (vía JS) */
+.navbar-collapse.active {
+    right: 0;
+}
+
+/* Botón de cerrar (X) siempre preparado dentro del menú */
+.navbar-close {
+    display: block !important;
+    position: absolute;
+    top: 25px;
+    right: 5%;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-item {
+    margin: 15px 0; /* Espaciado vertical para la lista */
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-family: 'KeepCalm', sans-serif;
+    font-size: 1.3rem; /* Tamaño elegante para menú a pantalla completa */
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: rgba(82, 220, 223, 1);
+}
+
+/* --- LOGO (Mantenemos tus correcciones) --- */
+.navbar-logo-link,
+.navbar-logo-link:visited,
+.navbar-logo-link:hover,
+.navbar-logo-link:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-family: 'KeepCalm', 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.navbar-logo-web {
+    color: rgba(82, 220, 223, 1) !important;
+}
+
 
 footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -77,6 +170,7 @@ footer .copyright {
 
 .stirlogo {
     /*font-family: 'Barriecito', cursive;*/
+    font-size: 1.5rem;
     font-family: 'KeepCalm', 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -96,7 +190,7 @@ footer .copyright {
     background-repeat: repeat;
     background-attachment: fixed;
     */
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(47, 47, 47);
     min-height: 100vh;
     display: flex;
     flex-direction: column;

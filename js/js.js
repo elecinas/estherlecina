@@ -145,3 +145,27 @@ document.addEventListener("DOMContentLoaded", function() {
             break;
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.querySelector('.navbar-toggler');
+    const closeBtn = document.querySelector('.navbar-close');
+    const navMenu = document.querySelector('.navbar-collapse');
+
+    // Abrir menú
+    menuBtn?.addEventListener('click', () => {
+        navMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Cerrar menú
+    const closeMenu = () => {
+        navMenu.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    };
+
+    closeBtn?.addEventListener('click', closeMenu);
+
+    // Cerrar si se clica un enlace (útil para Single Page Apps o anclas)
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => link.addEventListener('click', closeMenu));
+});
