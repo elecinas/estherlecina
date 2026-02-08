@@ -19,6 +19,51 @@ body {
     background-color: rgb(47, 47, 47);
 }
 
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;      /* Tamaño del círculo */
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Círculo finito elegante */
+    border-radius: 50%;
+    margin: 0 8px;
+    color: rgba(255, 255, 255, 0.5); /* Color del icono */
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.social-link:hover {
+    color: rgba(82, 220, 223, 1);       /* Icono turquesa */
+    border-color: rgba(82, 220, 223, 1); /* Círculo turquesa */
+    transform: translateY(-3px);        /* Pequeño salto hacia arriba */
+}
+
+.icon-social {
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.icon-social:hover {
+    color: rgba(82, 220, 223, 1);
+    transform: translateY(-3px);
+}
+
+footer .copyright {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 .carousel-inner>.item>img {
     min-height: 100%;
     height: 100%;
