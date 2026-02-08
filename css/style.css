@@ -63,13 +63,13 @@ body {
 }
 
 .fondo_modal {
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10000;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .no_scroll {
@@ -185,6 +185,79 @@ body {
 .list-group-item-dark {
     color: grey;
     background-color: rgb(47, 47, 47);
+}
+
+/* Nuevos estilos para proyectos */
+
+.modal-proyecto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000; /* Por encima de navbar */
+    display: none; /* Se controla desde js.js */
+}
+
+.nav-arrow,
+.btn-cerrar {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none !important;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-arrow {
+    font-size: 3.5rem;
+    margin: 0 40px;
+}
+
+.btn-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 4rem;
+    z-index: 10001; /* siempre por encima */
+}
+
+.nav-arrow:hover,
+.btn-cerrar:hover {
+    color: rgba(82, 220, 223, 1); 
+    transform: scale(1.1);
+}
+
+.nav-arrow:active,
+.btn-cerrar:active {
+    transform: scale(0.9);
+}
+
+.contenedor-principal-modal{
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.imagen-wrapper {
+    flex-grow: 1; /* Ocupara el espacio central disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-wrapper img {
+    max-height: 70vh;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.no_scroll {
+    overflow: hidden !important;
+    height: 100vh;
 }
 
 
