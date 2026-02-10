@@ -4,15 +4,15 @@ let activeImageIndex = 0;    // Índice de la imagen que se está viendo
 /*muestra y oculta la imagen de la galería*/
 
 function showImg(img) {
-    activeImageIndex = 0; // Sempre començarà amb la primera imatge
-    let x = document.getElementById(img); //obtenim l'element enviat
-   
-    if (x.style.display === "none") {
-        x.style.display = "block"; //ensenyem l'imatge
-        document.body.classList.add("no_scroll") //bloquegem l'scroll
+    activeImageIndex = 0;
+    let x = document.getElementById(img);
+
+    if (x.style.display === "none" || x.style.display === "") {
+        x.style.display = "flex"; // CAMBIADO DE BLOCK A FLEX
+        document.body.classList.add("no_scroll");
     } else {
-        x.style.display = "none"; //amaguem l'imatge
-       document.body.classList.remove("no_scroll") //desbloquegem l'scroll
+        x.style.display = "none";
+        document.body.classList.remove("no_scroll");
     }
 }
 
@@ -21,10 +21,10 @@ function showImg(img) {
 
 function readTextFile(data_type) {
     const requestURL = 'data.json';
-    
+
     fetch(requestURL)
         .then(response => {
-            if(!response.ok) throw new Error("Error al cargar el archivo JSON");
+            if (!response.ok) throw new Error("Error al cargar el archivo JSON");
             return response.json();
         })
         .then(data => {
@@ -53,59 +53,107 @@ function makingFront(section_array) {
 }
 
 function makeCard(card_data) {
-    const card_columns = document.querySelector(".card-columns");
-    if (!card_columns) return;
+    const galleryContainer = document.querySelector(".gallery-container");
+    if (!galleryContainer) return;
+
+    // OPCIÓN A: Número fijo de columnas para que todas las cards sean iguales
+    const squaresX = 16;
+    const squareWidth = 100 / squaresX;
+
+    // 1. RECTÁNGULO BASE: Bloque sólido inferior (75% del alto)
+    let svgContent = `<rect x="0" y="25%" width="100%" height="75%" fill="rgb(35, 35, 35)" stroke="none" />`;
+
+    // 2. FILA SUPERIOR: Cuadrados de transición con ritmo fijo
+    for (let col = 0; col < squaresX; col++) {
+        let fill = 'rgb(35, 35, 35)';
+        let opacity = 1;
+
+        if (col === 0) {
+            fill = 'rgb(35, 35, 35)';
+        } else if (col === 1) {
+            fill = 'rgba(58, 127, 129, 1)';
+        } else if (col === 2) {
+            fill = 'rgba(82, 220, 223, 1)';
+        } else {
+            fill = 'rgba(82, 220, 223, 1)';
+            // Desvanecimiento: ajusta el 0.25 si quieres que el rastro sea más largo o corto
+            opacity = Math.max(0, 1 - ((col - 2) * 0.25));
+        }
+
+        svgContent += `<rect x="${col * squareWidth}%" y="0" width="${squareWidth}%" height="25%" fill="${fill}" fill-opacity="${opacity}" stroke="none" />`;
+    }
 
     const cardHTML = `
-        <div class="card text-white bg-dark mb-3">
-            <a href="#" onclick="event.preventDefault(); showImg('${card_data.id}')">
-                <img class="card-img-top" src="${card_data.images[0].url}" alt="${card_data.name}">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title">${card_data.name}</h5>
-                <p class="card-text">${card_data.img_description}</p>
-                <p class="card-text">
-                    <small class="text-muted">${card_data.editorial}. ${card_data.img_date}</small>
-                </p>
+        <div class="card-box" onclick="toggleCardFlip('${card_data.id}', event)">
+            <div class="card-inner" id="inner-${card_data.id}">
+                <div class="card-face front">
+                    <img src="${card_data.cardImgUrl}" alt="${card_data.name}">
+                    <div class="mosaico-wrapper">
+                        <svg class="mosaico-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            ${svgContent}
+                        </svg>
+                        <h3 class="card-front-title">${card_data.name}</h3>
+                    </div>
+                </div>
+
+                <div class="card-face back-card">
+                    <div class="card-info-container">
+                        <h3 class="card-info-title">${card_data.name}</h3>
+                        <p class="card-info-text">${card_data.description}</p>
+                        <p class="card-info-client-date">${card_data.editorial} • ${card_data.date}</p>
+        
+                        <div class="button-wrapper">
+                            <button class="btn-outline-info" 
+                                onclick="event.stopPropagation(); showImg('${card_data.id}')">
+                                Ver Proyecto
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     `;
-    
-    card_columns.innerHTML += cardHTML;
+    galleryContainer.innerHTML += cardHTML;
+}
+// Función para girar la carta
+function toggleCardFlip(id, event) {
+    // Si clicamos el botón, no giramos
+    if (event.target.closest('.btn-outline-info')) return;
+
+    const cardInner = document.getElementById(`inner-${id}`);
+    if (cardInner) {
+        cardInner.classList.toggle('switched');
+    }
 }
 
 function makeModal(project) {
     const img_modales = document.querySelector(".img-modales");
     if (!img_modales) return;
 
-    // Solo mostramos flechas si hay más de una imagen
-    const showControls = project.images.length > 1 ? 'd-flex' : 'd-none';
+    const showControls = project.images.length > 1 ? '' : 'd-none';
 
     const modalHTML = `
-        <div id="${project.id}" class="modal-proyecto" style="display: none;">
-            <div class="fondo_modal d-flex flex-column justify-content-center align-items-center" onclick="if(event.target == this) showImg('${project.id}')">
+        <div id="${project.id}" class="modal-proyecto">
+            <div class="contenedor-principal-modal">
+                <button class="nav-arrow ${showControls}" onclick="changeImg('${project.id}', -1)">&#10094;</button>
                 
-                <button class="btn-cerrar" onclick="showImg('${project.id}')">&times;</button>
-
-                <div class="contenedor-principal-modal d-flex align-items-center">
-                    <button class="nav-arrow ${showControls}" onclick="changeImg('${project.id}', -1)">&#10094;</button>
+                <div class="imagen-wrapper">
+                    <img id="img-${project.id}" src="${project.images[0].url}" alt="${project.name}">
                     
-                    <div class="imagen-wrapper text-center">
-                        <img id="img-${project.id}" class="img-fluid" src="${project.images[0].url}" alt="${project.name}">
+                    <div class="modal-info-footer">
+                        <h4>${project.name}</h4>
+                        <p id="caption-${project.id}">${project.images[0].caption || ''}</p>
+                        <small id="counter-${project.id}">${1} / ${project.images.length}</small>
                     </div>
-
-                    <button class="nav-arrow ${showControls}" onclick="changeImg('${project.id}', 1)">&#10095;</button>
                 </div>
 
-                <div class="modal-info-footer text-center text-white mt-3">
-                    <h4 class="mb-1">${project.name}</h4>
-                    <p id="caption-${project.id}" class="mb-0 text-muted">${project.images[0].caption || ''}</p>
-                    <small id="counter-${project.id}" class="d-block mt-2">${1} / ${project.images.length}</small>
-                </div>
+                <button class="nav-arrow ${showControls}" onclick="changeImg('${project.id}', 1)">&#10095;</button>
             </div>
+            
+            <button class="btn-cerrar" onclick="showImg('${project.id}')">&times;</button>
         </div>
     `;
-    
+
     img_modales.innerHTML += modalHTML;
 }
 
@@ -123,11 +171,11 @@ function changeImg(projectId, direction) {
     document.getElementById(`img-${projectId}`).src = project.images[activeImageIndex].url;
     document.getElementById(`caption-${projectId}`).innerText = project.images[activeImageIndex].caption || '';
     document.getElementById(`counter-${projectId}`).innerText = `${activeImageIndex + 1} / ${project.images.length}`;
-    document.activeElement.blur(); // quita el foco del botón
+    // document.activeElement.blur(); // quita el foco del botón
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    
+document.addEventListener("DOMContentLoaded", function () {
+
     const path = window.location.pathname;
     const page = path.split("/").pop();
 

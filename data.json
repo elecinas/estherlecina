@@ -3,9 +3,10 @@
         {
             "id": "COLORS_cards",
             "name": "Cartas para Colors Space",
-            "img_description": "Cartas para actividad lúdica, Space.",
+            "description": "Cartas para actividad lúdica, Space.",
             "editorial": "Colors of Talent",
-            "img_date": "2022",
+            "cardImgUrl": "img/ilustracion/cards/COLORS_cards_05_mimo.jpg",
+            "date": "2022",
             "images": [
                 {
                     "url": "img/ilustracion/COLORS_cards_05_mimo.jpg",
@@ -32,9 +33,10 @@
         {
             "id": "PRH_Raquel",
             "name": "Las ideas de Raquel",
-            "img_description": "Ilustraciones para los libros de la saga Las ideas de Raquel.",
+            "description": "Ilustraciones para los libros de la saga Las ideas de Raquel.",
             "editorial": "Penguin Random House",
-            "img_date": "2021",
+            "cardImgUrl": "img/ilustracion/cards/PRH_Raquel_01_cover.jpg",
+            "date": "2021",
             "images":[
                 {
                     "url": "img/ilustracion/PRH_Raquel_01_cover.jpg",
@@ -51,9 +53,10 @@
         {
             "id": "xfrd_Luna",
             "name": "Luna y los incorpóreos",
-            "img_description": "Ilustraciones para la saga de libros Luna y los incorpóreos.",
+            "description": "Ilustraciones para la saga de libros Luna y los incorpóreos.",
             "editorial": "Oxford Editorial",
-            "img_date": "2014-2020",
+            "cardImgUrl": "img/ilustracion/cards/xfrd_Luna_06_07.jpg",
+            "date": "2014-2020",
             "images": [
                 {
                     "url": "img/ilustracion/xfrd_Luna_07_08.jpg",
@@ -92,9 +95,10 @@
         {
             "id": "xfrd_lang_quad",
             "name": "cuaderno de francés",
-            "img_description": "Ilustraciones para cuaderno de francés",
+            "description": "Ilustraciones para cuaderno de francés",
             "editorial": "Oxford Editorial",
-            "img_date": "2017",
+            "cardImgUrl": "img/ilustracion/cards/xfrd_lang_s100.jpg",
+            "date": "2017",
             "images":[
                 {
                     "url": "img/ilustracion/xfrd_lang_s100.jpg",
@@ -117,9 +121,10 @@
         {
             "id": "novios_MNG",
             "name": "Invitación de boda",
-            "img_description": "Ilustración de unos novios para invitación de boda.",
+            "description": "Ilustración de unos novios para invitación de boda.",
             "editorial": "Tu invitación de boda",
-            "img_date": "2014",
+            "cardImgUrl": "img/ilustracion/cards/novios_MNG.jpg",
+            "date": "2014",
             "images":[
                 {
                     "url": "img/ilustracion/novios_MNG.jpg",
@@ -130,9 +135,10 @@
         {
             "id": "XPromo_Saskia",
             "name": "Ilustraciones proyecto personal",
-            "img_description": "Proyecto de cómic personal.",
+            "description": "Proyecto de cómic personal.",
             "editorial": "Proyecto personal",
-            "img_date": "2014",
+            "cardImgUrl": "img/ilustracion/cards/XPromo_saskia.jpg",
+            "date": "2014",
             "images":[
                 {
                     "url": "img/ilustracion/XPromo_Saskia_1.jpg",
@@ -151,9 +157,10 @@
         {
             "id": "xfrd_OR",
             "name": "Odio el rosa",
-            "img_description": "Ilustraciones para la saga de novelas de Odio el rosa.",
+            "description": "Ilustraciones para la saga de novelas de Odio el rosa.",
             "editorial": "Oxford Editorial",
-            "img_date": "2014-2015",
+            "cardImgUrl": "img/ilustracion/cards/xfrd_OR_internet_dark_promontorio.jpg",
+            "date": "2014-2015",
             "images":[
                 {
                     "url": "img/ilustracion/xfrd_OR_HJulia_10.jpg",
@@ -196,9 +203,10 @@
         {
             "id": "indio",
             "name": "Indio",
-            "img_description": "Ilustración de un indio oyendo cantar a un hada.",
+            "description": "Ilustración de un indio oyendo cantar a un hada.",
             "editorial": "Proyecto personal",
-            "img_date": "2004",
+            "cardImgUrl": "img/ilustracion/cards/indio.jpg",
+            "date": "2004",
             "images":[
                 {
                     "url": "img/ilustracion/indio.jpg",
@@ -209,9 +217,10 @@
         {
             "id": "msn_Los_Otros_niebla",
             "name": "Los otros",
-            "img_description": "Proyecto ficticio de una versión ilustrada de la película de Alejandro Amenábar; Los Otros. Tinta y acuarela.",
+            "description": "Proyecto ficticio de una versión ilustrada de la película de Alejandro Amenábar; Los Otros. Tinta y acuarela.",
             "editorial": "Escola Massana",
-            "img_date": "2002-2003",
+            "cardImgUrl": "img/ilustracion/cards/msn_Los_Otros_niebla.jpg",
+            "date": "2002-2003",
             "images":[
                 {
                     "url": "img/ilustracion/msn_Los_Otros_niebla.jpg",
@@ -222,9 +231,10 @@
         {
             "id": "msn_pinochos",
             "name": "Pinochos",
-            "img_description": "Ejercicio de documentación de versiones de época. Lápices de color sobre collage de cartulinas.",
+            "description": "Ejercicio de documentación de versiones de época. Lápices de color sobre collage de cartulinas.",
             "editorial": "Escola Massana",
-            "img_date": "2002",
+            "cardImgUrl": "img/ilustracion/cards/msn_pinocho_oliver_twist.jpg",
+            "date": "2002",
             "images":[
                 {
                     "url": "img/ilustracion/msn_pinocho_mosquetero.jpg",
@@ -243,10 +253,9 @@
         {
             "id": "bcnv_sopa_de_llibres",
             "name": "Sopa de llibres",
-            "img_route": "",
-            "alt_description": "Cubierta para el libro Un estiu a Borneo.",
-            "img_description": "Cubiertas para la colección infantil Sopa de Llibres",
-            "img_date": "2005",
+            "description": "Cubiertas para la colección infantil Sopa de Llibres",
+            "cardImgUrl": "img/ilustracion/cards/bcnv_borneo_1456122.jpg",
+            "date": "2005",
             "editorial": "Editorial Barcanova",
             "images":[
                 {
@@ -260,12 +269,14 @@
             ]
         }
     ],
-    "comic": [{
+    "comic": [
+        {
             "id": "comic_dimonis",
             "name": "Demonios de dibujante",
-            "img_description": "Proyecto de cómic sobre los demonios que atormentan a una dibujante.",
+            "description": "Proyecto de cómic sobre los demonios que atormentan a una dibujante.",
+            "cardImgUrl": "img/comic/cards/comic_dimonis.jpg",
             "editorial": "Proyecto personal",
-            "img_date": "2020",
+            "date": "2020",
             "images":[
                 {
                     "url": "img/comic/comic_001_dimonis.jpg",
@@ -276,9 +287,10 @@
         {
             "id": "comic_erin",
             "name": "Manga Erin",
-            "img_description": "Manga autoconclusivo de fantasía heroica.",
+            "description": "Manga autoconclusivo de fantasía heroica.",
             "editorial": "Ediciones Babylon",
-            "img_date": "2019",
+            "cardImgUrl": "img/comic/cards/comic_erin.jpg",
+            "date": "2019",
             "images":[
                 {
                     "url": "img/comic/comic_124_125_erin.jpg",
@@ -301,9 +313,10 @@
         {
             "id": "comic_manon_18",
             "name": "BD Manon",
-            "img_description": "BD para aprender francés, suplemento de la ESO.",
+            "description": "BD para aprender francés, suplemento de la ESO.",
             "editorial": "Oxford Editorial",
-            "img_date": "2018",
+            "cardImgUrl": "img/comic/cards/comic_manon.jpg",
+            "date": "2018",
             "images":[
                 {
                     "url": "img/comic/comic_manon_18.jpg",
@@ -322,9 +335,10 @@
         {
             "id": "comic_parkour_08",
             "name": "BD Parkour",
-            "img_description": "BD para aprender francés, suplemento de la ESO.",
+            "description": "BD para aprender francés, suplemento de la ESO.",
             "editorial": "Oxford Editorial",
-            "img_date": "2016",
+            "cardImgUrl": "img/comic/cards/comic_parkour.jpg",
+            "date": "2016",
             "images":[
                 {
                     "url": "img/comic/comic_parkour_08.jpg",
@@ -347,9 +361,10 @@
         {
             "id": "comic_dark",
             "name": "Manga Dark",
-            "img_description": "Suplemento manga de Dark perteneciente a la colección Odio el Rosa.",
+            "description": "Suplemento manga de Dark perteneciente a la colección Odio el Rosa.",
             "editorial": "Oxford Editorial",
-            "img_date": "2014",
+            "cardImgUrl": "img/comic/cards/comic_dark.jpg",
+            "date": "2014",
             "images":[
                 {
                     "url": "img/comic/comic_dark_04.jpg",
@@ -369,9 +384,10 @@
     "graphic_design": [{
             "id": "gfc_UI_design",
             "name": "Diseño web",
-            "img_description": "Diseño corporativo páginas web.",
+            "description": "Diseño corporativo páginas web.",
             "editorial": "Proyecto formativo (UOC)",
-            "img_date": "2014",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_webcorporativa.jpg",
+            "date": "2014",
             "images":[
                 {
                     "url": "img/grafica/gfc_UOC_webcorporativa.jpg",
@@ -386,9 +402,10 @@
         {
             "id": "gfc_3D",
             "name": "Desarrollo 3D",
-            "img_description": "Desarrollo 3D",
+            "description": "Desarrollo 3D",
             "editorial": "Proyecto formativo (UOC)",
-            "img_date": "2017",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_3D.jpg",
+            "date": "2017",
             "images":[
                 {
                     "url": "img/grafica/gfc_UOC_3D.jpg",
@@ -399,9 +416,10 @@
         {
             "id": "gfc_UX_design",
             "name": "Arquitectura de la información",
-            "img_description": "Diseño UX y arquitectura de la información",
+            "description": "Diseño UX y arquitectura de la información",
             "editorial": "Proyecto formativo (UOC)",
-            "img_date": "2016",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_arcinfo.jpg",
+            "date": "2016",
             "images":[
                 {
                     "url": "img/grafica/gfc_UOC_arcinfo.jpg",
@@ -412,9 +430,10 @@
         {
             "id": "gfc_imagen_corporativa",
             "name": "Imagen corporativa",
-            "img_description": "Diseño de logotipo e imagen corporativa",
+            "description": "Diseño de logotipo e imagen corporativa",
             "editorial": "Proyecto formativo (UOC)",
-            "img_date": "2015",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_logo.jpg",
+            "date": "2015",
             "images":[
                 {
                     "url": "img/grafica/gfc_UOC_logo.jpg",
@@ -425,9 +444,10 @@
         {
             "id": "gfc_UOC_infografia",
             "name": "Infografía",
-            "img_description": "Infografías",
+            "description": "Infografías",
             "editorial": "Proyecto formativo (UOC)",
-            "img_date": "2015",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_infografia.jpg",
+            "date": "2015",
             "images":[
                 {
                     "url": "img/grafica/gfc_UOC_infografia.svg",
@@ -436,10 +456,11 @@
             ]
         },
         {
-            "id": "gfc_PngnRndmHs_Lidr_cover",
+            "id": "gfc_PngnRndmHs_Lidr",
             "name": "Diseño editorial Las ideas de Raquel",
-            "img_description": "Diseño editorial de la saga Las ideas de Raquel",
-            "img_date": "2021",
+            "description": "Diseño editorial de la saga Las ideas de Raquel",
+            "cardImgUrl": "img/grafica/cards/gfc_PngnRndmHs_Lidr_design.jpg",
+            "date": "2021",
             "editorial": "Penguin Random House (Beascoa)",
             "images":[
                 {
@@ -455,9 +476,10 @@
         {
             "id": "gfc_bcnv_editorial_design",
             "name": "Diseño editorial",
-            "img_description": "Diseño editorial para Editorial Barcanova",
+            "description": "Diseño editorial para Editorial Barcanova",
             "editorial": "Editorial Barcanova",
-             "img_date": "2007",
+            "cardImgUrl": "img/grafica/cards/gfc_bcnv_editorial.jpg",
+             "date": "2007",
             "images":[
                 {
                     "url": "img/grafica/gfc_bcnv_maDeu.jpg",
@@ -492,9 +514,10 @@
         {
             "id": "gfc_bcnv_cataleg_design",
             "name": "Catalogos Barcanova",
-            "img_description": "Diseño y maquetación de catálogos para Barcanova.",
+            "description": "Diseño y maquetación de catálogos para Barcanova.",
             "editorial": "Editorial Barcanova",
-            "img_date": "2007",
+            "cardImgUrl": "img/grafica/cards/gfc_bcnv.jpg",
+            "date": "2007",
             "images":[
                 {
                     "url": "img/grafica/gfc_bcnv_catalegmates.jpg",
@@ -517,9 +540,10 @@
         {
             "id": "gfc_bcnv_teatre",
             "name": "Libro-teatro",
-            "img_description": "Displays y packaging",
+            "description": "Displays y packaging",
             "editorial": "Editorial Barcanova",
-            "img_date": "2007",
+            "cardImgUrl": "img/grafica/cards/gfc_bcnv_display.jpg",
+            "date": "2007",
             "images":[
                 {
                     "url": "img/grafica/gfc_bcnv_teatre.jpg",
@@ -528,11 +552,12 @@
             ]
         },
         {
-            "id": "gfc_ict_poster",
-            "name": "Material promocional del ICT.",
-            "img_description": "Material corporativo para Institut Català de Tecnologia (ICT) y Escola Industrial d'Enginyers Industrials de Catalunya (EIC)",
+            "id": "gfc_ict_eic",
+            "name": "Imagen corporativa ICT y EIC",
+            "description": "Material corporativo para Institut Català de Tecnologia (ICT) y Enginyers Industrials de Catalunya (EIC)",
             "editorial": "Institut Català de Tecnologia (ICT)",
-            "img_date": "2004",
+            "cardImgUrl": "img/grafica/cards/gfc_ing_img_corporativa.jpg",
+            "date": "2004",
             "images":[
                 {
                     "url": "img/grafica/gfc_ict_poster.jpg",
@@ -564,16 +589,18 @@
     "web": [{
             "id": "",
             "name": "",
-            "img_description": "",
-            "img_date": "",
+            "description": "",
+            "cardImgUrl": "img/ilustracion/cards/COLORS_cards_05_mimo.jpg",
+            "date": "",
             "editorial": "",
             "images":[]
         },
         {
             "id": "",
             "name": "",
-            "img_description": "",
-            "img_date": "",
+            "description": "",
+            "cardImgUrl": "img/ilustracion/cards/COLORS_cards_05_mimo.jpg",
+            "date": "",
             "editorial": "",
             "images":[]
         }

@@ -1,26 +1,32 @@
+/* ============================================================
+   1. BASE & TIPOGRAFÍA (ESTILOS GLOBALES)
+   ============================================================ */
 @font-face {
     font-family: 'KeepCalm';
     src: url('../fonts/KeepCalm.ttf') format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
-    margin: 0px;
-    border: 0 none;
-    padding: 0px;
+    height: 100%;
 }
 
 body {
     scroll-behavior: smooth;
     background-color: rgb(47, 47, 47);
+    font-family: 'Montserrat', sans-serif; /* Fallback */
+    color: white;
 }
 
-header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* --- CONFIGURACIÓN DE NAVBAR GLOBAL (SIEMPRE MÓVIL) --- */
-
+/* ============================================================
+   2. NAVBAR (ESTILO MÓVIL POR DEFECTO)
+   ============================================================ */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,19 +36,17 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* El botón hamburguesa siempre visible */
 .navbar-toggler {
-    display: block !important;
+    display: block;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    padding: 0;
 }
 
-/* El menú lateral siempre oculto a la derecha por defecto */
 .navbar-collapse {
     position: fixed;
     top: 0;
@@ -50,7 +54,7 @@ header {
     width: 100%;
     height: 100vh;
     background: rgba(30, 30, 30, 0.98);
-    display: flex !important; /* Usamos flex para centrar contenido */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -58,14 +62,11 @@ header {
     z-index: 2000;
 }
 
-/* Clase para abrir el menú (vía JS) */
 .navbar-collapse.active {
     right: 0;
 }
 
-/* Botón de cerrar (X) siempre preparado dentro del menú */
 .navbar-close {
-    display: block !important;
     position: absolute;
     top: 25px;
     right: 5%;
@@ -79,20 +80,18 @@ header {
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
 .nav-item {
-    margin: 15px 0; /* Espaciado vertical para la lista */
+    margin: 15px 0;
 }
 
 .nav-link {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-family: 'KeepCalm', sans-serif;
-    font-size: 1.3rem; /* Tamaño elegante para menú a pantalla completa */
+    font-size: 1.5rem;
     transition: color 0.3s;
 }
 
@@ -100,402 +99,503 @@ header {
     color: rgba(82, 220, 223, 1);
 }
 
-/* --- LOGO (Mantenemos tus correcciones) --- */
-.navbar-logo-link,
-.navbar-logo-link:visited,
-.navbar-logo-link:hover,
-.navbar-logo-link:active {
+.navbar-logo-link {
     color: #ffffff !important;
     text-decoration: none !important;
-    font-family: 'KeepCalm', 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'KeepCalm', sans-serif;
+    font-size: 1.3rem;
 }
 
 .navbar-logo-web {
     color: rgba(82, 220, 223, 1) !important;
 }
 
-
-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 40px 0;
-    margin-top: 50px;
+/* ============================================================
+   3. GALERÍA Y CARDS (EN MÓVIL: 1 COLUMNA)
+   ============================================================ */
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna en móvil */
+    gap: 30px;
+    padding: 20px 5%;
 }
 
-.social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;      /* Tamaño del círculo */
-    height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Círculo finito elegante */
+.card-box {
+    perspective: 1000px;
+    aspect-ratio: 3 / 4; 
+    width: 100%;
+    max-width: 400px; /* Evita que la carta sea gigante en phablets */
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+}
+
+.card-corner-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.btn-flip {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    margin: 0 8px;
-    color: rgba(255, 255, 255, 0.5); /* Color del icono */
-    transition: all 0.3s ease;
-    text-decoration: none !important;
-}
-
-.social-link:hover {
-    color: rgba(82, 220, 223, 1);       /* Icono turquesa */
-    border-color: rgba(82, 220, 223, 1); /* Círculo turquesa */
-    transform: translateY(-3px);        /* Pequeño salto hacia arriba */
-}
-
-.icon-social {
-    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    background: none;
+    font-family: 'KeepCalm', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s ease;
 }
 
-.icon-social:hover {
+/* Estilo específico Frontal (i) */
+.front-flip {
+    color: white;
+}
+.front-flip:hover, .front-flip:focus {
     color: rgba(82, 220, 223, 1);
-    transform: translateY(-3px);
+    transform: scale(1.1);
 }
 
-footer .copyright {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.carousel-inner>.item>img {
-    min-height: 100%;
-    height: 100%;
-}
-
-.img {
-    height: 100vh;
-    width: 100%;
-    background-color: cadetblue;
-}
-
-.stirlogo {
-    /*font-family: 'Barriecito', cursive;*/
-    font-size: 1.5rem;
-    font-family: 'KeepCalm', 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
-.colorlogo {
-    /*color: rgba(255, 153, 51, 1);*/
-    /*color: rgba(102, 255, 102, 1);*/
+/* Estilo específico Trasero (x) */
+.back-flip {
     color: rgba(82, 220, 223, 1);
+    font-size: 1.8rem; /* La X suele verse más pequeña que la i */
+}
+.back-flip:hover {
+    transform: rotate(90deg) scale(1.1);
 }
 
-.back {
-    /*fondo de cada página por tema*/
-    /*
-    background-image: url(img/comicf.jpg);
-    background-position: -30px -22px;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    */
-    background-color: rgb(47, 47, 47);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.supertop {
-    /*padding para alejarse de debajo de la navbar*/
-    padding-top: 80px !important;
-}
-
-.fondo_modal {
-    background-color: rgba(0, 0, 0, 0.9);
+.card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.card-inner.switched {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #222;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-front-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 1.5rem 1.5rem 1.5rem; /* Más padding arriba para que el degradado sea suave */
+    /* Degradado de negro a transparente hacia arriba */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    text-align: left;
+}
+
+/* --- CONTENEDOR DEL MOSAICO PEGADO --- */
+.mosaico-wrapper {
+    position: absolute;
+    bottom: 0;   /* Pegado al borde inferior */
+    left: 0;     /* Pegado al borde izquierdo */
+    right: 0;    /* Pegado al borde derecho */
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Importante para que los cuadrados no se salgan del redondeado */
+    border-bottom-left-radius: 14px;  /* Un pelín menos que el contenedor padre */
+    border-bottom-right-radius: 14px;
+}
+
+.mosaico-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100.5%; /* Evita que queden líneas blancas por redondeo de píxeles */
+    height: 100%;
+    z-index: 1;
+}
+
+.card-front-title {
+    position: relative;
+    z-index: 2;
+    font-family: 'KeepCalm', sans-serif;
+    font-size: 1.15rem;
+    color: white;
+    margin: 0;
+    padding-top: 22px; /* Centrado visual en las 3 filas oscuras */
+    padding-bottom: 5px;
+    text-align: center;
+    width: 90%;
+    /* Si el título es muy largo, añade puntos suspensivos */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Opcional: un efecto hover sutil */
+.card-box:hover .mosaico-svg rect {
+    transition: fill-opacity 0.4s ease;
+}
+
+.card-front-title {
+    font-family: 'KeepCalm', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra extra por si la imagen es muy clara */
+}
+
+
+
+/* Ajuste opcional: que la imagen se oscurezca un pelín al pasar el ratón */
+.card-box:hover .card-face.front img {
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+.card-face.back-card {
+    pointer-events: none; /* La cara trasera está "apagada" inicialmente */
+    z-index: 1;
+}
+
+/* --- ESTADO GIRADO (.switched) --- */
+
+/* Cuando la carta gira, la cara FRONT se vuelve un fantasma */
+.card-inner.switched .card-face.front {
+    pointer-events: none; /* Ya no bloquea los clics al botón de atrás */
+    visibility: hidden;   /* La ocultamos del motor de renderizado */
+    transition: visibility 0s 0.4s; /* Espera a media vuelta para desaparecer */
+}
+
+/* Cuando la carta gira, la cara BACK toma el control */
+.card-inner.switched .card-face.back-card {
+    pointer-events: auto; /* Ahora el botón "Ver Proyecto" es clicable */
+    z-index: 10;
+    visibility: visible;
+}
+
+.card-face.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-face.back-card {
+    transform: rotateY(180deg);
+    padding: 1.5rem;
+    background: rgb(35, 35, 35);
+    border: 1px solid rgba(82, 220, 223, 0.3);
     justify-content: center;
     align-items: center;
+    text-align: center;
+    /* Aseguramos que la cara trasera permita clics en sus hijos */
+    pointer-events: all;
 }
 
-.no_scroll {
-    overflow: hidden;
+.button-wrapper {
+    pointer-events: auto; /* El botón sí recibe clics */
+    margin-top: 15px;
+    z-index: 20;
 }
 
-.rejilla,
-.rejilla2,
-.rejilla3 {
-    height: 19rem;
-}
-
-.rejilla {
-    border-width: 4px;
-    border-style: dashed;
-    border-color: white;
-    padding-left: 25px;
-}
-
-.c2,
-.c3,
-.c5,
-.c8,
-.c9 {
-    border-style: dashed;
-    border-color: white;
-    padding-left: 25px;
-}
-
-.c2 {
-    border-width: 0px 4px 4px 0px;
-}
-
-.c3,
-.c9 {
-    border-width: 4px 4px 4px 0px;
-}
-
-.c5 {
-    border-width: 0px 4px 0px 4px;
-}
-
-.fondo_comic {
-    background-image: url(img/div_comic_dark.jpg);
-}
-
-.fondo_comic:hover {
-    background-image: url(img/div_comic.jpg);
+.btn-outline-info {
+    position: relative;
+    z-index: 50;
+    border: 1px solid rgba(82, 220, 223, 1);
+    color: rgba(82, 220, 223, 1);
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: auto;
 }
 
-.fondo_ilustracion {
-    background-image: url(img/div_ilustracion_dark.jpg);
+.btn-outline-info:hover {
+    background: rgba(82, 220, 223, 1);
+    color: rgb(35, 35, 35);
 }
 
-.fondo_ilustracion:hover {
-    background-image: url(img/div_ilustracion.jpg);
-    cursor: pointer;
+.card-info-container {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
 }
 
-.fondo_grafica {
-    background-image: url(img/div_grafica_dark.jpg);
+/* Solo los elementos interactivos dentro recuperan el clic */
+.card-info-title, 
+.card-info-text, 
+.card-info-client-date {
+    pointer-events: none;
 }
 
-.fondo_grafica:hover {
-    background-image: url(img/div_grafica.jpg);
-    cursor: pointer;
+.card-info-title {
+    font-family: 'KeepCalm', sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: rgba(82, 220, 223, 1);
+    margin-bottom: 0.5rem;
 }
 
-.fondo_programacion {
-    background-image: url(img/div_programacion_dark.jpg);
+.card-info-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    max-height: 120px;
+    overflow-y: auto;
+    cursor: default;
 }
 
-.fondo_programacion:hover {
-    background-image: url(img/div_programacion.jpg);
-    cursor: pointer;
+.card-info-client-date {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: .75rem;
+    margin-top: auto;
 }
 
-.vinculo_rejilla {
-    color: white;
-}
-
-.vinculo_rejilla:hover {
-    color: white;
-    text-decoration: none;
-}
-
-.text-nombre1,
-.text-nombre2,
-.text-nombre3 {
-    font-family: 'KeepCalm', 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 7vw;
-    line-height: 7vw;
-}
-
-.text-nombre1 {
-    color: rgba(82, 220, 223, 1) !important;
-}
-
-.text-nombre2 {
-    color: rgba(255, 153, 51, 1) !important;
-}
-
-
-/*reescribiendo BOOTSTRAP classes*/
-
-.bg-dark {
-    background-color: rgb(47, 47, 47) !important;
-}
-
-.list-group-item-dark {
-    color: grey;
-    background-color: rgb(47, 47, 47);
-}
-
-/* Nuevos estilos para proyectos */
-
+/* ============================================================
+   4. MODAL DE PROYECTOS (ESTILO MÓVIL)
+   ============================================================ */
 .modal-proyecto {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 10000; /* Por encima de navbar */
-    display: none; /* Se controla desde js.js */
-}
-
-.nav-arrow,
-.btn-cerrar {
-    background: none;
-    border: none;
-    color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    outline: none !important;
-    user-select: none;
-    display: flex;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    display: none; /* Se activa como flex desde JS */
     justify-content: center;
     align-items: center;
 }
 
-.nav-arrow {
-    font-size: 3.5rem;
-    margin: 0 40px;
-}
-
-.btn-cerrar {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    font-size: 4rem;
-    z-index: 10001; /* siempre por encima */
-}
-
-.nav-arrow:hover,
-.btn-cerrar:hover {
-    color: rgba(82, 220, 223, 1); 
-    transform: scale(1.1);
-}
-
-.nav-arrow:active,
-.btn-cerrar:active {
-    transform: scale(0.9);
-}
-
-.contenedor-principal-modal{
-    width: 90%;
-    max-width: 1200px;
+.contenedor-principal-modal {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 .imagen-wrapper {
-    flex-grow: 1; /* Ocupara el espacio central disponible */
+    flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Imagen arriba, texto abajo */
     align-items: center;
+    justify-content: center;
 }
 
 .imagen-wrapper img {
-    max-height: 70vh;
+    max-width: 90%;
+    max-height: 70vh; /* Un poco menos para dejar sitio al texto */
+    object-fit: contain;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    margin-bottom: 20px; /* Espacio entre imagen y texto */
 }
 
-.no_scroll {
-    overflow: hidden !important;
-    height: 100vh;
+.nav-arrow {
+    position: absolute; /* En móvil flotan para no robar espacio */
+    background: rgba(0, 0, 0, 0.3); /* Un fondo sutil para que se vean sobre la foto */
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 10010;
+    padding: 15px 10px;
+    border-radius: 5px;
+    line-height: 1;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Posición de las flechas en móvil */
+.nav-arrow:first-of-type { left: 5px; }  /* Flecha izquierda */
+.nav-arrow:last-of-type { right: 5px; }  /* Flecha derecha */
+
+.nav-arrow:hover, 
+.nav-arrow:focus {
+    color: rgba(82, 220, 223, 1) !important; /* Turquesa */
+    background: rgba(255, 255, 255, 0.1); /* Un fondo muy sutil al pasar por encima */
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.nav-arrow:active {
+    transform: scale(0.9); /* Efecto de pulsación */
 }
 
 
-/* media queries*/
-
-@media screen and (min-width: 150px) {
-    .c2 {
-        border-width: 0px;
-    }
-    .c3,
-    .c9 {
-        border-width: 4px;
-    }
-    .c5 {
-        border-width: 0px 4px 4px 4px;
-    }
-    .text-nombre1,
-    .text-nombre2,
-    .text-nombre3 {
-        font-size: 55px;
-        line-height: 55px;
-    }
-    h2 {
-        font-size: 25px;
-    }
+/* --- BOTÓN DE CERRAR (MÓVIL) --- */
+.btn-cerrar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 10020;
+    transition: all 0.3s ease;
+    line-height: 1;
+    outline: none;
 }
 
-@media screen and (min-width: 576px) {
-    .c2 {
-        border-width: 0px;
-    }
-    .c3,
-    .c9 {
-        border-width: 4px;
-    }
-    .c5 {
-        border-width: 0px 4px 4px 4px;
-    }
-    .text-nombre1,
-    .text-nombre2,
-    .text-nombre3 {
-        font-size: 92px;
-        line-height: 92px;
-    }
+.btn-cerrar:hover, 
+.btn-cerrar:focus {
+    color: rgba(82, 220, 223, 1) !important;
+    transform: rotate(90deg) scale(1.2);
+    cursor: pointer;
 }
+
+/* Estilo para cuando se navega con el teclado (accesibilidad) */
+.nav-arrow:focus-visible, 
+.btn-cerrar:focus-visible {
+    box-shadow: 0 0 0 2px rgba(82, 220, 223, 0.5);
+    border-radius: 5px;
+}
+
+/* --- INFORMACIÓN DEL PROYECTO --- */
+.modal-info-footer {
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.modal-info-footer h4 {
+    font-family: 'KeepCalm', sans-serif;
+    color: rgba(82, 220, 223, 1);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+
+
+/* ============================================================
+   5. FOOTER
+   ============================================================ */
+footer {
+    background-color: rgb(47, 47, 47);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 5%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social-networks-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* ============================================================
+   6. MEDIA QUERIES (ESCRITORIO / PANTALLAS GRANDES)
+   ============================================================ */
 
 @media screen and (min-width: 768px) {
-    .c2 {
-        border-width: 0px 4px 4px 0px;
+    /* Galería en 2 o 3 columnas */
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .c3,
-    .c9 {
-        border-width: 4px 4px 4px 0px;
+
+    /* Ajuste de logo */
+    .navbar-logo-link { font-size: 1.5rem; }
+
+    /* El modal ahora puede ser horizontal */
+    .contenedor-principal-modal {
+        flex-direction: row;
+        width: 90%;
     }
-    .c5 {
-        border-width: 0px 4px 0px 4px;
+
+    .imagen-wrapper img {
+        max-height: 80vh;
     }
-    .text-nombre1,
-    .text-nombre2,
-    .text-nombre3 {
+
+    .text-nombre1, .text-nombre2 {
         font-size: 82px;
         line-height: 82px;
     }
 }
 
-@media screen and (min-width: 992px) {
-    .c2 {
-        border-width: 0px 4px 4px 0px;
+@media screen and (min-width: 1024px) {
+    /* Aquí podrías decidir si quieres quitar el botón hamburguesa 
+       y mostrar el menú horizontal, pero según tu código 
+       prefieres el menú lateral siempre activo */
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
     }
-    .c3,
-    .c9 {
-        border-width: 4px 4px 4px 0px;
-    }
-    .c5 {
-        border-width: 0px 4px 0px 4px;
-    }
-    .text-nombre1,
-    .text-nombre2,
-    .text-nombre3 {
+    
+    .text-nombre1, .text-nombre2 {
         font-size: 102px;
         line-height: 102px;
     }
+
+    .contenedor-principal-modal {
+        padding: 0 50px; /* Damos aire lateral */
+    }
+
+    .nav-arrow {
+        position: static; /* En escritorio vuelven a su sitio en el flex */
+        background: none;
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    .imagen-wrapper img {
+        max-height: 75vh; /* La imagen puede ser más grande */
+    }
+
+    .btn-cerrar {
+        top: 30px;
+        right: 40px;
+        font-size: 4rem;
+    }
 }
 
-@media screen and (min-width: 1200px) {
-    .c2 {
-        border-width: 0px 4px 4px 0px;
-    }
-    .c3,
-    .c9 {
-        border-width: 4px 4px 4px 0px;
-    }
-    .c5 {
-        border-width: 0px 4px 0px 4px;
-    }
-    .text-nombre1,
-    .text-nombre2,
-    .text-nombre3 {
-        font-size: 112px;
-        line-height: 112px;
+@media screen and (min-width: 1400px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
