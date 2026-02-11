@@ -121,12 +121,14 @@ body {
 }
 
 .card-box {
+    display: block;
     perspective: 1000px;
     aspect-ratio: 3 / 4; 
     width: 100%;
     max-width: 400px; /* Evita que la carta sea gigante en phablets */
     margin: 0 auto 20px auto;
     cursor: pointer;
+    position: relative;
 }
 
 .card-corner-gradient {
@@ -181,6 +183,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    min-height: 400px; /* Damos una altura mínima para que el reverso tenga espacio */
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
 }
@@ -242,13 +245,14 @@ body {
     position: relative;
     z-index: 2;
     font-family: 'KeepCalm', sans-serif;
-    font-size: 1.15rem;
-    color: white;
+    font-size: 0.9rem; /* Un poco más pequeño para que parezca código */
+    color: rgba(82, 220, 223, 1); /* Turquesa para que resalte sobre el oscuro */
     margin: 0;
-    padding-top: 22px; /* Centrado visual en las 3 filas oscuras */
+    padding-top: 25px; /* Centrado visual en las 3 filas oscuras */
     padding-bottom: 5px;
     text-align: center;
     width: 90%;
+    letter-spacing: 2px; /* Espaciado de letras tipo terminal */
     /* Si el título es muy largo, añade puntos suspensivos */
     white-space: nowrap;
     overflow: hidden;
@@ -258,14 +262,6 @@ body {
 /* Opcional: un efecto hover sutil */
 .card-box:hover .mosaico-svg rect {
     transition: fill-opacity 0.4s ease;
-}
-
-.card-front-title {
-    font-family: 'KeepCalm', sans-serif;
-    font-size: 1.1rem;
-    color: white;
-    margin: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra extra por si la imagen es muy clara */
 }
 
 
@@ -280,6 +276,110 @@ body {
     pointer-events: none; /* La cara trasera está "apagada" inicialmente */
     z-index: 1;
 }
+
+/* --- ESTILO GLOW Y ETIQUETAS --- */
+/* Contenedor de etiquetas en el reverso */
+.art-pills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+}
+
+.art-pill {
+    font-size: 0.65rem;
+    background: rgba(82, 220, 223, 0.1);
+    border: 1px solid rgba(82, 220, 223, 0.3);
+    color: rgba(82, 220, 223, 1);
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Efecto Glow en la carta */
+.card-box {
+    transition: transform 0.3s ease;
+}
+
+.card-box:hover {
+    transform: translateY(-5px);
+}
+
+.card-box:hover .card-face {
+    border-color: rgba(82, 220, 223, 0.5);
+    box-shadow: 0 0 15px rgba(82, 220, 223, 0.15);
+}
+
+/* Tipografía y alineación del reverso */
+.card-info-title {
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+}
+
+.card-info-text {
+    text-align: left;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.card-info-footer {
+    margin-top: auto;
+    text-align: left;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 10px;
+}
+
+/* Botón estilo terminal */
+.btn-terminal-style {
+    background: transparent;
+    border: 1px solid rgba(82, 220, 223, 1);
+    color: rgba(82, 220, 223, 1);
+    font-family: 'KeepCalm', sans-serif;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-terminal-style:hover {
+    background: rgba(82, 220, 223, 0.1);
+    letter-spacing: 1px;
+}
+
+/* --- GALERÍA CORREGIDA (GRID EN VEZ DE MASONRY) --- */
+.gallery-container {
+    display: grid;
+    /* En móvil 1 columna, en tablet 2, en escritorio 3, en monitores grandes 4 */
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 30px;
+    padding: 20px 5%;
+}
+
+/* Tablets */
+@media (min-width: 768px) { 
+    .gallery-container { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+}
+
+/* Escritorio normal */
+@media (min-width: 1024px) { 
+    .gallery-container { 
+        grid-template-columns: repeat(3, 1fr); 
+    } 
+}
+
+/* Pantallas grandes */
+@media (min-width: 1400px) { 
+    .gallery-container { 
+        grid-template-columns: repeat(4, 1fr); 
+    } 
+}
+
 
 /* --- ESTADO GIRADO (.switched) --- */
 
@@ -301,6 +401,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .card-face.back-card {
@@ -308,9 +409,9 @@ body {
     padding: 1.5rem;
     background: rgb(35, 35, 35);
     border: 1px solid rgba(82, 220, 223, 0.3);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: left;
     /* Aseguramos que la cara trasera permita clics en sus hijos */
     pointer-events: all;
 }

@@ -83,29 +83,37 @@ function makeCard(card_data) {
         svgContent += `<rect x="${col * squareWidth}%" y="0" width="${squareWidth}%" height="25%" fill="${fill}" fill-opacity="${opacity}" stroke="none" />`;
     }
 
+    // Generamos las etiquetas de técnica dinámicamente
+    const techTags = card_data.technique.map(t => `<span class="art-pill">${t}</span>`).join('');
+
     const cardHTML = `
-        <div class="card-box" onclick="toggleCardFlip('${card_data.id}', event)">
+        <div class="card-box" data-category="${card_data.category}" onclick="toggleCardFlip('${card_data.id}', event)">
             <div class="card-inner" id="inner-${card_data.id}">
                 <div class="card-face front">
-                    <img src="${card_data.cardImgUrl}" alt="${card_data.name}">
+                    <img src="${card_data.cardImgUrl}" alt="${card_data.name}" loading="lazy">
                     <div class="mosaico-wrapper">
                         <svg class="mosaico-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                            ${svgContent}
-                        </svg>
-                        <h3 class="card-front-title">${card_data.name}</h3>
+                            ${svgContent} </svg>
+                        <h3 class="card-front-title">[ ${card_data.name.toUpperCase()} ]</h3>
                     </div>
                 </div>
 
                 <div class="card-face back-card">
                     <div class="card-info-container">
+                        <div class="art-pills-container">${techTags}</div>
+                        
                         <h3 class="card-info-title">${card_data.name}</h3>
                         <p class="card-info-text">${card_data.description}</p>
-                        <p class="card-info-client-date">${card_data.editorial} • ${card_data.date}</p>
+                        
+                        <div class="card-info-footer">
+                            <p class="card-info-client"><strong>Cliente:</strong> ${card_data.client}</p>
+                            <p class="card-info-date">${card_data.date}</p>
+                        </div>
         
                         <div class="button-wrapper">
-                            <button class="btn-outline-info" 
+                            <button class="btn-terminal-style" 
                                 onclick="event.stopPropagation(); showImg('${card_data.id}')">
-                                Ver Proyecto
+                                [ VER_PROYECTO ]
                             </button>
                         </div>
                     </div>
@@ -117,8 +125,10 @@ function makeCard(card_data) {
 }
 // Función para girar la carta
 function toggleCardFlip(id, event) {
-    // Si clicamos el botón, no giramos
-    if (event.target.closest('.btn-outline-info')) return;
+    // Si clicamos el botón "VER PROYECTO" o cualquier cosa dentro de button-wrapper, NO giramos
+    if (event.target.closest('.button-wrapper') || event.target.closest('.btn-terminal-style')) {
+        return;
+    }
 
     const cardInner = document.getElementById(`inner-${id}`);
     if (cardInner) {

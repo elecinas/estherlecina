@@ -3,8 +3,13 @@
         {
             "id": "COLORS_cards",
             "name": "Cartas para Colors Space",
+            "category": "Juego",
+            "technique": [
+                "Digital",
+                "Photoshop"
+            ],
             "description": "Cartas para actividad lúdica, Space.",
-            "editorial": "Colors of Talent",
+            "client": "Colors of Talent",
             "cardImgUrl": "img/ilustracion/cards/COLORS_cards_05_mimo.jpg",
             "date": "2022",
             "images": [
@@ -14,7 +19,7 @@
                 },
                 {
                     "url": "img/ilustracion/COLORS_cards_04_blackout.jpg",
-                    "caption": "Blackout"    
+                    "caption": "Blackout"
                 },
                 {
                     "url": "img/ilustracion/COLORS_cards_03_king_midas.jpg",
@@ -33,28 +38,38 @@
         {
             "id": "PRH_Raquel",
             "name": "Las ideas de Raquel",
+            "category": "Editorial",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
             "description": "Ilustraciones para los libros de la saga Las ideas de Raquel.",
-            "editorial": "Penguin Random House",
+            "client": "Penguin Random House",
             "cardImgUrl": "img/ilustracion/cards/PRH_Raquel_01_cover.jpg",
             "date": "2021",
-            "images":[
+            "images": [
                 {
                     "url": "img/ilustracion/PRH_Raquel_01_cover.jpg",
                     "caption": "Cubierta para la novela Pide un deseo, de la saga Las ideas de Raquel."
-                    
                 },
                 {
                     "url": "img/ilustracion/PRH_Raquel_02_cover.jpg",
                     "caption": "Cubierta para la novela Con mucho love, de la saga Las ideas de Raquel."
-                    
                 }
             ]
         },
         {
             "id": "xfrd_Luna",
             "name": "Luna y los incorpóreos",
+            "category": "Editorial",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
             "description": "Ilustraciones para la saga de libros Luna y los incorpóreos.",
-            "editorial": "Oxford Editorial",
+            "client": "Oxford Editorial",
             "cardImgUrl": "img/ilustracion/cards/xfrd_Luna_06_07.jpg",
             "date": "2014-2020",
             "images": [
@@ -95,11 +110,17 @@
         {
             "id": "xfrd_lang_quad",
             "name": "cuaderno de francés",
+            "category": "Libro de texto",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
             "description": "Ilustraciones para cuaderno de francés",
-            "editorial": "Oxford Editorial",
+            "client": "Oxford Editorial",
             "cardImgUrl": "img/ilustracion/cards/xfrd_lang_s100.jpg",
             "date": "2017",
-            "images":[
+            "images": [
                 {
                     "url": "img/ilustracion/xfrd_lang_s100.jpg",
                     "caption": "Ilustración referente al teatro para cuaderno de francés, a dos tintas."
@@ -121,11 +142,17 @@
         {
             "id": "novios_MNG",
             "name": "Invitación de boda",
+            "category": "Encargo personal",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Tinta"
+            ],
             "description": "Ilustración de unos novios para invitación de boda.",
-            "editorial": "Tu invitación de boda",
+            "client": "Tu invitación de boda",
             "cardImgUrl": "img/ilustracion/cards/novios_MNG.jpg",
             "date": "2014",
-            "images":[
+            "images": [
                 {
                     "url": "img/ilustracion/novios_MNG.jpg",
                     "caption": "Ilustración de unos novios para invitación de boda."
@@ -135,11 +162,17 @@
         {
             "id": "XPromo_Saskia",
             "name": "Ilustraciones proyecto personal",
+            "category": "Comic",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
             "description": "Proyecto de cómic personal.",
-            "editorial": "Proyecto personal",
+            "client": "Proyecto personal",
             "cardImgUrl": "img/ilustracion/cards/XPromo_saskia.jpg",
             "date": "2014",
-            "images":[
+            "images": [
                 {
                     "url": "img/ilustracion/XPromo_Saskia_1.jpg",
                     "caption": "Diseño de personaje para proyecto personal de cómic."
@@ -157,11 +190,17 @@
         {
             "id": "xfrd_OR",
             "name": "Odio el rosa",
+            "category": "Editorial",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Tinta"
+            ],
             "description": "Ilustraciones para la saga de novelas de Odio el rosa.",
-            "editorial": "Oxford Editorial",
+            "client": "Oxford Editorial",
             "cardImgUrl": "img/ilustracion/cards/xfrd_OR_internet_dark_promontorio.jpg",
             "date": "2014-2015",
-            "images":[
+            "images": [
                 {
                     "url": "img/ilustracion/xfrd_OR_HJulia_10.jpg",
                     "caption": "Ilustración de Dani y Julia. Historia de Julia."
@@ -203,11 +242,17 @@
         {
             "id": "indio",
             "name": "Indio",
+            "category": "Encargo personal",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Lapiz"
+            ],
             "description": "Ilustración de un indio oyendo cantar a un hada.",
-            "editorial": "Proyecto personal",
+            "client": "Proyecto personal",
             "cardImgUrl": "img/ilustracion/cards/indio.jpg",
             "date": "2004",
-            "images":[
+            "images": [
                 {
                     "url": "img/ilustracion/indio.jpg",
                     "caption": "Ilustración de un indio oyendo cantar a un hada."
@@ -217,11 +262,16 @@
         {
             "id": "msn_Los_Otros_niebla",
             "name": "Los otros",
+            "category": "Editorial",
+            "technique": [
+                "Tinta",
+                "Acuarela"
+            ],
             "description": "Proyecto ficticio de una versión ilustrada de la película de Alejandro Amenábar; Los Otros. Tinta y acuarela.",
-            "editorial": "Escola Massana",
+            "client": "Escola Massana",
             "cardImgUrl": "img/ilustracion/cards/msn_Los_Otros_niebla.jpg",
             "date": "2002-2003",
-            "images":[
+            "images": [
                 {
                     "url": "img/ilustracion/msn_Los_Otros_niebla.jpg",
                     "caption": "Ilustración de los otros llegando envueltos en la niebla."
@@ -231,11 +281,17 @@
         {
             "id": "msn_pinochos",
             "name": "Pinochos",
+            "category": "Encargo personal",
+            "technique": [
+                "Acuarela",
+                "Gouache",
+                "Lápiz de color"
+            ],
             "description": "Ejercicio de documentación de versiones de época. Lápices de color sobre collage de cartulinas.",
-            "editorial": "Escola Massana",
+            "client": "Escola Massana",
             "cardImgUrl": "img/ilustracion/cards/msn_pinocho_oliver_twist.jpg",
             "date": "2002",
-            "images":[
+            "images": [
                 {
                     "url": "img/ilustracion/msn_pinocho_mosquetero.jpg",
                     "caption": "Ilustración de Pinocho en el siglo XVIII"
@@ -253,11 +309,18 @@
         {
             "id": "bcnv_sopa_de_llibres",
             "name": "Sopa de llibres",
+            "category": "Juego",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Tinta",
+                "Acuarela"
+            ],
             "description": "Cubiertas para la colección infantil Sopa de Llibres",
             "cardImgUrl": "img/ilustracion/cards/bcnv_borneo_1456122.jpg",
             "date": "2005",
-            "editorial": "Editorial Barcanova",
-            "images":[
+            "client": "Editorial Barcanova",
+            "images": [
                 {
                     "url": "img/ilustracion/bcnv_borneo_1456122.jpg",
                     "caption": "Cubierta para el libro Un estiu a Borneo. Acuarela y tinta."
@@ -273,11 +336,17 @@
         {
             "id": "comic_dimonis",
             "name": "Demonios de dibujante",
+            "category": "Comic",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
             "description": "Proyecto de cómic sobre los demonios que atormentan a una dibujante.",
             "cardImgUrl": "img/comic/cards/comic_dimonis.jpg",
-            "editorial": "Proyecto personal",
+            "client": "Proyecto personal",
             "date": "2020",
-            "images":[
+            "images": [
                 {
                     "url": "img/comic/comic_001_dimonis.jpg",
                     "caption": "Primera página de prueba sobre los demonios que atormentan a una dibujante."
@@ -287,11 +356,16 @@
         {
             "id": "comic_erin",
             "name": "Manga Erin",
+            "category": "Comic",
+            "technique": [
+                "Tinta",
+                "Clip Studio Paint"
+            ],
             "description": "Manga autoconclusivo de fantasía heroica.",
-            "editorial": "Ediciones Babylon",
+            "client": "Ediciones Babylon",
             "cardImgUrl": "img/comic/cards/comic_erin.jpg",
             "date": "2019",
-            "images":[
+            "images": [
                 {
                     "url": "img/comic/comic_124_125_erin.jpg",
                     "caption": "Manga Erin, páginas 124 y 125."
@@ -313,11 +387,17 @@
         {
             "id": "comic_manon_18",
             "name": "BD Manon",
+            "category": "Libro de texto",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
             "description": "BD para aprender francés, suplemento de la ESO.",
-            "editorial": "Oxford Editorial",
+            "client": "Oxford Editorial",
             "cardImgUrl": "img/comic/cards/comic_manon.jpg",
             "date": "2018",
-            "images":[
+            "images": [
                 {
                     "url": "img/comic/comic_manon_18.jpg",
                     "caption": "Decimooctava página de la BD de Manon."
@@ -335,11 +415,17 @@
         {
             "id": "comic_parkour_08",
             "name": "BD Parkour",
+            "category": "Libro de texto",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Tinta"
+            ],
             "description": "BD para aprender francés, suplemento de la ESO.",
-            "editorial": "Oxford Editorial",
+            "client": "Oxford Editorial",
             "cardImgUrl": "img/comic/cards/comic_parkour.jpg",
             "date": "2016",
-            "images":[
+            "images": [
                 {
                     "url": "img/comic/comic_parkour_08.jpg",
                     "caption": "Octava página de la BD sobre Parkour."
@@ -361,11 +447,17 @@
         {
             "id": "comic_dark",
             "name": "Manga Dark",
+            "category": "Editorial",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Tinta"
+            ],
             "description": "Suplemento manga de Dark perteneciente a la colección Odio el Rosa.",
-            "editorial": "Oxford Editorial",
+            "client": "Oxford Editorial",
             "cardImgUrl": "img/comic/cards/comic_dark.jpg",
             "date": "2014",
-            "images":[
+            "images": [
                 {
                     "url": "img/comic/comic_dark_04.jpg",
                     "caption": "Cuarta página del manga de Dark."
@@ -381,14 +473,21 @@
             ]
         }
     ],
-    "graphic_design": [{
+    "graphic_design": [
+        {
             "id": "gfc_UI_design",
             "name": "Diseño web",
+            "category": "UI design",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Illustrator"
+            ],
             "description": "Diseño corporativo páginas web.",
-            "editorial": "Proyecto formativo (UOC)",
+            "client": "Proyecto formativo (UOC)",
             "cardImgUrl": "img/grafica/cards/gfc_UOC_webcorporativa.jpg",
             "date": "2014",
-            "images":[
+            "images": [
                 {
                     "url": "img/grafica/gfc_UOC_webcorporativa.jpg",
                     "caption": "web corporativa de enseñanza a distancia."
@@ -402,11 +501,16 @@
         {
             "id": "gfc_3D",
             "name": "Desarrollo 3D",
+            "category": "Modelado 3D",
+            "technique": [
+                "Digital",
+                "3D Studio Max"
+            ],
             "description": "Desarrollo 3D",
-            "editorial": "Proyecto formativo (UOC)",
+            "client": "Proyecto formativo (UOC)",
             "cardImgUrl": "img/grafica/cards/gfc_UOC_3D.jpg",
             "date": "2017",
-            "images":[
+            "images": [
                 {
                     "url": "img/grafica/gfc_UOC_3D.jpg",
                     "caption": "Creación en 3D Studio Max de un barco vikingo."
@@ -416,11 +520,16 @@
         {
             "id": "gfc_UX_design",
             "name": "Arquitectura de la información",
+            "category": "UX design",
+            "technique": [
+                "Digital",
+                "Illustrator"
+            ],
             "description": "Diseño UX y arquitectura de la información",
-            "editorial": "Proyecto formativo (UOC)",
+            "client": "Proyecto formativo (UOC)",
             "cardImgUrl": "img/grafica/cards/gfc_UOC_arcinfo.jpg",
             "date": "2016",
-            "images":[
+            "images": [
                 {
                     "url": "img/grafica/gfc_UOC_arcinfo.jpg",
                     "caption": "Diseño de la arquitectura de la información (arbol de contenidos) peteneciente a un sitio hipotético de aprendizaje online"
@@ -430,11 +539,17 @@
         {
             "id": "gfc_imagen_corporativa",
             "name": "Imagen corporativa",
+            "category": "Imagen corporativa",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Indesign"
+            ],
             "description": "Diseño de logotipo e imagen corporativa",
-            "editorial": "Proyecto formativo (UOC)",
+            "client": "Proyecto formativo (UOC)",
             "cardImgUrl": "img/grafica/cards/gfc_UOC_logo.jpg",
             "date": "2015",
-            "images":[
+            "images": [
                 {
                     "url": "img/grafica/gfc_UOC_logo.jpg",
                     "caption": "Diseño de logotipo y el correspondiente libro de estilo."
@@ -444,11 +559,17 @@
         {
             "id": "gfc_UOC_infografia",
             "name": "Infografía",
+            "category": "Encargo personal",
+            "technique": [
+                "Digital",
+                "Illustrator",
+                "Vector"
+            ],
             "description": "Infografías",
-            "editorial": "Proyecto formativo (UOC)",
+            "client": "Proyecto formativo (UOC)",
             "cardImgUrl": "img/grafica/cards/gfc_UOC_infografia.jpg",
             "date": "2015",
-            "images":[
+            "images": [
                 {
                     "url": "img/grafica/gfc_UOC_infografia.svg",
                     "caption": "Infografía que representa las consecuencias de la catástrofe de Exxon Valdez."
@@ -458,11 +579,18 @@
         {
             "id": "gfc_PngnRndmHs_Lidr",
             "name": "Diseño editorial Las ideas de Raquel",
+            "category": "Diseño editorial",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint",
+                "Indesign"
+            ],
             "description": "Diseño editorial de la saga Las ideas de Raquel",
             "cardImgUrl": "img/grafica/cards/gfc_PngnRndmHs_Lidr_design.jpg",
             "date": "2021",
-            "editorial": "Penguin Random House (Beascoa)",
-            "images":[
+            "client": "Penguin Random House (Beascoa)",
+            "images": [
                 {
                     "url": "img/grafica/gfc_PngnRndmHs_Lidr_cover.jpg",
                     "caption": "Realización del diseño exterior de la colección de libros Las ideas de Raquel."
@@ -476,11 +604,18 @@
         {
             "id": "gfc_bcnv_editorial_design",
             "name": "Diseño editorial",
+            "category": "Diseño editorial",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Illustrator",
+                "QuarkXPress"
+            ],
             "description": "Diseño editorial para Editorial Barcanova",
-            "editorial": "Editorial Barcanova",
+            "client": "Editorial Barcanova",
             "cardImgUrl": "img/grafica/cards/gfc_bcnv_editorial.jpg",
-             "date": "2007",
-            "images":[
+            "date": "2007",
+            "images": [
                 {
                     "url": "img/grafica/gfc_bcnv_maDeu.jpg",
                     "caption": "Cubierta para el libro La mà de Déu, de la colección Calam."
@@ -514,11 +649,18 @@
         {
             "id": "gfc_bcnv_cataleg_design",
             "name": "Catalogos Barcanova",
+            "category": "Diseño editorial",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Illustrator",
+                "QuarkXPress"
+            ],
             "description": "Diseño y maquetación de catálogos para Barcanova.",
-            "editorial": "Editorial Barcanova",
+            "client": "Editorial Barcanova",
             "cardImgUrl": "img/grafica/cards/gfc_bcnv.jpg",
             "date": "2007",
-            "images":[
+            "images": [
                 {
                     "url": "img/grafica/gfc_bcnv_catalegmates.jpg",
                     "caption": "Presentación de un proyecto para la adquisición de estrategias de cálculo."
@@ -540,11 +682,17 @@
         {
             "id": "gfc_bcnv_teatre",
             "name": "Libro-teatro",
+            "category": "Display y packaging",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "Illustrator"
+            ],
             "description": "Displays y packaging",
-            "editorial": "Editorial Barcanova",
+            "client": "Editorial Barcanova",
             "cardImgUrl": "img/grafica/cards/gfc_bcnv_display.jpg",
             "date": "2007",
-            "images":[
+            "images": [
                 {
                     "url": "img/grafica/gfc_bcnv_teatre.jpg",
                     "caption": "Diseño y realización del libro teatro de las obras Caperucita roja y Hansel y Grettel."
@@ -554,11 +702,18 @@
         {
             "id": "gfc_ict_eic",
             "name": "Imagen corporativa ICT y EIC",
+            "category": "Imagen corporativa",
+            "technique": [
+                "Digital",
+                "Photoshop",
+                "QuarkXPress",
+                "Illustrator"
+            ],
             "description": "Material corporativo para Institut Català de Tecnologia (ICT) y Enginyers Industrials de Catalunya (EIC)",
-            "editorial": "Institut Català de Tecnologia (ICT)",
+            "client": "Institut Català de Tecnologia (ICT)",
             "cardImgUrl": "img/grafica/cards/gfc_ing_img_corporativa.jpg",
             "date": "2004",
-            "images":[
+            "images": [
                 {
                     "url": "img/grafica/gfc_ict_poster.jpg",
                     "caption": "Pósters y tarjetas promocionales para el Institut Català de Tecnologia."
@@ -584,25 +739,6 @@
                     "caption": "Gráficas corporativas realizadas para el Institut Català de Tecnologia (ICT)."
                 }
             ]
-        }
-    ],
-    "web": [{
-            "id": "",
-            "name": "",
-            "description": "",
-            "cardImgUrl": "img/ilustracion/cards/COLORS_cards_05_mimo.jpg",
-            "date": "",
-            "editorial": "",
-            "images":[]
-        },
-        {
-            "id": "",
-            "name": "",
-            "description": "",
-            "cardImgUrl": "img/ilustracion/cards/COLORS_cards_05_mimo.jpg",
-            "date": "",
-            "editorial": "",
-            "images":[]
         }
     ]
 }
