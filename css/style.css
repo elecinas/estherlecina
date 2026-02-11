@@ -599,3 +599,144 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* --- ESTILOS PÁGINA PROGRAMACIÓN --- */
+.text-turquesa { color: rgba(82, 220, 223, 1); }
+
+.dev-section-container {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    max-width: 900px; /* Centramos el contenido para mejor lectura */
+}
+
+.dev-header { margin-bottom: 50px; }
+.dev-title { font-family: 'KeepCalm', sans-serif; font-size: 2.5rem; margin-bottom: 10px; }
+.dev-subtitle { font-family: 'Montserrat', sans-serif; color: #888; font-size: 1.1rem; }
+
+/* La Fila del Proyecto */
+.dev-project-row {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid rgba(82, 220, 223, 0.2);
+    margin-bottom: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.dev-project-row:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-left-color: rgba(82, 220, 223, 1);
+}
+
+/* Cabecera de la Fila */
+.dev-project-header {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dev-project-info h3 {
+    font-family: 'KeepCalm', sans-serif;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.dev-category-tag {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Cuerpo Expandible */
+.dev-project-content {
+    max-height: 0;
+    padding: 0 25px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.dev-project-row.active .dev-project-content {
+    max-height: 1000px; /* Un valor alto para que quepa todo */
+    padding-bottom: 30px;
+    opacity: 1;
+}
+
+.dev-grid-details {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Etiquetas de Tecnología */
+.tech-pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.tech-pill {
+    background: rgba(82, 220, 223, 0.1);
+    border: 1px solid rgba(82, 220, 223, 0.3);
+    color: rgba(82, 220, 223, 1);
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-family: monospace;
+}
+
+/* Botones de acción */
+.dev-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .dev-grid-details { grid-template-columns: 1fr; }
+}
+
+.dev-filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #888;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: rgba(82, 220, 223, 0.5);
+    color: white;
+}
+
+.filter-btn.active {
+    background: rgba(82, 220, 223, 0.1);
+    border-color: rgba(82, 220, 223, 1);
+    color: rgba(82, 220, 223, 1);
+}
+
+/* Animación de entrada para las filas al filtrar */
+.dev-project-row {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

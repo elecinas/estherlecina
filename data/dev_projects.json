@@ -1,0 +1,57 @@
+[
+  {
+    "id": "skipBalls",
+    "title": "Skip Balls",
+    "category": "Hybrid Mobile Game",
+    "role": "Developer",
+    "year": "2026",
+    "status": "Publicado (v1.0)",
+    "short_description": "Videojuego arcade híbrido para Android. Combina renderizado en Canvas con capacidades nativas del dispositivo mediante Capacitor.",
+    "tech_stack": [
+        "Capacitor (Core, Android, Haptics)",
+        "p5.js (Graphic Engine)",
+        "JavaScript (ES6+)",
+        "REST API Integration",
+        "Local Storage / Preferences"
+    ],
+    "database": null,
+    "key_features": [
+        "Control físico inmersivo mediante lectura de sensores (Giroscopio/Acelerómetro).",
+        "Arquitectura de consumo de API resiliente con Fallback Offline (Estrategia Network-First).",
+        "Gestión eficiente del ciclo de vida de la App (Pausa automática y ahorro de energía).",
+        "Sistema de persistencia de datos local para economía del juego y High Scores.",
+        "Feedback háptico y sonoro sincronizado con eventos del motor físico."
+    ],
+    "github_url": "https://github.com/elecinas/skip-balls",
+    "live_url": "https://github.com/elecinas/skip-balls/releases/tag/v1.0",
+    "preview_img": "img/dev/skip_balls_screenshot.jpg",
+    "deployment": "APK / Android Native"
+  },
+  {
+    "id": "timeRings",
+    "title": "Time Rings",
+    "category": "Browser Extension",
+    "year": "2025",
+    "status": "Finalizado (v1.0)",
+    "short_description": "Extensión de productividad para Firefox que utiliza un reloj abstracto animado como temporizador Pomodoro. Enfocada en la persistencia de datos y visualización creativa.",
+    "tech_stack": [
+        "WebExtensions API (Manifest V3)",
+        "p5.js (Creative Coding)",
+        "JavaScript (ES6+)",
+        "HTML5 Audio API",
+        "LocalStorage & p5.Storage"
+    ],
+    "key_features": [
+        "Gestión de estado persistente mediante arquitectura desacoplada del popup (coherencia de datos tras cierre de interfaz).",
+        "Cálculo de tiempo basado en diferenciales de Unix Timestamp en lugar de intervalos volátiles (resiliencia de sesión).",
+        "Interfaz visual reactiva con renderizado dinámico en Canvas mediante p5.js.",
+        "Implementación de lógica condicional para modo Día/Noche basada en geolocalización temporal (Barcelona).",
+        "Configuración de usuario integrada mediante sidebar nativo y comunicación entre scripts de extensión.",
+        "Optimización de recursos multimedia para cumplimiento de políticas de seguridad de contenido (CSP) de Firefox."
+    ],
+    "github_url": "https://github.com/elecinas/time-rings-clock-extension",
+    "live_url": "https://github.com/elecinas/time-rings-clock-extension/releases/tag/v1.0",
+    "preview_img": "img/dev/pomodoro_time_rings_extension.jpg",
+    "deployment": "Firefox Add-on Store (Manual Install)"
+  }
+]
