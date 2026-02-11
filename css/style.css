@@ -661,9 +661,39 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-    /* Aquí podrías decidir si quieres quitar el botón hamburguesa 
-       y mostrar el menú horizontal, pero según tu código 
-       prefieres el menú lateral siempre activo */
+    
+    /* 1. Escondemos el botón de tres líneas y la X de cerrar */
+    .navbar-toggler, .navbar-close {
+        display: none !important;
+    }
+
+    /* 2. Convertimos el menú lateral en una barra horizontal */
+    .navbar-collapse {
+        position: static;    /* Quita el "vuelo" lateral */
+        width: auto;
+        height: auto;
+        background: transparent;
+        display: flex !important; /* Asegura que se vea */
+        flex: 0 1 auto; /* No crece ni se encoge, toma su tamaño natural */
+        flex-direction: row;
+        justify-content: flex-end;
+        transition: none;    /* Quitamos la animación de slide */
+    }
+
+    /* 3. Ajustamos la lista de enlaces */
+    .navbar-nav {
+        flex-direction: row; /* Enlaces uno al lado del otro */
+        gap: 30px;           /* Espacio entre botones */
+    }
+
+    .nav-item {
+        margin: 0;           /* Quitamos los márgenes verticales de móvil */
+    }
+
+    .nav-link {
+        font-size: 1rem;     /* Tamaño más adecuado para desktop */
+    }
+
     .gallery-container {
         grid-template-columns: repeat(3, 1fr);
     }
