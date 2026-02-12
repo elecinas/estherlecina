@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
 
     <title>Esther Lecina | Portfolio</title>
 </head>
@@ -19,7 +20,8 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="stirlogo navbar-logo-link" href="index.html">EstherLecina<span class="navbar-logo-web">Web</span></a>
+            <a class="stirlogo navbar-logo-link" href="index.html">EstherLecina<span
+                    class="navbar-logo-web">Web</span></a>
 
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
@@ -48,55 +50,55 @@
             </div>
         </nav>
     </header>
-    <main class="container my-4 w-70 supertop">
-        <div class="row">
-            <div class="c1 rejilla2 col-6 col-sm-6 col-md-4 col-lg-4 d-flex align-items-center text-light text-nombre1">
-                ES<br>THER</div>
-            <div
-                class="c2 rejilla3 col-6 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center align-items-center text-light">
-            </div>
-            <div class="c3 fondo_programacion col-6 col-sm-6 col-md-4 col-lg-4 d-flex align-items-center text-light"
-                onclick="window.location.href = 'web.html'">
-                <a class="vinculo_rejilla" href="web.html">
-                    <h2 class="font-weight-light">
-                        Web
-                    </h2>
-                </a>
-            </div>
-            <div class="c4 rejilla2 col-6 col-sm-6 col-md-4 col-lg-4 d-flex align-items-center text-light text-nombre2">
-                LEC<br>INA</div>
-            <div class="c5 fondo_grafica rejilla col-6 col-sm-6 col-md-4 col-lg-4 d-flex align-items-center text-light"
-                onclick="window.location.href = 'grafica.html'">
-                <a class="vinculo_rejilla" href="grafica.html">
-                    <h2 class="font-weight-light">
-                        Gráfica
-                    </h2>
-                </a>
-            </div>
-            <div
-                class="c6 rejilla3 col-6 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center align-items-center text-light">
-            </div>
-
-            <div class="c7 rejilla2 col-6 col-sm-6 col-md-4 col-lg-4 d-flex align-items-center text-light text-nombre3">
-                WEB</div>
-            <div class="c8 fondo_ilustracion rejilla col-6 col-sm-6 col-md-4 col-lg-4 d-flex align-items-center text-light"
-                onclick="window.location.href = 'ilustracion.html'">
-                <a class="vinculo_rejilla" href="ilustracion.html">
-                    <h2 class="font-weight-light">
-                        Ilustración
-                    </h2>
-                </a>
-            </div>
-            <div class="c9 fondo_comic rejilla col-6 col-sm-6 col-md-4 col-lg-4 d-flex align-items-center text-light"
-                onclick="window.location.href = 'comic.html'">
-                <a class="vinculo_rejilla" href="comic.html">
-                    <h2 class="font-weight-light">
-                        Cómic
-                    </h2>
-                </a>
+    <main>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="text-gradient">Esther Lecina</span>
+            </h1>
+            <p class="hero-subtitle">
+                Arquitecta de interfaces, narradora visual y desarrolladora Full-Stack. 
+                <span class="highlight">Fusiono la lógica del código con la sensibilidad del arte.</span>
+            </p>
+            <div class="scroll-indicator">
+                <span class="mouse"></span>
+                <a style="margin-top: 4rem;" href="#power-triangle" class="btn-main">Investiga</a>
             </div>
         </div>
-    </main>
+    </section>
+
+    <section id="power-triangle" class="power-triangle container">
+        <div class="row">
+            <a href="web.html" class="tri-block block-web col-md-4">
+                <div class="block-inner">
+                    <span class="block-tag">01. Logic</span>
+                    <h2>Desarrollo<br>Web</h2>
+                    <p>Soluciones robustas y escalables.</p>
+                </div>
+            </a>
+            <a href="grafica.html" class="tri-block block-design col-md-4">
+                <div class="block-inner">
+                    <span class="block-tag">02. Identity</span>
+                    <h2>Diseño<br>Gráfico</h2>
+                    <p>Sistemas visuales con propósito.</p>
+                </div>
+            </a>
+            <a href="ilustracion.html" class="tri-block block-art col-md-4">
+                <div class="block-inner">
+                    <span class="block-tag">03. Narrative</span>
+                    <h2>Arte &<br>Cómic</h2>
+                    <p>Historias que cobran vida.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="home-cta">
+        <h3>¿Te interesa trabajar conmigo?</h3>
+        <p>Busco proyectos que desafíen los límites entre lo técnico y lo creativo.</p>
+        <a href="mailto:tuemail@ejemplo.com" class="btn-main">Contacta</a>
+    </section>
+</main>
     <footer class="text-center">
         <div class="social-networks-icons d-flex justify-content-center mb-3">
             <a class="social-link" href="https://www.instagram.com/estherlecina/" target="_blank"
@@ -135,9 +137,7 @@
         </div>
         <p class="copyright text-muted small">© 2026 Esther Lecina</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <script src="js/js.js"></script>
 </body>
 

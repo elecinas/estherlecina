@@ -106,8 +106,177 @@ body {
     font-size: 1.3rem;
 }
 
+/* Alineación vertical del logo respecto a los enlaces */
+.navbar-logo-link {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    padding: 0;
+}
+
+.navbar-logo-link img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 48px; /* límite razonable para que no desborde la barra */
+}
+
 .navbar-logo-web {
     color: rgba(82, 220, 223, 1) !important;
+}
+
+/* ============================================================
+   3. INDEX
+   ============================================================ */
+/* --- HERO SECTION --- */
+.hero-section {
+    height: 85vh; /* Casi toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.hero-title {
+    font-family: 'KeepCalm', sans-serif;
+    font-size: clamp(3rem, 8vw, 6rem); /* Tamaño fluido */
+    margin-bottom: 20px;
+}
+
+.text-gradient {
+    background: rgba(82, 220, 223, 1);
+    /* background: linear-gradient(45deg, #fff, rgba(82, 220, 223, 1)); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.highlight { color: rgba(82, 220, 223, 1); font-weight: 600; }
+
+/* --- TRIÁNGULO DE PODER --- */
+.power-triangle {
+    padding: 100px 0;
+}
+
+.tri-block {
+    text-decoration: none !important;
+    padding: 20px;
+    transition: transform 0.4s ease;
+}
+
+.block-inner {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    height: 100%;
+    border-radius: 4px; /* Un toque de redondeo muy suave */
+    transition: all 0.4s ease;
+}
+
+.tri-block:hover .block-inner {
+    background: rgba(82, 220, 223, 0.05);
+    border-color: rgba(82, 220, 223, 1);
+    transform: translateY(-10px);
+}
+
+.block-tag {
+    font-family: monospace;
+    color: rgba(82, 220, 223, 1);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.block-inner h2 {
+    font-family: 'KeepCalm', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.block-inner p {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* --- CTA SECTION --- */
+.home-cta {
+    padding: 150px 0;
+    text-align: center;
+    /* background: linear-gradient(to bottom, transparent, rgba(82, 220, 223, 0.05)); */
+}
+
+.btn-main {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    border: 2px solid rgba(82, 220, 223, 1);
+    color: rgba(82, 220, 223, 1);
+    text-decoration: none;
+    font-family: 'KeepCalm', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.btn-main:hover {
+    background: rgba(82, 220, 223, 1);
+    color: #222;
+}
+
+/* Fondos para los bloques del Triángulo de Poder */
+.block-web {
+    background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)), 
+                      url('../img/home/bg-web.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.block-design {
+    background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)), 
+                      url('../img/home/bg-design.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.block-art {
+    background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)), 
+                      url('../img/home/bg_art.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Efecto al pasar el ratón: La imagen se revela */
+.block-art:hover {
+    background-image: linear-gradient(rgba(82, 220, 223, 0.2), rgba(47, 47, 47, 0.8)), 
+                      url('../img/home/bg_art.jpg'); /* Repite según el bloque */
+}
+
+.block-design:hover {
+    background-image: linear-gradient(rgba(82, 220, 223, 0.2), rgba(47, 47, 47, 0.8)), 
+                      url('../img/home/bg-design.jpg'); /* Repite según el bloque */
+}
+
+.block-web:hover {
+    background-image: linear-gradient(rgba(82, 220, 223, 0.2), rgba(47, 47, 47, 0.8)), 
+                      url('../img/home/bg-web.jpg'); /* Repite según el bloque */
+}
+
+.hero-section {
+    background: radial-gradient(circle at center, rgba(82, 220, 223, 0.05) 0%, rgba(47, 47, 47, 1) 70%),
+                url('../img/home/hero_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto Parallax suave */
 }
 
 /* ============================================================
@@ -356,7 +525,9 @@ body {
     /* En móvil 1 columna, en tablet 2, en escritorio 3, en monitores grandes 4 */
     grid-template-columns: repeat(1, 1fr); 
     gap: 30px;
-    padding: 20px 5%;
+    /* padding: 20px 5%; */
+    max-width: 1200px; /* Centrar y limitar el ancho en pantallas grandes */
+    margin: 0 auto;
 }
 
 /* Tablets */
@@ -722,12 +893,6 @@ footer {
         top: 30px;
         right: 40px;
         font-size: 4rem;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .gallery-container {
-        grid-template-columns: repeat(4, 1fr);
     }
 }
 
