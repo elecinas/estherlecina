@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
 
     <title>Ilustración | Esther Lecina</title>
 </head>
@@ -19,7 +20,8 @@
 <body class="back">
     <header>
         <nav class="navbar">
-            <a class="stirlogo navbar-logo-link" href="index.html">EstherLecina<span class="navbar-logo-web">Web</span></a>
+            <a class="stirlogo navbar-logo-link" href="index.html">EstherLecina<span
+                    class="navbar-logo-web">Web</span></a>
 
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
@@ -39,17 +41,22 @@
                 </button>
 
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Sobre mí</a></li>
-                    <li class="nav-item"><a href="web.html" class="nav-link">Desarrollo Web</a></li>
-                    <li class="nav-item"><a href="grafica.html" class="nav-link">Gráfica</a></li>
-                    <li class="nav-item"><a href="ilustracion.html" class="nav-link active">Ilustración</a></li>
-                    <li class="nav-item"><a href="comic.html" class="nav-link">Cómic</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">SOBRE MÍ</a></li>
+                    <li class="nav-item"><a href="web.html" class="nav-link">WEB / DEV</a></li>
+                    <li class="nav-item"><a href="grafica.html" class="nav-link">DISEÑO</a></li>
+                    <li class="nav-item"><a href="art.html" class="nav-link active">ARTE & NARRATIVA</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main class="container supertop">
+        <div class="art-filters-container text-center mb-5">
+            <button class="filter-btn active" data-filter="all" onclick="filterArt('all')">[ MOSTRAR_TODO ]</button>
+            <button class="filter-btn" data-filter="illustration" onclick="filterArt('illustration')">[ ILUSTRACIÓN ]</button>
+            <button class="filter-btn" data-filter="comic" onclick="filterArt('comic')">[ CÓMIC ]</button>
+        </div>
+
         <section class="gallery-container">
         </section>
     </main>

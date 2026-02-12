@@ -84,17 +84,17 @@ function makeCard(card_data) {
     }
 
     // Generamos las etiquetas de técnica dinámicamente
-    const techTags = card_data.technique.map(t => `<span class="art-pill">${t}</span>`).join('');
+    const techTags = card_data.tags.map(t => `<span class="art-pill">${t}</span>`).join('');
 
     const cardHTML = `
         <div class="card-box" data-category="${card_data.category}" onclick="toggleCardFlip('${card_data.id}', event)">
             <div class="card-inner" id="inner-${card_data.id}">
                 <div class="card-face front">
-                    <img src="${card_data.cardImgUrl}" alt="${card_data.name}" loading="lazy">
+                    <img src="${card_data.cardImgUrl}" alt="${card_data.title}" loading="lazy">
                     <div class="mosaico-wrapper">
                         <svg class="mosaico-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                             ${svgContent} </svg>
-                        <h3 class="card-front-title">[ ${card_data.name.toUpperCase()} ]</h3>
+                        <h3 class="card-front-title">[ ${card_data.title.toUpperCase()} ]</h3>
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@ function makeCard(card_data) {
                     <div class="card-info-container">
                         <div class="art-pills-container">${techTags}</div>
                         
-                        <h3 class="card-info-title">${card_data.name}</h3>
+                        <h3 class="card-info-title">${card_data.title}</h3>
                         <p class="card-info-text">${card_data.description}</p>
                         
                         <div class="card-info-footer">
@@ -185,24 +185,55 @@ function changeImg(projectId, direction) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-
-    const path = window.location.pathname;
-    const page = path.split("/").pop();
+    const page = window.location.pathname.split("/").pop();
 
     switch (page) {
-        case "comic.html":
-            readTextFile('comic');
+        case "art.html":
+            readTextFile('art'); 
             break;
         case "grafica.html":
             readTextFile('graphic_design');
             break;
-        case "ilustracion.html":
-            readTextFile('illustration');
+        case "web.html":
+            readTextFile('web');
             break;
         default:
             break;
     }
 });
+
+// Filtrado dinámico
+function filterArt(type) {
+    // Actualizar estado visual de los botones usando el atributo data-filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        const filter = btn.dataset.filter || '';
+        if (filter === type || (type === 'all' && filter === 'all')) {
+            btn.classList.add('active');
+        }
+    });
+
+    const gallery = document.querySelector(".gallery-container");
+    const modales = document.querySelector(".img-modales");
+    
+    // Limpiamos la vista actual
+    gallery.innerHTML = "";
+    modales.innerHTML = "";
+
+    // Filtramos los datos que ya tenemos en memoria
+    // currentProjectsData se llenó al hacer el primer fetch en readTextFile
+    const filteredData = type === 'all' 
+        ? currentProjectsData 
+        : currentProjectsData.filter(project => project.type === type);
+
+    // Renderizamos solo los filtrados
+    filteredData.forEach(project => {
+        makeCard(project);
+        makeModal(project);
+    });
+}
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.querySelector('.navbar-toggler');

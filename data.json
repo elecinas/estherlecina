@@ -1,10 +1,11 @@
 {
-    "illustration": [
+    "art": [
         {
             "id": "COLORS_cards",
-            "name": "Cartas para Colors Space",
+            "type": "illustration",
+            "title": "Cartas para Colors Space",
             "category": "Juego",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop"
             ],
@@ -37,9 +38,10 @@
         },
         {
             "id": "PRH_Raquel",
-            "name": "Las ideas de Raquel",
+            "type": "illustration",
+            "title": "Las ideas de Raquel",
             "category": "Editorial",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Clip Studio Paint"
@@ -61,9 +63,10 @@
         },
         {
             "id": "xfrd_Luna",
-            "name": "Luna y los incorpóreos",
+            "type": "illustration",
+            "title": "Luna y los incorpóreos",
             "category": "Editorial",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Clip Studio Paint"
@@ -109,9 +112,10 @@
         },
         {
             "id": "xfrd_lang_quad",
-            "name": "cuaderno de francés",
+            "type": "illustration",
+            "title": "cuaderno de francés",
             "category": "Libro de texto",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Clip Studio Paint"
@@ -141,9 +145,10 @@
         },
         {
             "id": "novios_MNG",
-            "name": "Invitación de boda",
+            "type": "illustration",
+            "title": "Invitación de boda",
             "category": "Encargo personal",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Tinta"
@@ -161,9 +166,10 @@
         },
         {
             "id": "XPromo_Saskia",
-            "name": "Ilustraciones proyecto personal",
+            "type": "illustration",
+            "title": "Ilustraciones proyecto personal",
             "category": "Comic",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Clip Studio Paint"
@@ -189,9 +195,10 @@
         },
         {
             "id": "xfrd_OR",
-            "name": "Odio el rosa",
+            "type": "illustration",
+            "title": "Odio el rosa",
             "category": "Editorial",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Tinta"
@@ -241,9 +248,10 @@
         },
         {
             "id": "indio",
-            "name": "Indio",
+            "type": "illustration",
+            "title": "Indio",
             "category": "Encargo personal",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Lapiz"
@@ -261,9 +269,10 @@
         },
         {
             "id": "msn_Los_Otros_niebla",
-            "name": "Los otros",
+            "type": "illustration",
+            "title": "Los otros",
             "category": "Editorial",
-            "technique": [
+            "tags": [
                 "Tinta",
                 "Acuarela"
             ],
@@ -280,9 +289,10 @@
         },
         {
             "id": "msn_pinochos",
-            "name": "Pinochos",
+            "type": "illustration",
+            "title": "Pinochos",
             "category": "Encargo personal",
-            "technique": [
+            "tags": [
                 "Acuarela",
                 "Gouache",
                 "Lápiz de color"
@@ -308,9 +318,10 @@
         },
         {
             "id": "bcnv_sopa_de_llibres",
-            "name": "Sopa de llibres",
+            "type": "illustration",
+            "title": "Sopa de llibres",
             "category": "Juego",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Tinta",
@@ -330,14 +341,13 @@
                     "caption": "Cubierta para el libro Una granota reial. Entintado manual y coloreado digital."
                 }
             ]
-        }
-    ],
-    "comic": [
+        },
         {
             "id": "comic_dimonis",
-            "name": "Demonios de dibujante",
+            "type": "comic",
+            "title": "Demonios de dibujante",
             "category": "Comic",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Clip Studio Paint"
@@ -355,9 +365,10 @@
         },
         {
             "id": "comic_erin",
-            "name": "Manga Erin",
+            "type": "comic",
+            "title": "Manga Erin",
             "category": "Comic",
-            "technique": [
+            "tags": [
                 "Tinta",
                 "Clip Studio Paint"
             ],
@@ -386,9 +397,10 @@
         },
         {
             "id": "comic_manon_18",
-            "name": "BD Manon",
+            "type": "comic",
+            "title": "BD Manon",
             "category": "Libro de texto",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Clip Studio Paint"
@@ -414,9 +426,10 @@
         },
         {
             "id": "comic_parkour_08",
-            "name": "BD Parkour",
+            "type": "comic",
+            "title": "BD Parkour",
             "category": "Libro de texto",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Tinta"
@@ -446,9 +459,10 @@
         },
         {
             "id": "comic_dark",
-            "name": "Manga Dark",
+            "type": "comic",
+            "title": "Manga Dark",
             "category": "Editorial",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Tinta"
@@ -476,9 +490,9 @@
     "graphic_design": [
         {
             "id": "gfc_UI_design",
-            "name": "Diseño web",
+            "title": "Diseño web",
             "category": "UI design",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Illustrator"
@@ -500,9 +514,9 @@
         },
         {
             "id": "gfc_3D",
-            "name": "Desarrollo 3D",
+            "title": "Desarrollo 3D",
             "category": "Modelado 3D",
-            "technique": [
+            "tags": [
                 "Digital",
                 "3D Studio Max"
             ],
@@ -519,9 +533,9 @@
         },
         {
             "id": "gfc_UX_design",
-            "name": "Arquitectura de la información",
+            "title": "Arquitectura de la información",
             "category": "UX design",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Illustrator"
             ],
@@ -538,9 +552,9 @@
         },
         {
             "id": "gfc_imagen_corporativa",
-            "name": "Imagen corporativa",
+            "title": "Imagen corporativa",
             "category": "Imagen corporativa",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Indesign"
@@ -558,9 +572,9 @@
         },
         {
             "id": "gfc_UOC_infografia",
-            "name": "Infografía",
+            "title": "Infografía",
             "category": "Encargo personal",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Illustrator",
                 "Vector"
@@ -578,9 +592,9 @@
         },
         {
             "id": "gfc_PngnRndmHs_Lidr",
-            "name": "Diseño editorial Las ideas de Raquel",
+            "title": "Diseño editorial Las ideas de Raquel",
             "category": "Diseño editorial",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Clip Studio Paint",
@@ -603,9 +617,9 @@
         },
         {
             "id": "gfc_bcnv_editorial_design",
-            "name": "Diseño editorial",
+            "title": "Diseño editorial",
             "category": "Diseño editorial",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Illustrator",
@@ -648,9 +662,9 @@
         },
         {
             "id": "gfc_bcnv_cataleg_design",
-            "name": "Catalogos Barcanova",
+            "title": "Catalogos Barcanova",
             "category": "Diseño editorial",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Illustrator",
@@ -681,9 +695,9 @@
         },
         {
             "id": "gfc_bcnv_teatre",
-            "name": "Libro-teatro",
+            "title": "Libro-teatro",
             "category": "Display y packaging",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "Illustrator"
@@ -701,9 +715,9 @@
         },
         {
             "id": "gfc_ict_eic",
-            "name": "Imagen corporativa ICT y EIC",
+            "title": "Imagen corporativa ICT y EIC",
             "category": "Imagen corporativa",
-            "technique": [
+            "tags": [
                 "Digital",
                 "Photoshop",
                 "QuarkXPress",
