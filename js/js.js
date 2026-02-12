@@ -36,14 +36,28 @@ function readTextFile(data_type) {
         })
 }
 
-/*enviando los datos de data.json al front*/
+/*enviando los datos de data.json al front con ordenación cronológica*/
 
 function loadingFront(data, data_type) {
     const sectionData = data[data_type];
+
+    // ORDENACIÓN: De más reciente a más antiguo
+    sectionData.sort((a, b) => {
+        // Función interna para sacar el año más alto de un string (ej: "2014-2020" -> 2020)
+        const getYear = (dateStr) => {
+            const years = dateStr.match(/\d{4}/g); // Busca grupos de 4 números
+            return years ? Math.max(...years.map(Number)) : 0;
+        };
+
+        const yearA = getYear(a.date);
+        const yearB = getYear(b.date);
+
+        return yearB - yearA; // Orden descendente
+    });
+
     currentProjectsData = sectionData;
     makingFront(sectionData);
 }
-
 function makingFront(section_array) {
     const myarray = section_array;
     for (i = 0; i < myarray.length; i++) {
@@ -232,7 +246,6 @@ function filterArt(type) {
         makeModal(project);
     });
 }
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
