@@ -399,6 +399,24 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.card-face.front {
+    background-color: rgba(82, 220, 223, 0.1); /* Un tinte muy suave */
+}
+
+/* Estado inicial de la imagen dentro de la carta */
+.card-face.front img {
+    filter: grayscale(100%) brightness(0.6) contrast(1.2);
+    transition: all 2s ease; /* Transición suave para el color */
+    mix-blend-mode: luminosity; /* Esto hace que la imagen coja el tono del fondo */
+}
+
+/* Al hacer hover sobre la caja, la imagen se transforma */
+.card-box:hover .card-face.front img {
+    filter: grayscale(0%) brightness(1) contrast(1);
+    transform: scale(1.05); /* Un ligero zoom para dar vida */
+    mix-blend-mode: normal; /* Vuelve al color real */
+}
+
 .card-front-footer {
     position: absolute;
     bottom: 0;
