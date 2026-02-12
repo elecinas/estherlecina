@@ -939,7 +939,10 @@ footer {
     }
 }
 
-/* --- ESTILOS PÁGINA PROGRAMACIÓN --- */
+/* ============================================================
+   7. ESTILOS ESPECÍFICOS DE LA PÁGINA DE PROGRAMACIÓN (EL RESTO DE PÁGINAS HEREDAN LOS ESTILOS ANTERIORES)
+   ============================================================ */
+
 .text-turquesa { color: rgba(82, 220, 223, 1); }
 
 .dev-section-container {
@@ -1079,3 +1082,57 @@ footer {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* ============================================================
+   8. ESTILOS ESPECÍFICOS DE LA PÁGINA SOBRE MÍ
+   ============================================================ */
+
+   .about-visual-container {
+    position: relative;
+    border: 1px solid rgba(82, 220, 223, 0.3);
+    padding: 10px;
+}
+
+.about-img {
+    filter: grayscale(100%) contrast(1.1);
+    transition: filter 0.5s ease;
+}
+
+.about-visual-container:hover .about-img {
+    filter: grayscale(0%);
+}
+
+.about-grid-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: radial-gradient(rgba(82, 220, 223, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.tech-specs {
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(82, 220, 223, 0.2);
+    border-bottom: 1px solid rgba(82, 220, 223, 0.2);
+}
+
+.spec-box h3 {
+    font-family: 'KeepCalm', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.spec-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.spec-box li {
+    font-family: monospace;
+    color: #888;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.text-cyan { color: rgba(82, 220, 223, 1); }
