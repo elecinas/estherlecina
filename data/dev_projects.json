@@ -1,6 +1,7 @@
 [
   {
     "id": "portfolio_react_ts",
+    "type": "frontend",
     "title": "Portfolio Engine v2.0 (WIP)",
     "category": "Frontend Engineering & Design System",
     "year": "2025-2026",
@@ -29,6 +30,7 @@
   },
   {
     "id": "skipBalls",
+    "type": "mobile",
     "title": "Skip Balls",
     "category": "Hybrid Mobile Game",
     "role": "Developer",
@@ -57,6 +59,7 @@
   },
   {
     "id": "timeRings",
+    "type": "frontend",
     "title": "Time Rings",
     "category": "Browser Extension",
     "year": "2025",
@@ -84,6 +87,7 @@
   },
   {
     "id": "dice_game_jwt",
+    "type": "fullstack",
     "title": "Dice Game: Fullstack Auth API",
     "category": "Fullstack Web App",
     "year": "2021",
@@ -112,6 +116,7 @@
   },
   {
     "id": "hotel_booking_system",
+    "type": "fullstack",
     "title": "Hotel Management & Booking System",
     "category": "Fullstack Web Application",
     "year": "2021",
@@ -140,6 +145,7 @@
   },
   {
     "id": "colors_of_talent_web",
+    "type": "frontend",
     "title": "Colors of Talent: Corporate & Lead Gen",
     "category": "Desarrollo Web & UI Design",
     "year": "2021",

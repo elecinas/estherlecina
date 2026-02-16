@@ -1,15 +1,44 @@
+let allProjects = []; // Variable global para guardar los datos cargados
+
 document.addEventListener("DOMContentLoaded", () => {
     fetch('data/dev_projects.json')
         .then(response => response.json())
-        .then(data => renderDevProjects(data));
+        .then(data => {
+            allProjects = data; // Guardamos una copia
+            renderDevProjects(allProjects); // Render inicial
+            setupFilters(); // Configuramos los clics de los botones
+        });
 });
+
+function setupFilters() {
+    const buttons = document.querySelectorAll('.filter-btn');
+    
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // 1. Gestionar clases de botones
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // 2. Filtrar lógica
+            const filterValue = btn.getAttribute('data-filter');
+            const filtered = filterValue === 'all' 
+                ? allProjects 
+                : allProjects.filter(p => p.type === filterValue);
+
+            // 3. Renderizar de nuevo
+            renderDevProjects(filtered);
+        });
+    });
+}
 
 function renderDevProjects(projects) {
     const container = document.getElementById('dev-projects-list');
-    
+    container.innerHTML = ''; // ¡IMPORTANTE! Limpiar antes de renderizar
+
     projects.forEach(project => {
         const row = document.createElement('div');
         row.className = 'dev-project-row';
+        // ... (Aquí va todo tu innerHTML actual que ya tienes)
         row.innerHTML = `
             <div class="dev-project-header">
                 <div class="dev-project-info">
@@ -44,7 +73,6 @@ function renderDevProjects(projects) {
         `;
 
         row.addEventListener('click', () => {
-            // Cerrar otros si se abre este
             document.querySelectorAll('.dev-project-row').forEach(r => {
                 if (r !== row) r.classList.remove('active');
             });
