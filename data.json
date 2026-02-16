@@ -1071,12 +1071,13 @@
     "graphic_design": [
          {
             "id": "gfc_UXUI_ELSweb",
+            "type": "digital",
             "title": "UX/UI Design",
             "category": "Diseño gráfico",
             "tags": [
                 "Digital",
-                "Indesign",
-                "Figma"
+                "Figma",
+                "UX/UI"
             ],
             "figmaUrl": "https://www.figma.com/design/YNUOZlpcoFbSn5a3EVzurl/EstherLecinaWeb?node-id=2024-42&t=X7aRSwnH381eprar-1",
             "description": "Diseño UX/UI para mi web portfolio personal. Versión 2.0.",
@@ -1140,10 +1141,11 @@
         },
         {
             "id": "gfc_dani_tesis",
+            "type": "print",
             "title": "Cubierta tesis doctoral",
             "category": "Diseño gráfico",
             "tags": [
-                "Digital",
+                "Print",
                 "Indesign",
                 "Photoshop"
             ],
@@ -1160,11 +1162,13 @@
         },
         {
             "id": "gfc_colors_instagram",
+            "type": "digital",
             "title": "Anuncios Instagram",
             "category": "Diseño gráfico",
             "tags": [
                 "Digital",
-                "Photoshop"
+                "Photoshop",
+                "Instagram"
             ],
             "description": "Anuncios para Instagram para la startup Colors of Talent, incluye un anuncio para su plataforma Space.",
             "client": "Colors of Talent",
@@ -1211,12 +1215,13 @@
         },
         {
             "id": "gfc_colors_promocional",
+            "type": "print",
             "title": "Material promocional",
             "category": "Diseño gráfico",
             "tags": [
-                "Digital",
-                "Indesign",
-                "Illustrator"
+                "Print",
+                "Illustrator",
+                "Branding"
             ],
             "description": "Material promocional para la startup Colors of Talent; tríptico y anuncio de revista.",
             "client": "Colors of Talent",
@@ -1239,10 +1244,11 @@
         },
         {
             "id": "gfc_colors_dossier_prensa",
+            "type": "print",
             "title": "Dossier de prensa",
             "category": "Diseño gráfico",
             "tags": [
-                "Digital",
+                "Print",
                 "Indesign",
                 "Illustrator"
             ],
@@ -1299,6 +1305,7 @@
         },
         {
             "id": "gfc_guia_de_estilo",
+            "type": "digital",
             "title": "Guía de estilo",
             "category": "Diseño gráfico",
             "tags": [
@@ -1347,6 +1354,7 @@
         },
         {
             "id": "gfc_BenchmarkingWireframes_CalaMariona",
+            "type": "digital",
             "title": "UX/UI Design",
             "category": "Diseño gráfico",
             "tags": [
@@ -1408,6 +1416,7 @@
         },
         {
             "id": "gfc_UI_design",
+            "type": "digital",
             "title": "Diseño web",
             "category": "UI design",
             "tags": [
@@ -1428,6 +1437,7 @@
         },
         {
             "id": "gfc_3D",
+            "type": "digital",
             "title": "Desarrollo 3D",
             "category": "Modelado 3D",
             "tags": [
@@ -1447,6 +1457,7 @@
         },
         {
             "id": "interface_design",
+            "type": "digital",
             "title": "Diseño de interfaz",
             "category": "UI/UX design",
             "tags": [
@@ -1535,6 +1546,7 @@
         },
         {
             "id": "gfc_UX_design",
+            "type": "digital",
             "title": "Arquitectura de la información",
             "category": "UX design",
             "tags": [
@@ -1614,10 +1626,11 @@
         },
         {
             "id": "gfc_imagen_corporativa",
+            "type": "print",
             "title": "Imagen corporativa",
             "category": "Imagen corporativa",
             "tags": [
-                "Digital",
+                "Print",
                 "Photoshop",
                 "Indesign"
             ],
@@ -1662,6 +1675,7 @@
         },
         {
             "id": "gfc_UOC_infografia",
+            "type": "digital",
             "title": "Infografía",
             "category": "Encargo personal",
             "tags": [
@@ -1682,10 +1696,11 @@
         },
         {
             "id": "gfc_PngnRndmHs_Lidr",
+            "type": "print",
             "title": "Diseño editorial Las ideas de Raquel",
             "category": "Diseño editorial",
             "tags": [
-                "Digital",
+                "Print",
                 "Photoshop",
                 "Clip Studio Paint",
                 "Indesign"
@@ -1707,10 +1722,11 @@
         },
         {
             "id": "gfc_bcnv_editorial_design",
+            "type": "print",
             "title": "Diseño editorial",
             "category": "Diseño editorial",
             "tags": [
-                "Digital",
+                "Print",
                 "Photoshop",
                 "Illustrator",
                 "QuarkXPress"
@@ -1752,10 +1768,11 @@
         },
         {
             "id": "gfc_bcnv_cataleg_design",
+            "type": "print",
             "title": "Catalogos Barcanova",
             "category": "Diseño editorial",
             "tags": [
-                "Digital",
+                "Print",
                 "Photoshop",
                 "Illustrator",
                 "QuarkXPress"
@@ -1785,10 +1802,11 @@
         },
         {
             "id": "gfc_bcnv_teatre",
+            "type": "print",
             "title": "Libro-teatro",
             "category": "Display y packaging",
             "tags": [
-                "Digital",
+                "Print",
                 "Photoshop",
                 "Illustrator"
             ],
@@ -1805,10 +1823,11 @@
         },
         {
             "id": "gfc_ict_eic",
+            "type": "print",
             "title": "Imagen corporativa ICT y EIC",
             "category": "Imagen corporativa",
             "tags": [
-                "Digital",
+                "Print",
                 "Photoshop",
                 "QuarkXPress",
                 "Illustrator"

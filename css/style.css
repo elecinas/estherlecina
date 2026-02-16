@@ -291,10 +291,13 @@ body {
 
 .art-filters-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
     margin-bottom: 40px;
     margin-top: 40px;
+    padding: 0 10px;
 }
 
 .filter-btn {
@@ -305,6 +308,8 @@ body {
     font-family: monospace;
     cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap; /* Impide que el texto salte de línea dentro del botón */
+    display: inline-block;
 }
 
 .filter-btn:hover, .filter-btn.active {
@@ -574,6 +579,7 @@ body {
     /* padding: 20px 5%; */
     max-width: 1200px; /* Centrar y limitar el ancho en pantallas grandes */
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 /* Tablets */

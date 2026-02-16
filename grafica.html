@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
 
     <title>Gráfica | Esther Lecina</title>
 </head>
@@ -51,6 +52,11 @@
 
 
     <main class="container supertop">
+        <div class="art-filters-container text-center mb-5">
+            <button class="filter-btn active" data-filter="all" onclick="filterArt('all')">[ ALL ]</button>
+            <button class="filter-btn" data-filter="digital" onclick="filterArt('digital')">[ DIGITAL_UX ]</button>
+            <button class="filter-btn" data-filter="print" onclick="filterArt('print')">[ BRANDING_PRINT ]</button>
+        </div>
         <section class="gallery-container">
         </section>
     </main>
