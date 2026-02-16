@@ -37,6 +37,28 @@ body {
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1200px; /* O el mismo valor que use tu container de main (ej. 900px o 1200px) */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Asegura que ocupe el ancho disponible hasta el máximo */
+}
+
+/* Ajuste opcional para el fondo */
+/* Como la navbar ahora es "estrecha", el color de fondo se cortaría. 
+   Para que el color de fondo siga siendo infinito de lado a lado 
+   pero el contenido esté centrado, lo ideal es esto: */
+
+header {
+    background: rgb(47, 47, 47);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+.navbar {
+    border-bottom: none; /* Quitamos el borde de aquí porque lo pusimos en el header */
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 1.5rem 20px; /* Padding fijo para que en móvil no toque los bordes */
 }
 
 .navbar-toggler {
@@ -964,7 +986,7 @@ footer {
     max-width: 900px; /* Centramos el contenido para mejor lectura */
 }
 
-.dev-header { margin-bottom: 50px; }
+.dev-header { margin-bottom: 50px; border-bottom: 0;}
 .dev-title { font-family: 'KeepCalm', sans-serif; font-size: 2.5rem; margin-bottom: 10px; }
 .dev-subtitle { font-family: 'Montserrat', sans-serif; color: #888; font-size: 1.1rem; }
 
