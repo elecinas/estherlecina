@@ -236,21 +236,21 @@ body {
 /* Fondos para los bloques del Triángulo de Poder */
 .block-web {
     background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)), 
-                      url('../img/home/bg-web.jpg');
+                      url('../img/home/bg-web.webp');
     background-size: cover;
     background-position: center;
 }
 
 .block-design {
     background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)), 
-                      url('../img/home/bg-design.jpg');
+                      url('../img/home/bg-design.webp');
     background-size: cover;
     background-position: center;
 }
 
 .block-art {
     background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)), 
-                      url('../img/home/bg_art.jpg');
+                      url('../img/home/bg_art.webp');
     background-size: cover;
     background-position: center;
 }
@@ -273,7 +273,7 @@ body {
 
 .hero-section {
     background: radial-gradient(circle at center, rgba(82, 220, 223, 0.05) 0%, rgba(47, 47, 47, 1) 70%),
-                url('../img/home/hero_background.jpg');
+                url('../img/home/hero_background.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Efecto Parallax suave */
@@ -546,20 +546,23 @@ body {
 }
 
 /* Botón estilo terminal */
-.btn-terminal-style {
+.btn-terminal-style, .figma-btn {
     background: transparent;
     border: 1px solid rgba(82, 220, 223, 1);
     color: rgba(82, 220, 223, 1);
     font-family: 'KeepCalm', sans-serif;
+    text-align: center;
     padding: 10px 20px;
     width: 100%;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-.btn-terminal-style:hover {
+.btn-terminal-style:hover, .figma-btn:hover {
     background: rgba(82, 220, 223, 0.1);
     letter-spacing: 1px;
+    color: rgba(82, 220, 223, 1);
+    text-decoration: none;
 }
 
 /* --- GALERÍA CORREGIDA (GRID EN VEZ DE MASONRY) --- */
@@ -631,6 +634,10 @@ body {
 }
 
 .button-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Por si el nombre es largo en móvil */
+    gap: 10px;
+    justify-content: center;
     pointer-events: auto; /* El botón sí recibe clics */
     margin-top: 15px;
     z-index: 20;

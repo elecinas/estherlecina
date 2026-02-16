@@ -1,6 +1,385 @@
 {
     "art": [
         {
+            "id": "SERENDIPIA_mil_brujas",
+            "type": "comic",
+            "title": "Mil brujas",
+            "category": "Editorial",
+            "tags": [
+                "Digital",
+                "Photoshop",
+                "Illustrator"
+            ],
+            "description": "Historia autoconclusiva que forma parte de un recopilatorio de diversas autoras. El guión de esta historia es de la escritora e ilustradora Marta Bru.",
+            "client": "Serendipia",
+            "cardImgUrl": "img/ilustracion/cards/SERENDIPIA_brujas.webp",
+            "date": "2021",
+            "images": [
+                {
+                    "url": "img/ilustracion/SERENDIPIA_brujas_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/SERENDIPIA_brujas_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/SERENDIPIA_brujas_03.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "DIARIO_covid_chronicles",
+            "type": "comic",
+            "title": "Crónicas de la pandemia",
+            "category": "Instagram",
+            "tags": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
+            "description": "Diario de vivencias durante la pandemia de COVID-19.",
+            "client": "Particular",
+            "cardImgUrl": "img/ilustracion/cards/DIARIO_covid_cronicles.webp",
+            "date": "2021",
+            "images": [
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_08.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_09.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_10.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_11.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_12.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_13.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_14.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_15.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_16.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_17.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_18.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_19.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_20.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/DIARIO_covid_cronicles_21.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "ANAYA_historias_enredadas",
+            "type": "illustration",
+            "title": "Historias enredadas",
+            "category": "Editorial",
+            "tags": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint",
+                "Procreate"
+            ],
+            "description": "Ilustraciones para la colección de libros Historias Enredadas",
+            "client": "Editorial Anaya",
+            "cardImgUrl": "img/ilustracion/cards/ANAYA_historias_enredadas.webp",
+            "date": "2022-2026",
+            "images": [
+                {
+                    "url": "img/ilustracion/ANAYA_he_roma_00.webp",
+                    "caption": "Portada Historias Enredadas: Roma."
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_roma_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_roma_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_roma_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_roma_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_roma_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_roma_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_piedra_00.webp",
+                    "caption": "Portada Historias Enredadas: Edad de Piedra."
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_piedra_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_piedra_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_piedra_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_piedra_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_piedra_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_piedra_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_00.webp",
+                    "caption": "Portada Historias Enredadas: Edad Media."
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_08.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_edad_media_09.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_grecia_00.webp",
+                    "caption": "Portada Historias Enredadas: Edad Media."
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_grecia_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_grecia_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_grecia_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_grecia_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_grecia_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/ANAYA_he_grecia_06.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "COLORS_Mymmo_arrival",
+            "type": "comic",
+            "title": "Llegada de Mymmo",
+            "category": "Instagram",
+            "tags": [
+                "Digital",
+                "Photoshop",
+                "Illustrator"
+            ],
+            "description": "Conjunto de imágenes que narra la llegada de Mymmo y es capturado en la red. Pensado para su publicación en Instagram.",
+            "client": "Colors of Talent",
+            "cardImgUrl": "img/ilustracion/cards/COLORS_mymmo.webp",
+            "date": "2022",
+            "images": [
+                {
+                    "url": "img/ilustracion/COLORS_mymo_arrival_frame_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/COLORS_mymo_arrival_frame_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/COLORS_mymo_arrival_frame_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/COLORS_mymo_arrival_frame_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/COLORS_mymo_arrival_frame_05.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "SUPERZINGS_frames",
+            "type": "comic",
+            "title": "Frames Superzings",
+            "category": "Animación",
+            "tags": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
+            "description": "Realización de los fotogramas para la presentación de dos personajes de la colección de juguetes Superzings.",
+            "client": "Magic Box",
+            "cardImgUrl": "img/ilustracion/cards/MAGICBOX_superzings.webp",
+            "date": "2019",
+            "images": [
+                {
+                    "url": "img/ilustracion/MAGICBOX_superzings_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/MAGICBOX_superzings_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/MAGICBOX_superzings_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/MAGICBOX_superzings_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/MAGICBOX_superzings_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/MAGICBOX_superzings_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/MAGICBOX_superzings_08.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/MAGICBOX_superzings_10.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "ESTHEER_cover",
+            "type": "illustration",
+            "title": "Un viaje de regreso",
+            "category": "Editorial",
+            "tags": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
+            "description": "Cubierta para el libro Un viaje de regreso.",
+            "client": "Particular",
+            "cardImgUrl": "img/ilustracion/cards/ESTHEER_viaje_regreso_novela.webp",
+            "date": "2019",
+            "images": [
+                {
+                    "url": "img/ilustracion/ESTHEER_viaje_regreso_novela.webp",
+                    "caption": "Cubierta para la novela Pide un deseo, de la saga Las ideas de Raquel."
+                }
+            ]
+        },
+        {
             "id": "COLORS_cards",
             "type": "illustration",
             "title": "Cartas para Colors Space",
@@ -11,27 +390,27 @@
             ],
             "description": "Cartas para actividad lúdica, Space.",
             "client": "Colors of Talent",
-            "cardImgUrl": "img/ilustracion/cards/COLORS_cards_05_mimo.jpg",
+            "cardImgUrl": "img/ilustracion/cards/COLORS_cards_05_mimo.webp",
             "date": "2022",
             "images": [
                 {
-                    "url": "img/ilustracion/COLORS_cards_05_mimo.jpg",
+                    "url": "img/ilustracion/COLORS_cards_05_mimo.webp",
                     "caption": "Mimo"
                 },
                 {
-                    "url": "img/ilustracion/COLORS_cards_04_blackout.jpg",
+                    "url": "img/ilustracion/COLORS_cards_04_blackout.webp",
                     "caption": "Blackout"
                 },
                 {
-                    "url": "img/ilustracion/COLORS_cards_03_king_midas.jpg",
+                    "url": "img/ilustracion/COLORS_cards_03_king_midas.webp",
                     "caption": "King Midas"
                 },
                 {
-                    "url": "img/ilustracion/COLORS_cards_02_excalibur.jpg",
+                    "url": "img/ilustracion/COLORS_cards_02_excalibur.webp",
                     "caption": "Excalibur"
                 },
                 {
-                    "url": "img/ilustracion/COLORS_cards_01_shapeshifter.jpg",
+                    "url": "img/ilustracion/COLORS_cards_01_shapeshifter.webp",
                     "caption": "Shape Shifter"
                 }
             ]
@@ -48,16 +427,64 @@
             ],
             "description": "Ilustraciones para los libros de la saga Las ideas de Raquel.",
             "client": "Penguin Random House",
-            "cardImgUrl": "img/ilustracion/cards/PRH_Raquel_01_cover.jpg",
+            "cardImgUrl": "img/ilustracion/cards/PRH_Raquel_01_cover.webp",
             "date": "2021",
             "images": [
                 {
-                    "url": "img/ilustracion/PRH_Raquel_01_cover.jpg",
+                    "url": "img/ilustracion/PRH_Raquel_01_cover.webp",
                     "caption": "Cubierta para la novela Pide un deseo, de la saga Las ideas de Raquel."
                 },
                 {
-                    "url": "img/ilustracion/PRH_Raquel_02_cover.jpg",
+                    "url": "img/ilustracion/PRH_Raquel_01_00.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_01_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_01_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_01_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_01_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_01_09.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_02_cover.webp",
                     "caption": "Cubierta para la novela Con mucho love, de la saga Las ideas de Raquel."
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_02_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_02_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_02_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_02_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_02_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/PRH_Raquel_02_09.webp",
+                    "caption": ""
                 }
             ]
         },
@@ -73,40 +500,194 @@
             ],
             "description": "Ilustraciones para la saga de libros Luna y los incorpóreos.",
             "client": "Oxford Editorial",
-            "cardImgUrl": "img/ilustracion/cards/xfrd_Luna_06_07.jpg",
+            "cardImgUrl": "img/ilustracion/cards/xfrd_Luna_06_07.webp",
             "date": "2014-2020",
             "images": [
                 {
-                    "url": "img/ilustracion/xfrd_Luna_07_08.jpg",
-                    "caption": "Octava ilustración para la novela juvenil La tumba pintada, de la saga Luna y los incorpóreos."
+                    "url": "img/ilustracion/xfrd_Luna_07_08.webp",
+                    "caption": ""
                 },
                 {
-                    "url": "img/ilustracion/xfrd_Luna_07_07.jpg",
-                    "caption": "Séptima ilustración para la novela juvenil La tumba pintada, de la saga Luna y los incorpóreos."
+                    "url": "img/ilustracion/xfrd_Luna_07_07.webp",
+                    "caption": ""
                 },
                 {
-                    "url": "img/ilustracion/xfrd_Luna_07_02.jpg",
-                    "caption": "Segunda ilustración para la novela juvenil La tumba pintada, de la saga Luna y los incorpóreos."
+                    "url": "img/ilustracion/xfrd_Luna_07_02.webp",
+                    "caption": ""
                 },
                 {
-                    "url": "img/ilustracion/xfrd_Luna_06_07.jpg",
-                    "caption": "Séptima ilustración para la novela juvenil La leyenda de Wallada, de la saga Luna y los incorpóreos."
+                    "url": "img/ilustracion/xfrd_Luna_06_07.webp",
+                    "caption": ""
                 },
                 {
-                    "url": "img/ilustracion/xfrd_Luna_06_01.jpg",
-                    "caption": "Primera ilustración para la novela juvenil La leyenda de Wallada, de la saga Luna y los incorpóreos."
+                    "url": "img/ilustracion/xfrd_Luna_06_01.webp",
+                    "caption": ""
                 },
                 {
-                    "url": "img/ilustracion/xfrd_Luna_02_cover.jpg",
-                    "caption": "Cubierta para la novela juvenil La rosa de cristal, de la saga Luna y los incorpóreos."
+                    "url": "img/ilustracion/xfrd_Luna_04_cover.webp",
+                    "caption": ""
                 },
                 {
-                    "url": "img/ilustracion/xfrd_Luna_02_09.jpg",
-                    "caption": "Novena ilustración para la novela juvenil La rosa de cristal, de la saga Luna y los incorpóreos."
+                    "url": "img/ilustracion/xfrd_Luna_04_01.webp",
+                    "caption": ""
                 },
                 {
-                    "url": "img/ilustracion/xfrd_Luna_02_04.jpg",
-                    "caption": "Cuarta ilustración para la novela juvenil La rosa de cristal, de la saga Luna y los incorpóreos."
+                    "url": "img/ilustracion/xfrd_Luna_02_cover.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/xfrd_Luna_02_09.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/xfrd_Luna_02_04.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "OB_proceso_acuarela_erin",
+            "type": "illustration",
+            "title": "Proceso de acuarela",
+            "category": "Revista",
+            "tags": [
+                "Lápiz",
+                "Tinta",
+                "Acuarela"
+            ],
+            "description": "La revista Otaku Bunka publicó en un artículo, el proceso de realización de una ilustración a acuarela de una ilustración sobre el manga Erin. Posteriormente se sorteó el original.",
+            "client": "Otaku Bunka",
+            "cardImgUrl": "img/ilustracion/cards/OTAKU_BUNKA_proceso_erin.webp",
+            "date": "2018",
+            "images": [
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_00.webp",
+                    "caption": "Boceto a lápiz sobre papel normal."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_01.webp",
+                    "caption": "Para calcar utilicé un atril translúcido."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_02.webp",
+                    "caption": "Se repasan solo las líneas necesarias."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_04.webp",
+                    "caption": "Con cuidado de no marcar demasiadas líneas."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_05.webp",
+                    "caption": "Se pasa a tinta con tinta que soporte el agua después."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_06.webp",
+                    "caption": "Las masas de negro se rellenan con pincel."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_07.webp",
+                    "caption": "Se eliminan las marcas de lápiz."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_08.webp",
+                    "caption": "Antes de empezar a pintar, preparo los colores necesarios."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_09.webp",
+                    "caption": "Se comienza por dar las capas más claras."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_10.webp",
+                    "caption": "En la espada se trabaja degradado de azul al blanco del papel."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_11.webp",
+                    "caption": "Finalmente obtenemos todo el color de la acuarela."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_12.webp",
+                    "caption": "Damos retoques con gouache blanco para dar luces y detalles finales."
+                },
+                {
+                    "url": "img/ilustracion/OTAKU_BUNKA_proceso_erin_13.webp",
+                    "caption": "Resultado final."
+                }
+            ]
+        },
+        {
+            "id": "EDELVIVES_cuad_plastica",
+            "type": "illustration",
+            "title": "Cuadernos de plástica",
+            "category": "Libro de texto",
+            "tags": [
+                "Digital",
+                "Photoshop",
+                "Clip Studio Paint"
+            ],
+            "description": "Ilustraciones para cuadernos de plástica de la ESO.",
+            "client": "Editorial Edelvives",
+            "cardImgUrl": "img/ilustracion/cards/EDELVIVES_libro_plastica.webp",
+            "date": "2022-2023",
+            "images": [
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_08.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_09.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_10.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_11.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_12.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_13.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_14.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/ilustracion/EDELVIVES_libro_plastica_15.webp",
+                    "caption": ""
                 }
             ]
         },
@@ -122,23 +703,23 @@
             ],
             "description": "Ilustraciones para cuaderno de francés",
             "client": "Oxford Editorial",
-            "cardImgUrl": "img/ilustracion/cards/xfrd_lang_s100.jpg",
+            "cardImgUrl": "img/ilustracion/cards/xfrd_lang_s100.webp",
             "date": "2017",
             "images": [
                 {
-                    "url": "img/ilustracion/xfrd_lang_s100.jpg",
+                    "url": "img/ilustracion/xfrd_lang_s100.webp",
                     "caption": "Ilustración referente al teatro para cuaderno de francés, a dos tintas."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_lang_s094.jpg",
+                    "url": "img/ilustracion/xfrd_lang_s094.webp",
                     "caption": "Ilustración referente a personajes de fantasía para cuaderno de francés, a dos tintas."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_lang_s061.jpg",
+                    "url": "img/ilustracion/xfrd_lang_s061.webp",
                     "caption": "Ilustración referente a criaturas mitológicas para cuaderno de francés, a dos tintas."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_lang_s041.jpg",
+                    "url": "img/ilustracion/xfrd_lang_s041.webp",
                     "caption": "Ilustración referente al demonio para cuaderno de francés, a dos tintas."
                 }
             ]
@@ -155,11 +736,11 @@
             ],
             "description": "Ilustración de unos novios para invitación de boda.",
             "client": "Tu invitación de boda",
-            "cardImgUrl": "img/ilustracion/cards/novios_MNG.jpg",
+            "cardImgUrl": "img/ilustracion/cards/novios_MNG.webp",
             "date": "2014",
             "images": [
                 {
-                    "url": "img/ilustracion/novios_MNG.jpg",
+                    "url": "img/ilustracion/novios_MNG.webp",
                     "caption": "Ilustración de unos novios para invitación de boda."
                 }
             ]
@@ -176,19 +757,19 @@
             ],
             "description": "Proyecto de cómic personal.",
             "client": "Proyecto personal",
-            "cardImgUrl": "img/ilustracion/cards/XPromo_saskia.jpg",
+            "cardImgUrl": "img/ilustracion/cards/XPromo_saskia.webp",
             "date": "2014",
             "images": [
                 {
-                    "url": "img/ilustracion/XPromo_Saskia_1.jpg",
+                    "url": "img/ilustracion/XPromo_Saskia_1.webp",
                     "caption": "Diseño de personaje para proyecto personal de cómic."
                 },
                 {
-                    "url": "img/ilustracion/XPromo_saskia.jpg",
+                    "url": "img/ilustracion/XPromo_saskia.webp",
                     "caption": "Imagen de promoción de fondo de escritorio para proyecto personal de cómic."
                 },
                 {
-                    "url": "img/ilustracion/XPromo.jpg",
+                    "url": "img/ilustracion/XPromo.webp",
                     "caption": "Propuesta de cubierta para proyecto personal de cómic."
                 }
             ]
@@ -205,43 +786,43 @@
             ],
             "description": "Ilustraciones para la saga de novelas de Odio el rosa.",
             "client": "Oxford Editorial",
-            "cardImgUrl": "img/ilustracion/cards/xfrd_OR_internet_dark_promontorio.jpg",
+            "cardImgUrl": "img/ilustracion/cards/xfrd_OR_internet_dark_promontorio.webp",
             "date": "2014-2015",
             "images": [
                 {
-                    "url": "img/ilustracion/xfrd_OR_HJulia_10.jpg",
+                    "url": "img/ilustracion/xfrd_OR_HJulia_10.webp",
                     "caption": "Ilustración de Dani y Julia. Historia de Julia."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_OR_HJulia_05.jpg",
+                    "url": "img/ilustracion/xfrd_OR_HJulia_05.webp",
                     "caption": "Ilustración de un entierro, Historia de Julia."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_OR_HJulia_03.jpg",
+                    "url": "img/ilustracion/xfrd_OR_HJulia_03.webp",
                     "caption": "Ilustración de Julia y Kaeru en el ascensor, Historia de Julia."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_OR_HAlan_02.jpg",
+                    "url": "img/ilustracion/xfrd_OR_HAlan_02.webp",
                     "caption": "Alan como pirata, Historia de Alan."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_OR_internet_Leila_gruta.jpg",
+                    "url": "img/ilustracion/xfrd_OR_internet_Leila_gruta.webp",
                     "caption": "Ilustración de Leila en la gruta para la web que forma parte del proyecto transmedia de la saga de novelas Odio el rosa."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_OR_internet_kima_barco.jpg",
+                    "url": "img/ilustracion/xfrd_OR_internet_kima_barco.webp",
                     "caption": "Ilustración de Kima en el barco para la web que forma parte del proyecto transmedia de la saga de novelas Odio el rosa."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_OR_internet_DarkLeila_ruinas.jpg",
+                    "url": "img/ilustracion/xfrd_OR_internet_DarkLeila_ruinas.webp",
                     "caption": "Ilustración de Dark y Leila en las ruinas para la web que forma parte del proyecto transmedia de la saga de novelas Odio el rosa."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_OR_internet_dark_promontorio.jpg",
+                    "url": "img/ilustracion/xfrd_OR_internet_dark_promontorio.webp",
                     "caption": "Ilustración de Dark en el promontorio para la web que forma parte del proyecto transmedia de la saga de novelas Odio el rosa."
                 },
                 {
-                    "url": "img/ilustracion/xfrd_OR_internet_Dark_emboscada.jpg",
+                    "url": "img/ilustracion/xfrd_OR_internet_Dark_emboscada.webp",
                     "caption": "Ilustración de Dark en la emboscada para la web que forma parte del proyecto transmedia de la saga de novelas Odio el rosa."
                 }
             ]
@@ -258,11 +839,11 @@
             ],
             "description": "Ilustración de un indio oyendo cantar a un hada.",
             "client": "Proyecto personal",
-            "cardImgUrl": "img/ilustracion/cards/indio.jpg",
+            "cardImgUrl": "img/ilustracion/cards/indio.webp",
             "date": "2004",
             "images": [
                 {
-                    "url": "img/ilustracion/indio.jpg",
+                    "url": "img/ilustracion/indio.webp",
                     "caption": "Ilustración de un indio oyendo cantar a un hada."
                 }
             ]
@@ -278,11 +859,11 @@
             ],
             "description": "Proyecto ficticio de una versión ilustrada de la película de Alejandro Amenábar; Los Otros. Tinta y acuarela.",
             "client": "Escola Massana",
-            "cardImgUrl": "img/ilustracion/cards/msn_Los_Otros_niebla.jpg",
+            "cardImgUrl": "img/ilustracion/cards/msn_Los_Otros_niebla.webp",
             "date": "2002-2003",
             "images": [
                 {
-                    "url": "img/ilustracion/msn_Los_Otros_niebla.jpg",
+                    "url": "img/ilustracion/msn_Los_Otros_niebla.webp",
                     "caption": "Ilustración de los otros llegando envueltos en la niebla."
                 }
             ]
@@ -299,19 +880,19 @@
             ],
             "description": "Ejercicio de documentación de versiones de época. Lápices de color sobre collage de cartulinas.",
             "client": "Escola Massana",
-            "cardImgUrl": "img/ilustracion/cards/msn_pinocho_oliver_twist.jpg",
+            "cardImgUrl": "img/ilustracion/cards/msn_pinocho_oliver_twist.webp",
             "date": "2002",
             "images": [
                 {
-                    "url": "img/ilustracion/msn_pinocho_mosquetero.jpg",
+                    "url": "img/ilustracion/msn_pinocho_mosquetero.webp",
                     "caption": "Ilustración de Pinocho en el siglo XVIII"
                 },
                 {
-                    "url": "img/ilustracion/msn_pinocho_oliver_twist.jpg",
+                    "url": "img/ilustracion/msn_pinocho_oliver_twist.webp",
                     "caption": "Ilustración de Pinocho en el siglo XIX."
                 },
                 {
-                    "url": "img/ilustracion/msn_pinocho_robespierre.jpg",
+                    "url": "img/ilustracion/msn_pinocho_robespierre.webp",
                     "caption": "Ilustración de Pinocho en el siglo XVII"
                 }
             ]
@@ -328,16 +909,16 @@
                 "Acuarela"
             ],
             "description": "Cubiertas para la colección infantil Sopa de Llibres",
-            "cardImgUrl": "img/ilustracion/cards/bcnv_borneo_1456122.jpg",
+            "cardImgUrl": "img/ilustracion/cards/bcnv_borneo_1456122.webp",
             "date": "2005",
             "client": "Editorial Barcanova",
             "images": [
                 {
-                    "url": "img/ilustracion/bcnv_borneo_1456122.jpg",
+                    "url": "img/ilustracion/bcnv_borneo_1456122.webp",
                     "caption": "Cubierta para el libro Un estiu a Borneo. Acuarela y tinta."
                 },
                 {
-                    "url": "img/ilustracion/bcnv_granota_1456141.jpg",
+                    "url": "img/ilustracion/bcnv_granota_1456141.webp",
                     "caption": "Cubierta para el libro Una granota reial. Entintado manual y coloreado digital."
                 }
             ]
@@ -353,12 +934,12 @@
                 "Clip Studio Paint"
             ],
             "description": "Proyecto de cómic sobre los demonios que atormentan a una dibujante.",
-            "cardImgUrl": "img/comic/cards/comic_dimonis.jpg",
+            "cardImgUrl": "img/ilustracion/cards/comic_dimonis.webp",
             "client": "Proyecto personal",
             "date": "2020",
             "images": [
                 {
-                    "url": "img/comic/comic_001_dimonis.jpg",
+                    "url": "img/ilustracion/comic_001_dimonis.webp",
                     "caption": "Primera página de prueba sobre los demonios que atormentan a una dibujante."
                 }
             ]
@@ -374,23 +955,23 @@
             ],
             "description": "Manga autoconclusivo de fantasía heroica.",
             "client": "Ediciones Babylon",
-            "cardImgUrl": "img/comic/cards/comic_erin.jpg",
-            "date": "2019",
+            "cardImgUrl": "img/ilustracion/cards/comic_erin.webp",
+            "date": "2017",
             "images": [
                 {
-                    "url": "img/comic/comic_124_125_erin.jpg",
+                    "url": "img/ilustracion/comic_124_125_erin.webp",
                     "caption": "Manga Erin, páginas 124 y 125."
                 },
                 {
-                    "url": "img/comic/comic_136_erin.jpg",
+                    "url": "img/ilustracion/comic_136_erin.webp",
                     "caption": "Manga Erin, página 136."
                 },
                 {
-                    "url": "img/comic/comic_162_erin.jpg",
+                    "url": "img/ilustracion/comic_162_erin.webp",
                     "caption": "Manga Erin, página 162."
                 },
                 {
-                    "url": "img/comic/comic_180_erin.jpg",
+                    "url": "img/ilustracion/comic_180_erin.webp",
                     "caption": "Manga Erin, página 180."
                 }
             ]
@@ -407,19 +988,19 @@
             ],
             "description": "BD para aprender francés, suplemento de la ESO.",
             "client": "Oxford Editorial",
-            "cardImgUrl": "img/comic/cards/comic_manon.jpg",
+            "cardImgUrl": "img/ilustracion/cards/comic_manon.webp",
             "date": "2018",
             "images": [
                 {
-                    "url": "img/comic/comic_manon_18.jpg",
+                    "url": "img/ilustracion/comic_manon_18.webp",
                     "caption": "Decimooctava página de la BD de Manon."
                 },
                 {
-                    "url": "img/comic/comic_manon_28.jpg",
+                    "url": "img/ilustracion/comic_manon_28.webp",
                     "caption": "Vigésimooctava página de la BD de Manon."
                 },
                 {
-                    "url": "img/comic/comic_manon_30.jpg",
+                    "url": "img/ilustracion/comic_manon_30.webp",
                     "caption": "Octava página de la BD de Manon."
                 }
             ]
@@ -436,23 +1017,23 @@
             ],
             "description": "BD para aprender francés, suplemento de la ESO.",
             "client": "Oxford Editorial",
-            "cardImgUrl": "img/comic/cards/comic_parkour.jpg",
+            "cardImgUrl": "img/ilustracion/cards/comic_parkour.webp",
             "date": "2016",
             "images": [
                 {
-                    "url": "img/comic/comic_parkour_08.jpg",
+                    "url": "img/ilustracion/comic_parkour_08.webp",
                     "caption": "Octava página de la BD sobre Parkour."
                 },
                 {
-                    "url": "img/comic/comic_parkour_24.jpg",
+                    "url": "img/ilustracion/comic_parkour_24.webp",
                     "caption": "Vigésimocuarta página de la BD sobre Parkour."
                 },
                 {
-                    "url": "img/comic/comic_parkour_25.jpg",
+                    "url": "img/ilustracion/comic_parkour_25.webp",
                     "caption": "Vigésimoquinta página de la BD sobre Parkour."
                 },
                 {
-                    "url": "img/comic/comic_parkour_26.jpg",
+                    "url": "img/ilustracion/comic_parkour_26.webp",
                     "caption": "Vigésimosexta página de la BD sobre Parkour."
                 }
             ]
@@ -469,25 +1050,362 @@
             ],
             "description": "Suplemento manga de Dark perteneciente a la colección Odio el Rosa.",
             "client": "Oxford Editorial",
-            "cardImgUrl": "img/comic/cards/comic_dark.jpg",
+            "cardImgUrl": "img/ilustracion/cards/comic_dark.webp",
             "date": "2014",
             "images": [
                 {
-                    "url": "img/comic/comic_dark_04.jpg",
+                    "url": "img/ilustracion/comic_dark_04.webp",
                     "caption": "Cuarta página del manga de Dark."
                 },
                 {
-                    "url": "img/comic/comic_dark_07.jpg",
+                    "url": "img/ilustracion/comic_dark_07.webp",
                     "caption": "Séptima página del manga de Dark."
                 },
                 {
-                    "url": "img/comic/comic_dark_05.jpg",
+                    "url": "img/ilustracion/comic_dark_05.webp",
                     "caption": "Quinta página del manga de Dark."
                 }
             ]
         }
     ],
     "graphic_design": [
+         {
+            "id": "gfc_UXUI_ELSweb",
+            "title": "UX/UI Design",
+            "category": "Diseño gráfico",
+            "tags": [
+                "Digital",
+                "Indesign",
+                "Figma"
+            ],
+            "figmaUrl": "https://www.figma.com/design/YNUOZlpcoFbSn5a3EVzurl/EstherLecinaWeb?node-id=2024-42&t=X7aRSwnH381eprar-1",
+            "description": "Diseño UX/UI para mi web portfolio personal. Versión 2.0.",
+            "client": "Personal",
+            "cardImgUrl": "img/grafica/cards/gfc_elsweb_UXUI.webp",
+            "date": "2025",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_01.webp",
+                    "caption": "Propuesta metodológica para el diseño UX/UI de mi web portfolio personal. Versión 2.0."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_02.webp",
+                    "caption": "Benchmarking de perfiles de perfiles creativos y técnicos para el diseño UX/UI de mi web portfolio personal. Versión 2.0."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_03.webp",
+                    "caption": "Benchmarking de perfiles de perfiles creativos y técnicos para el diseño UX/UI de mi web portfolio personal. Versión 2.0."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_04.webp",
+                    "caption": "Benchmarking de perfiles de perfiles creativos y técnicos para el diseño UX/UI de mi web portfolio personal. Versión 2.0."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_05.webp",
+                    "caption": "Benchmarking de perfiles de perfiles creativos y técnicos para el diseño UX/UI de mi web portfolio personal. Versión 2.0."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_06.webp",
+                    "caption": "Benchmarking de perfiles de perfiles creativos y técnicos para el diseño UX/UI de mi web portfolio personal. Versión 2.0."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_07.webp",
+                    "caption": "Benchmarking de perfiles de perfiles creativos y técnicos para el diseño UX/UI de mi web portfolio personal. Versión 2.0."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_08.webp",
+                    "caption": "Benchmarking de perfiles de perfiles creativos y técnicos para el diseño UX/UI de mi web portfolio personal. Versión 2.0."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_09.webp",
+                    "caption": "Resultados del Benchmarking."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_10.webp",
+                    "caption": "Estudio de ofertas de empleo para perfiles creativos y técnicos."
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_11.webp",
+                    "caption": "Síntesis y definición de los resultados"
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_12.webp",
+                    "caption": "Target de posibles clientes y reclutadores"
+                },
+                {
+                    "url": "img/grafica/gfc_elsweb_UXUI_13.webp",
+                    "caption": "Árbol de contenidos"
+                }
+            ]
+        },
+        {
+            "id": "gfc_dani_tesis",
+            "title": "Cubierta tesis doctoral",
+            "category": "Diseño gráfico",
+            "tags": [
+                "Digital",
+                "Indesign",
+                "Photoshop"
+            ],
+            "description": "Cubierta de tesis doctoral sobre  el las interacciones proteína.",
+            "client": "Particular",
+            "cardImgUrl": "img/grafica/cards/gfc_dani_tesis.webp",
+            "date": "2013",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_dani_tesis_01.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "gfc_colors_instagram",
+            "title": "Anuncios Instagram",
+            "category": "Diseño gráfico",
+            "tags": [
+                "Digital",
+                "Photoshop"
+            ],
+            "description": "Anuncios para Instagram para la startup Colors of Talent, incluye un anuncio para su plataforma Space.",
+            "client": "Colors of Talent",
+            "cardImgUrl": "img/grafica/cards/gfc_colors_instagram.webp",
+            "date": "2021",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_colors_instagram_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_instagram_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_instagram_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_instagram_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_instagram_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_instagram_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_instagram_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_instagram_08.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_instagram_09.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "gfc_colors_promocional",
+            "title": "Material promocional",
+            "category": "Diseño gráfico",
+            "tags": [
+                "Digital",
+                "Indesign",
+                "Illustrator"
+            ],
+            "description": "Material promocional para la startup Colors of Talent; tríptico y anuncio de revista.",
+            "client": "Colors of Talent",
+            "cardImgUrl": "img/grafica/cards/gfc_colors_promocional.webp",
+            "date": "2021",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_colors_promocional_01.webp",
+                    "caption": "Tríptico promocional presentando la startup Colors of Talent."
+                },
+                {
+                    "url": "img/grafica/gfc_colors_promocional_02.webp",
+                    "caption": "Tríptico promocional presentando la startup Colors of Talent."
+                },
+                {
+                    "url": "img/grafica/gfc_colors_promocional_03.webp",
+                    "caption": "Tríptico promocional presentando la startup Colors of Talent."
+                }
+            ]
+        },
+        {
+            "id": "gfc_colors_dossier_prensa",
+            "title": "Dossier de prensa",
+            "category": "Diseño gráfico",
+            "tags": [
+                "Digital",
+                "Indesign",
+                "Illustrator"
+            ],
+            "description": "Dossier de prensa para startup Colors of Talent. Proyecto educativo.",
+            "client": "Colors of Talent",
+            "cardImgUrl": "img/grafica/cards/gfc_colors_dossier_prensa.webp",
+            "date": "2022",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_08.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_09.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_10.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_colors_dossier_prensa_11.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "gfc_guia_de_estilo",
+            "title": "Guía de estilo",
+            "category": "Diseño gráfico",
+            "tags": [
+                "Digital",
+                "Illustrator",
+                "Figma"
+            ],
+            "description": "Guía de estilo para la web de CalaMariona. Cooperativa de productos de kilómetro 0.",
+            "client": "Proyecto formativo (UOC)",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_guiaestil_CalaMariona.webp",
+            "date": "2023",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_UOC_guiaestil_CalaMariona_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guiaestil_CalaMariona_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guiaestil_CalaMariona_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guiaestil_CalaMariona_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guiaestil_CalaMariona_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guiaestil_CalaMariona_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guiaestil_CalaMariona_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guiaestil_CalaMariona_08.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "gfc_BenchmarkingWireframes_CalaMariona",
+            "title": "UX/UI Design",
+            "category": "Diseño gráfico",
+            "tags": [
+                "Digital",
+                "Photoshop",
+                "Indesign"
+            ],
+            "figmaUrl": "https://www.figma.com/design/ZQlMkpqRKZiYJnJYKQlgij/Ca-La-Mariona?node-id=0-1&t=zuSg8NHGArxC6xZf-1",
+            "description": "Diseño UX/UI para CaLaMariona. Cooperativa de productos de kilómetro 0.",
+            "client": "Proyecto formativo (UOC)",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_UXUI_CalaMariona.webp",
+            "date": "2023",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_01.webp",
+                    "caption": "Target clientes de la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_02.webp",
+                    "caption": "Benchmarking de la competencia para la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_03.webp",
+                    "caption": "Benchmarking de la competencia para la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_04.webp",
+                    "caption": "Benchmarking de la competencia para la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_05.webp",
+                    "caption": "Benchmarking de la competencia para la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_06.webp",
+                    "caption": "Benchmarking de la competencia para la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_07.webp",
+                    "caption": "Benchmarking de la competencia para la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_08.webp",
+                    "caption": "Resultados del benchmarking para la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_09.webp",
+                    "caption": "Árbol de contenido para la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_10.webp",
+                    "caption": "Wireframes de baja fidelidad para la web de CalaMariona."
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_UXUI_CalaMariona_11.webp",
+                    "caption": "Wireframes de baja fidelidad para la web de CalaMariona."
+                }
+            ]
+        },
         {
             "id": "gfc_UI_design",
             "title": "Diseño web",
@@ -499,16 +1417,12 @@
             ],
             "description": "Diseño corporativo páginas web.",
             "client": "Proyecto formativo (UOC)",
-            "cardImgUrl": "img/grafica/cards/gfc_UOC_webcorporativa.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_webcorporativa.webp",
             "date": "2014",
             "images": [
                 {
-                    "url": "img/grafica/gfc_UOC_webcorporativa.jpg",
+                    "url": "img/grafica/gfc_UOC_webcorporativa.webp",
                     "caption": "web corporativa de enseñanza a distancia."
-                },
-                {
-                    "url": "img/grafica/gfc_UOC_interficie1.jpg",
-                    "caption": "Diseño de la interficie gráfica para una web de venta de zapatos artesanales."
                 }
             ]
         },
@@ -522,12 +1436,100 @@
             ],
             "description": "Desarrollo 3D",
             "client": "Proyecto formativo (UOC)",
-            "cardImgUrl": "img/grafica/cards/gfc_UOC_3D.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_3D.webp",
             "date": "2017",
             "images": [
                 {
-                    "url": "img/grafica/gfc_UOC_3D.jpg",
+                    "url": "img/grafica/gfc_UOC_3D.webp",
                     "caption": "Creación en 3D Studio Max de un barco vikingo."
+                }
+            ]
+        },
+        {
+            "id": "interface_design",
+            "title": "Diseño de interfaz",
+            "category": "UI/UX design",
+            "tags": [
+                "Digital",
+                "Photoshop",
+                "Illustrator"
+            ],
+            "description": "Diseño de interfaz gráfica para Pisaverde. Creado con Suite Adobe; programas como Figma y Adobe XD no se lanzaron hasta después de la realización de este proyecto.",
+            "client": "Proyecto formativo (UOC)",
+            "cardImgUrl": "img/grafica/cards/UOC_uxui_pisaverde.webp",
+            "date": "2016",
+            "images": [
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_08.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_09.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_10.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_11.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_12.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_13.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_14.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_15.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_16.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_17.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/UOC_uxui_pisaverde_18.webp",
+                    "caption": ""
                 }
             ]
         },
@@ -539,14 +1541,74 @@
                 "Digital",
                 "Illustrator"
             ],
-            "description": "Diseño UX y arquitectura de la información",
+            "description": "Diseño UX/UI y arquitectura de la información. Con realización del árbol de contenidos y mockups para una web de aprendizaje online. ",
             "client": "Proyecto formativo (UOC)",
-            "cardImgUrl": "img/grafica/cards/gfc_UOC_arcinfo.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_arcinfo.webp",
             "date": "2016",
             "images": [
                 {
-                    "url": "img/grafica/gfc_UOC_arcinfo.jpg",
-                    "caption": "Diseño de la arquitectura de la información (arbol de contenidos) peteneciente a un sitio hipotético de aprendizaje online"
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_01.webp",
+                    "caption": "Diseño de la arquitectura de la información (arbol de contenidos)"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_02.webp",
+                    "caption": "Mockup homepage desktop"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_03.webp",
+                    "caption": "Mockup menú desplegable desktop"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_04.webp",
+                    "caption": "Mockup submenú sección desktop"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_05.webp",
+                    "caption": "Mockup cuenta de usuario desktop"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_06.webp",
+                    "caption": "Mockup sección multiplicar desktop"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_07.webp",
+                    "caption": "Mockup sección multiplicar tutoriales desktop"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_08.webp",
+                    "caption": "Mockup sección multiplicar vídeotutorial desktop"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_09.webp",
+                    "caption": "Mockup gran prix desktop"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_10.webp",
+                    "caption": "Mockup gran prix actiu desktop"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_11.webp",
+                    "caption": "Mockup homepage mobile"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_12.webp",
+                    "caption": "Mockup userpage mobile"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_13.webp",
+                    "caption": "Mockup sección multiplicar mobile"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_14.webp",
+                    "caption": "Mockup videotutorial multiplicar mobile"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_15.webp",
+                    "caption": "Mockup multiplicar desplegable mobile"
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_AI_wireframes_16.webp",
+                    "caption": "Mockup gran prix mobile"
                 }
             ]
         },
@@ -561,12 +1623,40 @@
             ],
             "description": "Diseño de logotipo e imagen corporativa",
             "client": "Proyecto formativo (UOC)",
-            "cardImgUrl": "img/grafica/cards/gfc_UOC_logo.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_logo.webp",
             "date": "2015",
             "images": [
                 {
-                    "url": "img/grafica/gfc_UOC_logo.jpg",
-                    "caption": "Diseño de logotipo y el correspondiente libro de estilo."
+                    "url": "img/grafica/gfc_UOC_guia_estilo_PWS_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guia_estilo_PWS_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guia_estilo_PWS_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guia_estilo_PWS_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guia_estilo_PWS_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guia_estilo_PWS_06.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guia_estilo_PWS_07.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_UOC_guia_estilo_PWS_08.webp",
+                    "caption": ""
                 }
             ]
         },
@@ -581,11 +1671,11 @@
             ],
             "description": "Infografías",
             "client": "Proyecto formativo (UOC)",
-            "cardImgUrl": "img/grafica/cards/gfc_UOC_infografia.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_UOC_infografia.webp",
             "date": "2015",
             "images": [
                 {
-                    "url": "img/grafica/gfc_UOC_infografia.svg",
+                    "url": "img/grafica/gfc_UOC_infografia.webp",
                     "caption": "Infografía que representa las consecuencias de la catástrofe de Exxon Valdez."
                 }
             ]
@@ -601,16 +1691,16 @@
                 "Indesign"
             ],
             "description": "Diseño editorial de la saga Las ideas de Raquel",
-            "cardImgUrl": "img/grafica/cards/gfc_PngnRndmHs_Lidr_design.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_PngnRndmHs_Lidr_design.webp",
             "date": "2021",
             "client": "Penguin Random House (Beascoa)",
             "images": [
                 {
-                    "url": "img/grafica/gfc_PngnRndmHs_Lidr_cover.jpg",
+                    "url": "img/grafica/gfc_PngnRndmHs_Lidr_cover.webp",
                     "caption": "Realización del diseño exterior de la colección de libros Las ideas de Raquel."
                 },
                 {
-                    "url": "img/grafica/gfc_PngnRndmHs_Lidr_interior.jpg",
+                    "url": "img/grafica/gfc_PngnRndmHs_Lidr_interior.webp",
                     "caption": "Realización del diseño y la maquetación del interior de la colección de libros Las ideas de Raquel."
                 }
             ]
@@ -627,35 +1717,35 @@
             ],
             "description": "Diseño editorial para Editorial Barcanova",
             "client": "Editorial Barcanova",
-            "cardImgUrl": "img/grafica/cards/gfc_bcnv_editorial.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_bcnv_editorial.webp",
             "date": "2007",
             "images": [
                 {
-                    "url": "img/grafica/gfc_bcnv_maDeu.jpg",
+                    "url": "img/grafica/gfc_bcnv_maDeu.webp",
                     "caption": "Cubierta para el libro La mà de Déu, de la colección Calam."
                 },
                 {
-                    "url": "img/grafica/gfc_bcnv_miradavampir.jpg",
+                    "url": "img/grafica/gfc_bcnv_miradavampir.webp",
                     "caption": "Cubierta para el libro La mirada del vampir, de la colección Calam."
                 },
                 {
-                    "url": "img/grafica/gfc_bcnv_Xxino.jpg",
+                    "url": "img/grafica/gfc_bcnv_Xxino.webp",
                     "caption": "Cubierta para el libro Amb X de Xino, de la colección Calam."
                 },
                 {
-                    "url": "img/grafica/gfc_bcnv_abece.jpg",
+                    "url": "img/grafica/gfc_bcnv_abece.webp",
                     "caption": "Diseño de las cubiertas para la colección de infantil ABC."
                 },
                 {
-                    "url": "img/grafica/gfc_bcnv_cobESO.jpg",
+                    "url": "img/grafica/gfc_bcnv_cobESO.webp",
                     "caption": "Diseño de las cubiertas de libros y CDs de toda la línea deucativa ESO."
                 },
                 {
-                    "url": "img/grafica/gfc_bcnv_saltamarti.jpg",
+                    "url": "img/grafica/gfc_bcnv_saltamarti.webp",
                     "caption": "Readaptación de las antiguas cubiertas de educación primaria a una versión más actual."
                 },
                 {
-                    "url": "img/grafica/gfc_bcnv_cobmedi.jpg",
+                    "url": "img/grafica/gfc_bcnv_cobmedi.webp",
                     "caption": "Guías para profesores que resumen los contenidos de cada área"
                 }
             ]
@@ -672,23 +1762,23 @@
             ],
             "description": "Diseño y maquetación de catálogos para Barcanova.",
             "client": "Editorial Barcanova",
-            "cardImgUrl": "img/grafica/cards/gfc_bcnv.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_bcnv.webp",
             "date": "2007",
             "images": [
                 {
-                    "url": "img/grafica/gfc_bcnv_catalegmates.jpg",
+                    "url": "img/grafica/gfc_bcnv_catalegmates.webp",
                     "caption": "Presentación de un proyecto para la adquisición de estrategias de cálculo."
                 },
                 {
-                    "url": "img/grafica/gfc_bcnv_cobcatalegmusica.jpg",
+                    "url": "img/grafica/gfc_bcnv_cobcatalegmusica.webp",
                     "caption": "Diseño y maquetación de los catálogos que presentavan los libros de texto de primaria de la temporada."
                 },
                 {
-                    "url": "img/grafica/gfc_bcnv_catalegcalam.jpg",
+                    "url": "img/grafica/gfc_bcnv_catalegcalam.webp",
                     "caption": "Catálogo para novedades de lecturas de la colección Calam. Imitando un diario de noticias."
                 },
                 {
-                    "url": "img/grafica/gfc_bcnv_catalegsestacionals.jpg",
+                    "url": "img/grafica/gfc_bcnv_catalegsestacionals.webp",
                     "caption": "Catálogos de novedades editoriales de las temporadas de primavera e invierno."
                 }
             ]
@@ -704,11 +1794,11 @@
             ],
             "description": "Displays y packaging",
             "client": "Editorial Barcanova",
-            "cardImgUrl": "img/grafica/cards/gfc_bcnv_display.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_bcnv_display.webp",
             "date": "2007",
             "images": [
                 {
-                    "url": "img/grafica/gfc_bcnv_teatre.jpg",
+                    "url": "img/grafica/gfc_bcnv_teatre.webp",
                     "caption": "Diseño y realización del libro teatro de las obras Caperucita roja y Hansel y Grettel."
                 }
             ]
@@ -725,31 +1815,31 @@
             ],
             "description": "Material corporativo para Institut Català de Tecnologia (ICT) y Enginyers Industrials de Catalunya (EIC)",
             "client": "Institut Català de Tecnologia (ICT)",
-            "cardImgUrl": "img/grafica/cards/gfc_ing_img_corporativa.jpg",
+            "cardImgUrl": "img/grafica/cards/gfc_ing_img_corporativa.webp",
             "date": "2004",
             "images": [
                 {
-                    "url": "img/grafica/gfc_ict_poster.jpg",
+                    "url": "img/grafica/gfc_ict_poster.webp",
                     "caption": "Pósters y tarjetas promocionales para el Institut Català de Tecnologia."
                 },
                 {
-                    "url": "img/grafica/gfc_ing_coral.jpg",
+                    "url": "img/grafica/gfc_ing_coral.webp",
                     "caption": "Invitaciones y libreto informativo para la coral de la asociación de Enginyers Industrials de Catalunya."
                 },
                 {
-                    "url": "img/grafica/gfc_ing_quadript.jpg",
+                    "url": "img/grafica/gfc_ing_quadript.webp",
                     "caption": "Libreto y cuadríptico corporativos para eventos de la asociación de Enginyers Industrials de Catalunya."
                 },
                 {
-                    "url": "img/grafica/gfc_ing_tripticcoral.jpg",
+                    "url": "img/grafica/gfc_ing_tripticcoral.webp",
                     "caption": "Tríptico promocional de la coral de Enginyers Industrials de Catalunya."
                 },
                 {
-                    "url": "img/grafica/gfc_ict_graficas2.jpg",
+                    "url": "img/grafica/gfc_ict_graficas2.webp",
                     "caption": "Gráficas corporativas realizadas para el Institut Català de Tecnologia (ICT)."
                 },
                 {
-                    "url": "img/grafica/gfc_ict_graficas1.jpg",
+                    "url": "img/grafica/gfc_ict_graficas1.webp",
                     "caption": "Gráficas corporativas realizadas para el Institut Català de Tecnologia (ICT)."
                 }
             ]

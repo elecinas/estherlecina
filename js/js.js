@@ -100,6 +100,13 @@ function makeCard(card_data) {
     // Generamos las etiquetas de técnica dinámicamente
     const techTags = card_data.tags.map(t => `<span class="art-pill">${t}</span>`).join('');
 
+    // Botón vínculo a Figma (si existe)
+    const figmaBtn = card_data.figmaUrl 
+    ? `<a href="${card_data.figmaUrl}" target="_blank" class="btn-terminal-style figma-btn" onclick="event.stopPropagation();">
+        [ VER_EN_FIGMA ]
+       </a>` 
+    : '';
+
     const cardHTML = `
         <div class="card-box" data-category="${card_data.category}" onclick="toggleCardFlip('${card_data.id}', event)">
             <div class="card-inner" id="inner-${card_data.id}">
@@ -125,6 +132,7 @@ function makeCard(card_data) {
                         </div>
         
                         <div class="button-wrapper">
+                            ${figmaBtn}
                             <button class="btn-terminal-style" 
                                 onclick="event.stopPropagation(); showImg('${card_data.id}')">
                                 [ VER_PROYECTO ]
@@ -162,10 +170,10 @@ function makeModal(project) {
                 <button class="nav-arrow ${showControls}" onclick="changeImg('${project.id}', -1)">&#10094;</button>
                 
                 <div class="imagen-wrapper">
-                    <img id="img-${project.id}" src="${project.images[0].url}" alt="${project.name}">
+                    <img id="img-${project.id}" src="${project.images[0].url}" alt="${project.title}">
                     
                     <div class="modal-info-footer">
-                        <h4>${project.name}</h4>
+                        <h4>${project.title}</h4>
                         <p id="caption-${project.id}">${project.images[0].caption || ''}</p>
                         <small id="counter-${project.id}">${1} / ${project.images.length}</small>
                     </div>
