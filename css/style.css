@@ -146,6 +146,10 @@ header {
     color: rgba(82, 220, 223, 1) !important;
 }
 
+.top-section-container {
+    padding: 100px 0;
+}
+
 /* ============================================================
    3. INDEX
    ============================================================ */
@@ -601,7 +605,7 @@ header {
     /* padding: 20px 5%; */
     max-width: 1200px; /* Centrar y limitar el ancho en pantallas grandes */
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0;
 }
 
 /* Tablets */
@@ -989,6 +993,19 @@ footer {
 .dev-header { margin-bottom: 50px; border-bottom: 0;}
 .dev-title { font-family: 'KeepCalm', sans-serif; font-size: 2.5rem; margin-bottom: 10px; }
 .dev-subtitle { font-family: 'Montserrat', sans-serif; color: #888; font-size: 1.1rem; }
+
+/* Ajuste para que los filtros de Gráfica/Arte se alineen con el estilo de la cabecera */
+.dev-header .art-filters-container {
+    justify-content: flex-start; /* Alinea los filtros a la izquierda como el texto */
+    margin-top: 30px;
+    padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    .dev-header .art-filters-container {
+        justify-content: center; /* En móvil, mejor centrados */
+    }
+}
 
 /* La Fila del Proyecto */
 .dev-project-row {
