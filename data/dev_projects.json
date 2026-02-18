@@ -1,0 +1,174 @@
+[
+  {
+    "id": "portfolio_react_ts",
+    "type": "frontend",
+    "title": "Portfolio Engine v2.0 (WIP)",
+    "category": "Frontend Engineering & Design System",
+    "year": "2025-2026",
+    "status": "En Desarrollo (Beta)",
+    "short_description": "Migración de la arquitectura del portfolio hacia un entorno reactivo y tipado. Foco en la creación de un sistema de componentes reutilizables y escalables mediante React y TypeScript.",
+    "tech_stack": [
+      "React 19",
+      "TypeScript 5.8 (Strict Mode)",
+      "Vite (Next Generation Bundling)",
+      "React Router 7",
+      "Figma (UI/UX & Wireframing)",
+      "SVG-to-Component Workflow"
+    ],
+    "key_features": [
+      "Desarrollo de un Design System propio en Figma, abarcando desde el wireframing de baja fidelidad hasta mockups de alta definición.",
+      "Implementación de componentes funcionales altamente reutilizables con tipado estricto (Interfaces & Types) para garantizar la integridad de los datos.",
+      "Arquitectura de navegación avanzada con React Router 7, incluyendo lógicas de scroll management ('ScrollToTop').",
+      "Componentización de recursos gráficos mediante 'vite-plugin-svgr', permitiendo manipular SVGs dinámicamente como componentes de React.",
+      "Gestión de contenido multimedia mediante un sistema de 'Embeds' inteligente capaz de renderizar dinámicamente Figma, YouTube, Vimeo y URLs externas.",
+      "Optimización del flujo de desarrollo con Vite, logrando tiempos de compilación y Hot Module Replacement (HMR) ultra rápidos."
+    ],
+    "github_url": "https://github.com/elecinas/web-estherlecina-vite",
+    "live_url": "",
+    "preview_img": "img/dev/estherlecinaweb_vite_react_screenshot.webp",
+    "deployment": "Vite Build Pipeline"
+  },
+  {
+    "id": "skipBalls",
+    "type": "mobile",
+    "title": "Skip Balls",
+    "category": "Hybrid Mobile Game",
+    "role": "Developer",
+    "year": "2026",
+    "status": "Publicado (v1.0)",
+    "short_description": "Videojuego arcade híbrido para Android. Combina renderizado en Canvas con capacidades nativas del dispositivo mediante Capacitor.",
+    "tech_stack": [
+      "Capacitor (Core, Android, Haptics)",
+      "p5.js (Graphic Engine)",
+      "JavaScript (ES6+)",
+      "REST API Integration",
+      "Local Storage / Preferences"
+    ],
+    "database": null,
+    "key_features": [
+      "Control físico inmersivo mediante lectura de sensores (Giroscopio/Acelerómetro).",
+      "Arquitectura de consumo de API resiliente con Fallback Offline (Estrategia Network-First).",
+      "Gestión eficiente del ciclo de vida de la App (Pausa automática y ahorro de energía).",
+      "Sistema de persistencia de datos local para economía del juego y High Scores.",
+      "Feedback háptico y sonoro sincronizado con eventos del motor físico."
+    ],
+    "github_url": "https://github.com/elecinas/skip-balls",
+    "live_url": "https://github.com/elecinas/skip-balls/releases/tag/v1.0",
+    "preview_img": "img/dev/skip_balls_screenshot.webp",
+    "deployment": "APK / Android Native"
+  },
+  {
+    "id": "timeRings",
+    "type": "frontend",
+    "title": "Time Rings",
+    "category": "Browser Extension",
+    "year": "2025",
+    "status": "Finalizado (v1.0)",
+    "short_description": "Extensión de productividad para Firefox que utiliza un reloj abstracto animado como temporizador Pomodoro. Enfocada en la persistencia de datos y visualización creativa.",
+    "tech_stack": [
+      "WebExtensions API (Manifest V3)",
+      "p5.js (Creative Coding)",
+      "JavaScript (ES6+)",
+      "HTML5 Audio API",
+      "LocalStorage & p5.Storage"
+    ],
+    "key_features": [
+      "Gestión de estado persistente mediante arquitectura desacoplada del popup (coherencia de datos tras cierre de interfaz).",
+      "Cálculo de tiempo basado en diferenciales de Unix Timestamp en lugar de intervalos volátiles (resiliencia de sesión).",
+      "Interfaz visual reactiva con renderizado dinámico en Canvas mediante p5.js.",
+      "Implementación de lógica condicional para modo Día/Noche basada en geolocalización temporal (Barcelona).",
+      "Configuración de usuario integrada mediante sidebar nativo y comunicación entre scripts de extensión.",
+      "Optimización de recursos multimedia para cumplimiento de políticas de seguridad de contenido (CSP) de Firefox."
+    ],
+    "github_url": "https://github.com/elecinas/time-rings-clock-extension",
+    "live_url": "https://github.com/elecinas/time-rings-clock-extension/releases/tag/v1.0",
+    "preview_img": "img/dev/pomodoro_time_rings_extension.webp",
+    "deployment": "Firefox Add-on Store (Manual Install)"
+  },
+  {
+    "id": "dice_game_jwt",
+    "type": "fullstack",
+    "title": "Dice Game: Fullstack Auth API",
+    "category": "Fullstack Web App",
+    "year": "2021",
+    "status": "Finalizado",
+    "short_description": "Aplicación de juegos de azar con arquitectura monolítica en Laravel y frontend reactivo en Vue 3. Implementa un sistema de gestión de estadísticas y rankings con autenticación segura mediante JWT.",
+    "tech_stack": [
+      "Laravel 8 (Backend Framework)",
+      "Vue 3 (Frontend Library)",
+      "JWT (Tymon/JWT-auth)",
+      "Laravel Mix (Asset Bundling)",
+      "MySQL (Database Management)",
+      "Axios (Asynchronous HTTP)"
+    ],
+    "key_features": [
+      "Arquitectura de autenticación Stateless utilizando JSON Web Tokens para la gestión de sesiones seguras.",
+      "Desarrollo de API RESTful con segmentación de rutas protegidas y públicas mediante Middleware personalizado.",
+      "Gestión de lógica de negocio para el cálculo dinámico de porcentajes de éxito y ranking global de jugadores.",
+      "Integración de Vue 3 mediante Laravel Mix, permitiendo una experiencia de usuario fluida sin recargas de página.",
+      "Implementación de controladores especializados para la gestión de recursos (Players, Games, Tokens) siguiendo el patrón MVC.",
+      "Sistema de persistencia de datos con relaciones Uno a Muchos (Jugadores -> Tiradas) y borrado lógico/físico de historiales."
+    ],
+    "github_url": "https://github.com/elecinas/repositori1/tree/PHP_M15/juego",
+    "live_url": "",
+    "preview_img": "img/dev/dice_game_laravel_vue_screenshot.webp",
+    "deployment": "Local Environment (Artisan / NPM)"
+  },
+  {
+    "id": "hotel_booking_system",
+    "type": "fullstack",
+    "title": "Hotel Management & Booking System",
+    "category": "Fullstack Web Application",
+    "year": "2021",
+    "status": "Finalizado",
+    "short_description": "Sistema de gestión de reservas hoteleras con control de inventario de habitaciones, gestión de clientes y sistema de roles de usuario.",
+    "tech_stack": [
+      "Laravel 8 (Backend)",
+      "Eloquent ORM (Relaciones Complejas)",
+      "Spatie Laravel-Permission (RBAC)",
+      "Alpine.js (Frontend Reactivity)",
+      "Tailwind CSS (UI Framework)",
+      "Laravel Breeze (Authentication)"
+    ],
+    "key_features": [
+      "Implementación de arquitectura de base de datos relacional avanzada mediante relaciones Many-to-Many con tablas pivote personalizadas.",
+      "Sistema de Control de Acceso Basado en Roles (RBAC) con Spatie, permitiendo segmentar acciones de edición y borrado solo para gestores autorizados.",
+      "Desarrollo de lógica de reservas con seguimiento de metadatos (fechas y timestamps) integrados en la relación entre Clientes y Habitaciones.",
+      "Interfaz de administración reactiva mediante Alpine.js integrada en un entorno Laravel Breeze, optimizando la experiencia de usuario sin sobrecargar el frontend.",
+      "Modelado de datos jerárquico (Pisos > Habitaciones > Clientes) garantizando la integridad referencial y la escalabilidad del sistema.",
+      "Uso de Middlewares personalizados y de terceros para la protección selectiva de rutas críticas y validación de permisos en tiempo de ejecución."
+    ],
+    "github_url": "https://github.com/elecinas/repositori1/tree/PHP_M13/sprint_13",
+    "live_url": "",
+    "preview_img": "img/dev/reservas_laravel_vue_screenshot.webp",
+    "deployment": "Local Environment / Docker (Sail)"
+  },
+  {
+    "id": "colors_of_talent_web",
+    "type": "frontend",
+    "title": "Colors of Talent: Corporate & Lead Gen",
+    "category": "Desarrollo Web & UI Design",
+    "year": "2021",
+    "status": "Finalizado",
+    "short_description": "Diseño y desarrollo integral de la web corporativa para agencia de educación. Enfocada en la captación de clientes potenciales y la presentación de servicios mediante una interfaz limpia y profesional.",
+    "tech_stack": [
+      "JavaScript (ES6+) Vanilla",
+      "HTML5 Semántico",
+      "CSS3 Avanzado (Flexbox & Grid)",
+      "Manipulación Dinámica del DOM",
+      "Diseño Gráfico con Adobe Illustrator"
+    ],
+    "key_features": [
+      "Arquitectura de frontend 'Single Page' con navegación fluida y gestión de eventos mediante JavaScript puro.",
+      "Implementación de lógica de validación de formularios personalizada para optimizar la conversión de clientes potenciales.",
+      "Diseño responsive adaptativo desarrollado con una estructura de CSS modular y limpia.",
+      "Creación de componentes interactivos como sliders de testimonios y menús de navegación dinámicos sin dependencias externas.",
+      "Integración de elementos visuales diseñados vectorialmente, garantizando una identidad de marca coherente y profesional.",
+      "Estructura de código organizada que facilita el mantenimiento y la escalabilidad del sitio corporativo."
+    ],
+    "github_url": "https://github.com/elecinas/colors-of-talent",
+    "live_url": "https://elecinas.github.io/colors-of-talent/",
+    "preview_img": "img/dev/colors_of_talent_web_screenchot.webp",
+    "deployment": "Web Corporativa Producción"
+  }
+]

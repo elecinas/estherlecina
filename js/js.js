@@ -1,18 +1,18 @@
+let currentProjectsData = []; // Proyectos de la página actual
+let activeImageIndex = 0;    // Índice de la imagen que se está viendo
+
 /*muestra y oculta la imagen de la galería*/
 
 function showImg(img) {
-    var scroll_position = window.scrollY; //guardem la posició actual de l'scroll
-    var x = document.getElementById(img); //obtenim l'element enviat
-    var clase = document.querySelectorAll('.fondo_modal'); //seleccionem la classe
-    clase.forEach(element => {
-        element.style.top = Math.round(scroll_position) + "px"; //possició de l'scroll := posició de la imatge
-    });
-    if (x.style.display === "none") {
-        x.style.display = "block"; //ensenyem l'imatge
-        $("body").addClass("no_scroll"); //bloquegem l'scroll
+    activeImageIndex = 0;
+    let x = document.getElementById(img);
+
+    if (x.style.display === "none" || x.style.display === "") {
+        x.style.display = "flex"; // CAMBIADO DE BLOCK A FLEX
+        document.body.classList.add("no_scroll");
     } else {
-        x.style.display = "none"; //amaguem l'imatge
-        $("body").removeClass("no_scroll"); //desbloquegem l'scroll
+        x.style.display = "none";
+        document.body.classList.remove("no_scroll");
     }
 }
 
@@ -20,121 +20,262 @@ function showImg(img) {
 /*acceder a los datos de data.json */
 
 function readTextFile(data_type) {
-    const requestURL = 'data.json';
-    const request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
-    request.onload = function() {
-        const data = request.response;
-        loadingFront(data, data_type);
-    }
+    const requestURL = '../data/data.json';
+
+    fetch(requestURL)
+        .then(response => {
+            if (!response.ok) throw new Error("Error al cargar el archivo JSON");
+            return response.json();
+        })
+        .then(data => {
+            currentProjectsData = data;
+            loadingFront(data, data_type);
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        })
 }
 
-/*enviando los datos de data.json al front*/
+/*enviando los datos de data.json al front con ordenación cronológica*/
 
 function loadingFront(data, data_type) {
-    switch (data_type) {
-        case 'illustration':
-            makingFront(data['illustration']);
-            break;
-        case 'comic':
-            makingFront(data['comic']);
-            break;
-        case 'graphic_design':
-            makingFront(data['graphic_design']);
-            break;
-        case 'web':
-            makingFront(data['web']);
-            break;
-    }
-}
+    const sectionData = data[data_type];
 
+    // ORDENACIÓN: De más reciente a más antiguo
+    sectionData.sort((a, b) => {
+        // Función interna para sacar el año más alto de un string (ej: "2014-2020" -> 2020)
+        const getYear = (dateStr) => {
+            const years = dateStr.match(/\d{4}/g); // Busca grupos de 4 números
+            return years ? Math.max(...years.map(Number)) : 0;
+        };
+
+        const yearA = getYear(a.date);
+        const yearB = getYear(b.date);
+
+        return yearB - yearA; // Orden descendente
+    });
+
+    currentProjectsData = sectionData;
+    makingFront(sectionData);
+}
 function makingFront(section_array) {
-    var myarray = section_array;
+    const myarray = section_array;
     for (i = 0; i < myarray.length; i++) {
         makeCard(myarray[i]);
         makeModal(myarray[i]);
     }
 }
 
-var card_columns = document.querySelector(".card-columns");
-var img_modales = document.querySelector(".img-modales");
-
 function makeCard(card_data) {
+    const galleryContainer = document.querySelector(".gallery-container");
+    if (!galleryContainer) return;
 
-    //1º CREAR <div> QUE LO ENVUELVE TODO
-    //<div class="card">
-    var divCard = document.createElement('div');
-    divCard.setAttribute("class", "card  text-white bg-dark mb-3");
-    card_columns.appendChild(divCard);
+    // OPCIÓN A: Número fijo de columnas para que todas las cards sean iguales
+    const squaresX = 16;
+    const squareWidth = 100 / squaresX;
 
-    //2º METER DENTRO LOS ELEMENTOS HIJOS: <a> Y <div>
-    //<a href="#" onclick="event.preventDefault(); showImg('xfrd_Luna_07_08')">
-    var aCard = document.createElement('a');
-    aCard.setAttribute("href", "#");
-    aCard.setAttribute("onclick", "event.preventDefault(); showImg('" + card_data.id + "')");
-    divCard.appendChild(aCard);
+    // 1. RECTÁNGULO BASE: Bloque sólido inferior (75% del alto)
+    let svgContent = `<rect x="0" y="25%" width="100%" height="75%" fill="rgb(35, 35, 35)" stroke="none" />`;
 
-    //<div class="card-body">
-    var divCardBody = document.createElement('div');
-    divCardBody.setAttribute("class", "card-body");
-    divCard.appendChild(divCardBody);
+    // 2. FILA SUPERIOR: Cuadrados de transición con ritmo fijo
+    for (let col = 0; col < squaresX; col++) {
+        let fill = 'rgb(35, 35, 35)';
+        let opacity = 1;
 
-    //3º METER DENTRO DE <a> EL ELEMENTO <img>
-    //<img class="card-img-top" src="httd34.jpg" alt="Card image cap">
-    var imgCard = document.createElement('img');
-    imgCard.setAttribute("class", "card-img-top");
-    imgCard.setAttribute("alt", "Card image cap");
-    imgCard.setAttribute("src", card_data.img_route);
-    aCard.appendChild(imgCard);
+        if (col === 0) {
+            fill = 'rgb(35, 35, 35)';
+        } else if (col === 1) {
+            fill = 'rgba(58, 127, 129, 1)';
+        } else if (col === 2) {
+            fill = 'rgba(82, 220, 223, 1)';
+        } else {
+            fill = 'rgba(82, 220, 223, 1)';
+            // Desvanecimiento: ajusta el 0.25 si quieres que el rastro sea más largo o corto
+            opacity = Math.max(0, 1 - ((col - 2) * 0.25));
+        }
 
-    //4º METER DENTRO DE <div class="card-body"> LOS ELEMENTOS h5, p, p
-    //<h5 class="card-title">Card title that wraps to a new line</h5>
-    var titleh5 = document.createElement('h5');
-    titleh5.setAttribute("class", "card-title");
-    titleh5.textContent = card_data.name;
-    divCardBody.appendChild(titleh5);
+        svgContent += `<rect x="${col * squareWidth}%" y="0" width="${squareWidth}%" height="25%" fill="${fill}" fill-opacity="${opacity}" stroke="none" />`;
+    }
 
-    //<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-    var principalText = document.createElement('p');
-    principalText.setAttribute("class", "card-text");
-    principalText.textContent = card_data.img_description;
-    divCardBody.appendChild(principalText);
+    // Generamos las etiquetas de técnica dinámicamente
+    const techTags = card_data.tags.map(t => `<span class="art-pill">${t}</span>`).join('');
 
-    //<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    var littleText = document.createElement('p');
-    littleText.setAttribute("class", "card-text");
-    divCardBody.appendChild(littleText);
+    // Botón vínculo a Figma (si existe)
+    const figmaBtn = card_data.figmaUrl 
+    ? `<a href="${card_data.figmaUrl}" target="_blank" class="btn-terminal-style figma-btn" onclick="event.stopPropagation();">
+        [ VER_EN_FIGMA ]
+       </a>` 
+    : '';
 
-    var smallText = document.createElement('small');
-    smallText.setAttribute("class", "text-muted");
-    smallText.textContent = card_data.editorial + '. ' + card_data.img_date;
-    littleText.appendChild(smallText);
+    const cardHTML = `
+        <div class="card-box" data-category="${card_data.category}" onclick="toggleCardFlip('${card_data.id}', event)">
+            <div class="card-inner" id="inner-${card_data.id}">
+                <div class="card-face front">
+                    <img src="${card_data.cardImg.url}" alt="${card_data.cardImg.alt}" loading="lazy">
+                    <div class="mosaico-wrapper">
+                        <svg class="mosaico-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            ${svgContent} </svg>
+                        <h3 class="card-front-title">[ ${card_data.title.toUpperCase()} ]</h3>
+                    </div>
+                </div>
+
+                <div class="card-face back-card">
+                    <div class="card-info-container">
+                        <div class="art-pills-container">${techTags}</div>
+                        
+                        <h3 class="card-info-title">${card_data.title}</h3>
+                        <p class="card-info-text">${card_data.description}</p>
+                        
+                        <div class="card-info-footer">
+                            <p class="card-info-client"><strong>Cliente:</strong> ${card_data.client}</p>
+                            <p class="card-info-date">${card_data.date}</p>
+                        </div>
+        
+                        <div class="button-wrapper">
+                            ${figmaBtn}
+                            <button class="btn-terminal-style" 
+                                onclick="event.stopPropagation(); showImg('${card_data.id}')">
+                                [ VER_PROYECTO ]
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    galleryContainer.innerHTML += cardHTML;
+}
+// Función para girar la carta
+function toggleCardFlip(id, event) {
+    // Si clicamos el botón "VER PROYECTO" o cualquier cosa dentro de button-wrapper, NO giramos
+    if (event.target.closest('.button-wrapper') || event.target.closest('.btn-terminal-style')) {
+        return;
+    }
+
+    const cardInner = document.getElementById(`inner-${id}`);
+    if (cardInner) {
+        cardInner.classList.toggle('switched');
+    }
 }
 
-function makeModal(ruta_img) {
+function makeModal(project) {
+    const img_modales = document.querySelector(".img-modales");
+    if (!img_modales) return;
 
-    //1º CREAR <div> QUE LO ENVUELVE TODO
-    //<div id="xfrd_Luna_07_08">
-    var divId = document.createElement('div');
-    divId.setAttribute("id", ruta_img.id);
-    img_modales.appendChild(divId);
+    const showControls = project.images.length > 1 ? '' : 'd-none';
 
-    //2º METER DENTRO <div> QUE ENVUELVE LA IMAGEN
-    //<div class="fondo_modal d-flex justify-content-center align-items-center" onclick="showImg('xfrd_Luna_07_08')">
-    var divImg = document.createElement('div');
-    divImg.setAttribute("class", "fondo_modal d-flex justify-content-center align-items-center");
-    divImg.setAttribute("onclick", "showImg('" + ruta_img.id + "')");
-    divId.appendChild(divImg);
+    const modalHTML = `
+        <div id="${project.id}" class="modal-proyecto">
+            <div class="contenedor-principal-modal">
+                <button class="nav-arrow ${showControls}" onclick="changeImg('${project.id}', -1)">&#10094;</button>
+                
+                <div class="imagen-wrapper">
+                    <img id="img-${project.id}" src="${project.images[0].url}" alt="${project.title}">
+                    
+                    <div class="modal-info-footer">
+                        <h4>${project.title}</h4>
+                        <p id="caption-${project.id}">${project.images[0].caption || ''}</p>
+                        <small id="counter-${project.id}">${1} / ${project.images.length}</small>
+                    </div>
+                </div>
 
-    //3º METER DENTRO <img>
-    //<img class="img-fluid" src="https:b38cd34.jpg">
-    var imgModal = document.createElement('img');
-    imgModal.setAttribute("class", "img-fluid");
-    imgModal.setAttribute("src", ruta_img.img_route);
-    divImg.appendChild(imgModal);
+                <button class="nav-arrow ${showControls}" onclick="changeImg('${project.id}', 1)">&#10095;</button>
+            </div>
+            
+            <button class="btn-cerrar" onclick="showImg('${project.id}')">&times;</button>
+        </div>
+    `;
 
-    //OCULTARLO TODO MEDIANTE CSS
-    document.getElementById(ruta_img.id).style.display = "none";
+    img_modales.innerHTML += modalHTML;
 }
+
+function changeImg(projectId, direction) {
+    // Encontrar el proyecto
+    const project = currentProjectsData.find(p => p.id === projectId);
+    if (!project) return;
+
+    // Actualizar el índice, efecto bucle
+    activeImageIndex += direction;
+    if (activeImageIndex >= project.images.length) activeImageIndex = 0;
+    if (activeImageIndex < 0) activeImageIndex = project.images.length - 1;
+
+    // Actualizar el DOM (Imagen, Caption y Contador)
+    document.getElementById(`img-${projectId}`).src = project.images[activeImageIndex].url;
+    document.getElementById(`caption-${projectId}`).innerText = project.images[activeImageIndex].caption || '';
+    document.getElementById(`counter-${projectId}`).innerText = `${activeImageIndex + 1} / ${project.images.length}`;
+    // document.activeElement.blur(); // quita el foco del botón
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const page = window.location.pathname.split("/").pop();
+
+    switch (page) {
+        case "art.html":
+            readTextFile('art'); 
+            break;
+        case "grafica.html":
+            readTextFile('graphic_design');
+            break;
+        case "web.html":
+            readTextFile('web');
+            break;
+        default:
+            break;
+    }
+});
+
+// Filtrado dinámico
+function filterArt(type) {
+    // Actualizar estado visual de los botones usando el atributo data-filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        const filter = btn.dataset.filter || '';
+        if (filter === type || (type === 'all' && filter === 'all')) {
+            btn.classList.add('active');
+        }
+    });
+
+    const gallery = document.querySelector(".gallery-container");
+    const modales = document.querySelector(".img-modales");
+    
+    // Limpiamos la vista actual
+    gallery.innerHTML = "";
+    modales.innerHTML = "";
+
+    // Filtramos los datos que ya tenemos en memoria
+    // currentProjectsData se llenó al hacer el primer fetch en readTextFile
+    const filteredData = type === 'all' 
+        ? currentProjectsData 
+        : currentProjectsData.filter(project => project.type === type);
+
+    // Renderizamos solo los filtrados
+    filteredData.forEach(project => {
+        makeCard(project);
+        makeModal(project);
+    });
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.querySelector('.navbar-toggler');
+    const closeBtn = document.querySelector('.navbar-close');
+    const navMenu = document.querySelector('.navbar-collapse');
+
+    // Abrir menú
+    menuBtn?.addEventListener('click', () => {
+        navMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Cerrar menú
+    const closeMenu = () => {
+        navMenu.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    };
+
+    closeBtn?.addEventListener('click', closeMenu);
+
+    // Cerrar si se clica un enlace (útil para Single Page Apps o anclas)
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => link.addEventListener('click', closeMenu));
+});
