@@ -762,6 +762,10 @@ header {
     pointer-events: auto;
 }
 
+.card-info-client {
+    margin-bottom: 0.5rem;
+}
+
 /* Solo los elementos interactivos dentro recuperan el clic */
 .card-info-title,
 .card-info-text,

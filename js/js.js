@@ -111,7 +111,7 @@ function makeCard(card_data) {
         <div class="card-box" data-category="${card_data.category}" onclick="toggleCardFlip('${card_data.id}', event)">
             <div class="card-inner" id="inner-${card_data.id}">
                 <div class="card-face front">
-                    <img src="${card_data.cardImgUrl}" alt="${card_data.title}" loading="lazy">
+                    <img src="${card_data.cardImg.url}" alt="${card_data.cardImg.alt}" loading="lazy">
                     <div class="mosaico-wrapper">
                         <svg class="mosaico-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                             ${svgContent} </svg>
