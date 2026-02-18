@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    }
+
 html,
 body {
     height: 100%;
@@ -198,6 +202,10 @@ header {
 .highlight {
     color: rgba(82, 220, 223, 1);
     font-weight: 600;
+}
+
+.btn-investiga {
+    margin-top: 4rem;
 }
 
 /* --- TRIÁNGULO DE PODER --- */
