@@ -1112,6 +1112,12 @@ footer {
     padding-left: 0;
 }
 
+.btn-dev-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .dev-header .art-filters-container {
         justify-content: center;

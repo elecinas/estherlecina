@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function setupFilters() {
     const buttons = document.querySelectorAll('.filter-btn');
-    
+
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
             // 1. Gestionar clases de botones
@@ -21,8 +21,8 @@ function setupFilters() {
 
             // 2. Filtrar lógica
             const filterValue = btn.getAttribute('data-filter');
-            const filtered = filterValue === 'all' 
-                ? allProjects 
+            const filtered = filterValue === 'all'
+                ? allProjects
                 : allProjects.filter(p => p.type === filterValue);
 
             // 3. Renderizar de nuevo
@@ -60,8 +60,8 @@ function renderDevProjects(projects) {
                             ${project.key_features.map(feat => `<li class="mb-2">${feat}</li>`).join('')}
                         </ul>
                         <div class="dev-actions">
-                            <a href="${project.github_url}" target="_blank" class="btn btn-outline-light btn-sm">Repo GitHub</a>
-                            <a href="${project.live_url}" target="_blank" class="btn btn-outline-info btn-sm">Demo / Release</a>
+                            ${project.github_url ? `<a href="${project.github_url}" target="_blank" class="btn btn-outline-light btn-sm btn-dev-centered">Repo GitHub</a>` : ""}
+                            ${project.live_url ? `<a href="${project.live_url}" target="_blank" class="btn btn-outline-info btn-sm btn-dev-centered">Demo / Release</a>` : ""}
                         </div>
                     </div>
                     <div class="dev-preview">
