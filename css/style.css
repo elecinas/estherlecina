@@ -20,7 +20,8 @@ body {
 body {
     scroll-behavior: smooth;
     background-color: rgb(47, 47, 47);
-    font-family: 'Montserrat', sans-serif; /* Fallback */
+    font-family: 'Montserrat', sans-serif;
+    /* Fallback */
     color: white;
 }
 
@@ -37,10 +38,12 @@ body {
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    max-width: 1200px; /* O el mismo valor que use tu container de main (ej. 900px o 1200px) */
+    max-width: 1200px;
+    /* O el mismo valor que use tu container de main (ej. 900px o 1200px) */
     margin-left: auto;
     margin-right: auto;
-    width: 100%; /* Asegura que ocupe el ancho disponible hasta el máximo */
+    width: 100%;
+    /* Asegura que ocupe el ancho disponible hasta el máximo */
 }
 
 /* Ajuste opcional para el fondo */
@@ -55,10 +58,12 @@ header {
 }
 
 .navbar {
-    border-bottom: none; /* Quitamos el borde de aquí porque lo pusimos en el header */
-    max-width: 1200px; 
+    border-bottom: none;
+    /* Quitamos el borde de aquí porque lo pusimos en el header */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 1.5rem 20px; /* Padding fijo para que en móvil no toque los bordes */
+    padding: 1.5rem 20px;
+    /* Padding fijo para que en móvil no toque los bordes */
 }
 
 .navbar-toggler {
@@ -72,7 +77,7 @@ header {
 .navbar-collapse {
     position: fixed;
     top: 0;
-    right: -100%; 
+    right: -100%;
     width: 100%;
     height: 100vh;
     background: rgba(30, 30, 30, 0.98);
@@ -117,7 +122,8 @@ header {
     transition: color 0.3s;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: rgba(82, 220, 223, 1);
 }
 
@@ -139,7 +145,8 @@ header {
 .navbar-logo-link img {
     display: inline-block;
     vertical-align: middle;
-    max-height: 48px; /* límite razonable para que no desborde la barra */
+    max-height: 48px;
+    /* límite razonable para que no desborde la barra */
 }
 
 .navbar-logo-web {
@@ -155,7 +162,8 @@ header {
    ============================================================ */
 /* --- HERO SECTION --- */
 .hero-section {
-    height: 85vh; /* Casi toda la pantalla */
+    height: 85vh;
+    /* Casi toda la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,7 +173,8 @@ header {
 
 .hero-title {
     font-family: 'KeepCalm', sans-serif;
-    font-size: clamp(3rem, 8vw, 6rem); /* Tamaño fluido */
+    font-size: clamp(3rem, 8vw, 6rem);
+    /* Tamaño fluido */
     margin-bottom: 20px;
 }
 
@@ -186,7 +195,10 @@ header {
     line-height: 1.6;
 }
 
-.highlight { color: rgba(82, 220, 223, 1); font-weight: 600; }
+.highlight {
+    color: rgba(82, 220, 223, 1);
+    font-weight: 600;
+}
 
 /* --- TRIÁNGULO DE PODER --- */
 .power-triangle {
@@ -204,7 +216,8 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 40px 30px;
     height: 100%;
-    border-radius: 4px; /* Un toque de redondeo muy suave */
+    border-radius: 4px;
+    /* Un toque de redondeo muy suave */
     transition: all 0.4s ease;
 }
 
@@ -261,48 +274,52 @@ header {
 
 /* Fondos para los bloques del Triángulo de Poder */
 .block-web {
-    background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)), 
-                      url('../img/home/bg-web.webp');
+    background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)),
+        url('../img/home/bg-web.webp');
     background-size: cover;
     background-position: center;
 }
 
 .block-design {
-    background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)), 
-                      url('../img/home/bg-design.webp');
+    background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)),
+        url('../img/home/bg-design.webp');
     background-size: cover;
     background-position: center;
 }
 
 .block-art {
-    background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)), 
-                      url('../img/home/bg_art.webp');
+    background-image: linear-gradient(rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.9)),
+        url('../img/home/bg_art.webp');
     background-size: cover;
     background-position: center;
 }
 
 /* Efecto al pasar el ratón: La imagen se revela */
 .block-art:hover {
-    background-image: linear-gradient(rgba(82, 220, 223, 0.2), rgba(47, 47, 47, 0.8)), 
-                      url('../img/home/bg_art.jpg'); /* Repite según el bloque */
+    background-image: linear-gradient(rgba(82, 220, 223, 0.2), rgba(47, 47, 47, 0.8)),
+        url('../img/home/bg_art.jpg');
+    /* Repite según el bloque */
 }
 
 .block-design:hover {
-    background-image: linear-gradient(rgba(82, 220, 223, 0.2), rgba(47, 47, 47, 0.8)), 
-                      url('../img/home/bg-design.jpg'); /* Repite según el bloque */
+    background-image: linear-gradient(rgba(82, 220, 223, 0.2), rgba(47, 47, 47, 0.8)),
+        url('../img/home/bg-design.jpg');
+    /* Repite según el bloque */
 }
 
 .block-web:hover {
-    background-image: linear-gradient(rgba(82, 220, 223, 0.2), rgba(47, 47, 47, 0.8)), 
-                      url('../img/home/bg-web.jpg'); /* Repite según el bloque */
+    background-image: linear-gradient(rgba(82, 220, 223, 0.2), rgba(47, 47, 47, 0.8)),
+        url('../img/home/bg-web.jpg');
+    /* Repite según el bloque */
 }
 
 .hero-section {
     background: radial-gradient(circle at center, rgba(82, 220, 223, 0.05) 0%, rgba(47, 47, 47, 1) 70%),
-                url('../img/home/hero_background.webp');
+        url('../img/home/hero_background.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Efecto Parallax suave */
+    background-attachment: fixed;
+    /* Efecto Parallax suave */
 }
 
 /* ============================================================
@@ -310,7 +327,8 @@ header {
    ============================================================ */
 .gallery-container {
     display: grid;
-    grid-template-columns: 1fr; /* Una sola columna en móvil */
+    grid-template-columns: 1fr;
+    /* Una sola columna en móvil */
     gap: 30px;
     padding: 20px 5%;
 }
@@ -334,11 +352,13 @@ header {
     font-family: monospace;
     cursor: pointer;
     transition: all 0.3s ease;
-    white-space: nowrap; /* Impide que el texto salte de línea dentro del botón */
+    white-space: nowrap;
+    /* Impide que el texto salte de línea dentro del botón */
     display: inline-block;
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
     border-color: rgba(82, 220, 223, 1);
     color: rgba(82, 220, 223, 1);
     background: rgba(82, 220, 223, 0.05);
@@ -348,9 +368,10 @@ header {
 .card-box {
     display: block;
     perspective: 1000px;
-    aspect-ratio: 3 / 4; 
+    aspect-ratio: 3 / 4;
     width: 100%;
-    max-width: 400px; /* Evita que la carta sea gigante en phablets */
+    max-width: 400px;
+    /* Evita que la carta sea gigante en phablets */
     margin: 0 auto 20px auto;
     cursor: pointer;
     position: relative;
@@ -362,7 +383,7 @@ header {
     left: 0;
     width: 100%;
     height: 60px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
     z-index: 5;
     pointer-events: none;
 }
@@ -390,7 +411,9 @@ header {
 .front-flip {
     color: white;
 }
-.front-flip:hover, .front-flip:focus {
+
+.front-flip:hover,
+.front-flip:focus {
     color: rgba(82, 220, 223, 1);
     transform: scale(1.1);
 }
@@ -398,8 +421,10 @@ header {
 /* Estilo específico Trasero (x) */
 .back-flip {
     color: rgba(82, 220, 223, 1);
-    font-size: 1.8rem; /* La X suele verse más pequeña que la i */
+    font-size: 1.8rem;
+    /* La X suele verse más pequeña que la i */
 }
+
 .back-flip:hover {
     transform: rotate(90deg) scale(1.1);
 }
@@ -408,7 +433,8 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 400px; /* Damos una altura mínima para que el reverso tenga espacio */
+    min-height: 400px;
+    /* Damos una altura mínima para que el reverso tenga espacio */
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
 }
@@ -431,21 +457,26 @@ header {
 }
 
 .card-face.front {
-    background-color: rgba(82, 220, 223, 0.1); /* Un tinte muy suave */
+    background-color: rgba(82, 220, 223, 0.1);
+    /* Un tinte muy suave */
 }
 
 /* Estado inicial de la imagen dentro de la carta */
 .card-face.front img {
     filter: grayscale(100%) brightness(0.6) contrast(1.2);
-    transition: all 2s ease; /* Transición suave para el color */
-    mix-blend-mode: luminosity; /* Esto hace que la imagen coja el tono del fondo */
+    transition: all 2s ease;
+    /* Transición suave para el color */
+    mix-blend-mode: luminosity;
+    /* Esto hace que la imagen coja el tono del fondo */
 }
 
 /* Al hacer hover sobre la caja, la imagen se transforma */
 .card-box:hover .card-face.front img {
     filter: grayscale(0%) brightness(1) contrast(1);
-    transform: scale(1.05); /* Un ligero zoom para dar vida */
-    mix-blend-mode: normal; /* Vuelve al color real */
+    transform: scale(1.05);
+    /* Un ligero zoom para dar vida */
+    mix-blend-mode: normal;
+    /* Vuelve al color real */
 }
 
 .card-front-footer {
@@ -453,7 +484,8 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 40px 1.5rem 1.5rem 1.5rem; /* Más padding arriba para que el degradado sea suave */
+    padding: 40px 1.5rem 1.5rem 1.5rem;
+    /* Más padding arriba para que el degradado sea suave */
     /* Degradado de negro a transparente hacia arriba */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
     text-align: left;
@@ -462,16 +494,21 @@ header {
 /* --- CONTENEDOR DEL MOSAICO PEGADO --- */
 .mosaico-wrapper {
     position: absolute;
-    bottom: 0;   /* Pegado al borde inferior */
-    left: 0;     /* Pegado al borde izquierdo */
-    right: 0;    /* Pegado al borde derecho */
+    bottom: 0;
+    /* Pegado al borde inferior */
+    left: 0;
+    /* Pegado al borde izquierdo */
+    right: 0;
+    /* Pegado al borde derecho */
     width: 100%;
     min-height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Importante para que los cuadrados no se salgan del redondeado */
-    border-bottom-left-radius: 14px;  /* Un pelín menos que el contenedor padre */
+    overflow: hidden;
+    /* Importante para que los cuadrados no se salgan del redondeado */
+    border-bottom-left-radius: 14px;
+    /* Un pelín menos que el contenedor padre */
     border-bottom-right-radius: 14px;
 }
 
@@ -479,7 +516,8 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100.5%; /* Evita que queden líneas blancas por redondeo de píxeles */
+    width: 100.5%;
+    /* Evita que queden líneas blancas por redondeo de píxeles */
     height: 100%;
     z-index: 1;
 }
@@ -488,14 +526,18 @@ header {
     position: relative;
     z-index: 2;
     font-family: 'KeepCalm', sans-serif;
-    font-size: 0.9rem; /* Un poco más pequeño para que parezca código */
-    color: rgba(82, 220, 223, 1); /* Turquesa para que resalte sobre el oscuro */
+    font-size: 0.9rem;
+    /* Un poco más pequeño para que parezca código */
+    color: rgba(82, 220, 223, 1);
+    /* Turquesa para que resalte sobre el oscuro */
     margin: 0;
-    padding-top: 25px; /* Centrado visual en las 3 filas oscuras */
+    padding-top: 25px;
+    /* Centrado visual en las 3 filas oscuras */
     padding-bottom: 5px;
     text-align: center;
     width: 90%;
-    letter-spacing: 2px; /* Espaciado de letras tipo terminal */
+    letter-spacing: 2px;
+    /* Espaciado de letras tipo terminal */
     /* Si el título es muy largo, añade puntos suspensivos */
     white-space: nowrap;
     overflow: hidden;
@@ -516,7 +558,8 @@ header {
 }
 
 .card-face.back-card {
-    pointer-events: none; /* La cara trasera está "apagada" inicialmente */
+    pointer-events: none;
+    /* La cara trasera está "apagada" inicialmente */
     z-index: 1;
 }
 
@@ -558,7 +601,7 @@ header {
 /* Tipografía y alineación del reverso */
 .card-info-title {
     text-align: left;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 10px;
 }
 
@@ -572,12 +615,13 @@ header {
     margin-top: auto;
     text-align: left;
     font-size: 0.8rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 10px;
 }
 
 /* Botón estilo terminal */
-.btn-terminal-style, .figma-btn {
+.btn-terminal-style,
+.figma-btn {
     background: transparent;
     border: 1px solid rgba(82, 220, 223, 1);
     color: rgba(82, 220, 223, 1);
@@ -589,7 +633,8 @@ header {
     transition: all 0.3s;
 }
 
-.btn-terminal-style:hover, .figma-btn:hover {
+.btn-terminal-style:hover,
+.figma-btn:hover {
     background: rgba(82, 220, 223, 0.1);
     letter-spacing: 1px;
     color: rgba(82, 220, 223, 1);
@@ -600,33 +645,34 @@ header {
 .gallery-container {
     display: grid;
     /* En móvil 1 columna, en tablet 2, en escritorio 3, en monitores grandes 4 */
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     /* padding: 20px 5%; */
-    max-width: 1200px; /* Centrar y limitar el ancho en pantallas grandes */
+    max-width: 1200px;
+    /* Centrar y limitar el ancho en pantallas grandes */
     margin: 0 auto;
     padding: 0;
 }
 
 /* Tablets */
-@media (min-width: 768px) { 
-    .gallery-container { 
-        grid-template-columns: repeat(2, 1fr); 
-    } 
+@media (min-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Escritorio normal */
-@media (min-width: 1024px) { 
-    .gallery-container { 
-        grid-template-columns: repeat(3, 1fr); 
-    } 
+@media (min-width: 1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Pantallas grandes */
-@media (min-width: 1400px) { 
-    .gallery-container { 
-        grid-template-columns: repeat(4, 1fr); 
-    } 
+@media (min-width: 1400px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 
@@ -634,14 +680,18 @@ header {
 
 /* Cuando la carta gira, la cara FRONT se vuelve un fantasma */
 .card-inner.switched .card-face.front {
-    pointer-events: none; /* Ya no bloquea los clics al botón de atrás */
-    visibility: hidden;   /* La ocultamos del motor de renderizado */
-    transition: visibility 0s 0.4s; /* Espera a media vuelta para desaparecer */
+    pointer-events: none;
+    /* Ya no bloquea los clics al botón de atrás */
+    visibility: hidden;
+    /* La ocultamos del motor de renderizado */
+    transition: visibility 0s 0.4s;
+    /* Espera a media vuelta para desaparecer */
 }
 
 /* Cuando la carta gira, la cara BACK toma el control */
 .card-inner.switched .card-face.back-card {
-    pointer-events: auto; /* Ahora el botón "Ver Proyecto" es clicable */
+    pointer-events: auto;
+    /* Ahora el botón "Ver Proyecto" es clicable */
     z-index: 10;
     visibility: visible;
 }
@@ -667,10 +717,12 @@ header {
 
 .button-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Por si el nombre es largo en móvil */
+    flex-wrap: wrap;
+    /* Por si el nombre es largo en móvil */
     gap: 10px;
     justify-content: center;
-    pointer-events: auto; /* El botón sí recibe clics */
+    pointer-events: auto;
+    /* El botón sí recibe clics */
     margin-top: 15px;
     z-index: 20;
 }
@@ -703,8 +755,8 @@ header {
 }
 
 /* Solo los elementos interactivos dentro recuperan el clic */
-.card-info-title, 
-.card-info-text, 
+.card-info-title,
+.card-info-text,
 .card-info-client-date {
     pointer-events: none;
 }
@@ -746,7 +798,8 @@ header {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.95);
     z-index: 10000;
-    display: none; /* Se activa como flex desde JS */
+    display: none;
+    /* Se activa como flex desde JS */
     justify-content: center;
     align-items: center;
 }
@@ -763,22 +816,27 @@ header {
 .imagen-wrapper {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Imagen arriba, texto abajo */
+    flex-direction: column;
+    /* Imagen arriba, texto abajo */
     align-items: center;
     justify-content: center;
 }
 
 .imagen-wrapper img {
     max-width: 90%;
-    max-height: 70vh; /* Un poco menos para dejar sitio al texto */
+    max-height: 70vh;
+    /* Un poco menos para dejar sitio al texto */
     object-fit: contain;
-    box-shadow: 0 0 30px rgba(0,0,0,0.5);
-    margin-bottom: 20px; /* Espacio entre imagen y texto */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    /* Espacio entre imagen y texto */
 }
 
 .nav-arrow {
-    position: absolute; /* En móvil flotan para no robar espacio */
-    background: rgba(0, 0, 0, 0.3); /* Un fondo sutil para que se vean sobre la foto */
+    position: absolute;
+    /* En móvil flotan para no robar espacio */
+    background: rgba(0, 0, 0, 0.3);
+    /* Un fondo sutil para que se vean sobre la foto */
     border: none;
     color: white;
     font-size: 2.5rem;
@@ -792,19 +850,30 @@ header {
 }
 
 /* Posición de las flechas en móvil */
-.nav-arrow:first-of-type { left: 5px; }  /* Flecha izquierda */
-.nav-arrow:last-of-type { right: 5px; }  /* Flecha derecha */
+.nav-arrow:first-of-type {
+    left: 5px;
+}
 
-.nav-arrow:hover, 
+/* Flecha izquierda */
+.nav-arrow:last-of-type {
+    right: 5px;
+}
+
+/* Flecha derecha */
+
+.nav-arrow:hover,
 .nav-arrow:focus {
-    color: rgba(82, 220, 223, 1) !important; /* Turquesa */
-    background: rgba(255, 255, 255, 0.1); /* Un fondo muy sutil al pasar por encima */
+    color: rgba(82, 220, 223, 1) !important;
+    /* Turquesa */
+    background: rgba(255, 255, 255, 0.1);
+    /* Un fondo muy sutil al pasar por encima */
     transform: scale(1.1);
     cursor: pointer;
 }
 
 .nav-arrow:active {
-    transform: scale(0.9); /* Efecto de pulsación */
+    transform: scale(0.9);
+    /* Efecto de pulsación */
 }
 
 
@@ -824,7 +893,7 @@ header {
     outline: none;
 }
 
-.btn-cerrar:hover, 
+.btn-cerrar:hover,
 .btn-cerrar:focus {
     color: rgba(82, 220, 223, 1) !important;
     transform: rotate(90deg) scale(1.2);
@@ -832,7 +901,7 @@ header {
 }
 
 /* Estilo para cuando se navega con el teclado (accesibilidad) */
-.nav-arrow:focus-visible, 
+.nav-arrow:focus-visible,
 .btn-cerrar:focus-visible {
     box-shadow: 0 0 0 2px rgba(82, 220, 223, 0.5);
     border-radius: 5px;
@@ -889,13 +958,16 @@ footer {
    ============================================================ */
 
 @media screen and (min-width: 768px) {
+
     /* Galería en 2 o 3 columnas */
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
     /* Ajuste de logo */
-    .navbar-logo-link { font-size: 1.5rem; }
+    .navbar-logo-link {
+        font-size: 1.5rem;
+    }
 
     /* El modal ahora puede ser horizontal */
     .contenedor-principal-modal {
@@ -907,68 +979,82 @@ footer {
         max-height: 80vh;
     }
 
-    .text-nombre1, .text-nombre2 {
+    .text-nombre1,
+    .text-nombre2 {
         font-size: 82px;
         line-height: 82px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    
+
     /* 1. Escondemos el botón de tres líneas y la X de cerrar */
-    .navbar-toggler, .navbar-close {
+    .navbar-toggler,
+    .navbar-close {
         display: none !important;
     }
 
     /* 2. Convertimos el menú lateral en una barra horizontal */
     .navbar-collapse {
-        position: static;    /* Quita el "vuelo" lateral */
+        position: static;
+        /* Quita el "vuelo" lateral */
         width: auto;
         height: auto;
         background: transparent;
-        display: flex !important; /* Asegura que se vea */
-        flex: 0 1 auto; /* No crece ni se encoge, toma su tamaño natural */
+        display: flex !important;
+        /* Asegura que se vea */
+        flex: 0 1 auto;
+        /* No crece ni se encoge, toma su tamaño natural */
         flex-direction: row;
         justify-content: flex-end;
-        transition: none;    /* Quitamos la animación de slide */
+        transition: none;
+        /* Quitamos la animación de slide */
     }
 
     /* 3. Ajustamos la lista de enlaces */
     .navbar-nav {
-        flex-direction: row; /* Enlaces uno al lado del otro */
-        gap: 30px;           /* Espacio entre botones */
+        flex-direction: row;
+        /* Enlaces uno al lado del otro */
+        gap: 30px;
+        /* Espacio entre botones */
     }
 
     .nav-item {
-        margin: 0;           /* Quitamos los márgenes verticales de móvil */
+        margin: 0;
+        /* Quitamos los márgenes verticales de móvil */
     }
 
     .nav-link {
-        font-size: 1rem;     /* Tamaño más adecuado para desktop */
+        font-size: 1rem;
+        /* Tamaño más adecuado para desktop */
     }
 
     .gallery-container {
         grid-template-columns: repeat(3, 1fr);
     }
-    
-    .text-nombre1, .text-nombre2 {
+
+    .text-nombre1,
+    .text-nombre2 {
         font-size: 102px;
         line-height: 102px;
     }
 
     .contenedor-principal-modal {
-        padding: 0 50px; /* Damos aire lateral */
+        padding: 0 50px;
+        /* Damos aire lateral */
     }
 
     .nav-arrow {
-        position: static; /* En escritorio vuelven a su sitio en el flex */
+        position: static;
+        /* En escritorio vuelven a su sitio en el flex */
         background: none;
         font-size: 4rem;
         color: rgba(255, 255, 255, 0.4);
     }
 
     .imagen-wrapper img {
-        max-height: 75vh; /* La imagen puede ser más grande */
+        max-height: 75vh;
+        /* La imagen puede ser más grande */
     }
 
     .btn-cerrar {
@@ -982,28 +1068,46 @@ footer {
    7. ESTILOS ESPECÍFICOS DE LA PÁGINA DE PROGRAMACIÓN (EL RESTO DE PÁGINAS HEREDAN LOS ESTILOS ANTERIORES)
    ============================================================ */
 
-.text-turquesa { color: rgba(82, 220, 223, 1); }
+.text-turquesa {
+    color: rgba(82, 220, 223, 1);
+}
 
 .dev-section-container {
     padding-top: 60px;
     padding-bottom: 100px;
-    max-width: 900px; /* Centramos el contenido para mejor lectura */
+    max-width: 900px;
+    /* Centramos el contenido para mejor lectura */
 }
 
-.dev-header { margin-bottom: 50px; border-bottom: 0;}
-.dev-title { font-family: 'KeepCalm', sans-serif; font-size: 2.5rem; margin-bottom: 10px; }
-.dev-subtitle { font-family: 'Montserrat', sans-serif; color: #888; font-size: 1.1rem; }
+.dev-header {
+    margin-bottom: 50px;
+    border-bottom: 0;
+}
+
+.dev-title {
+    font-family: 'KeepCalm', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.dev-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #888;
+    font-size: 1.1rem;
+}
 
 /* Ajuste para que los filtros de Gráfica/Arte se alineen con el estilo de la cabecera */
 .dev-header .art-filters-container {
-    justify-content: flex-start; /* Alinea los filtros a la izquierda como el texto */
+    justify-content: flex-start;
+    /* Alinea los filtros a la izquierda como el texto */
     margin-top: 30px;
     padding-left: 0;
 }
 
 @media (max-width: 768px) {
     .dev-header .art-filters-container {
-        justify-content: center; /* En móvil, mejor centrados */
+        justify-content: center;
+        /* En móvil, mejor centrados */
     }
 }
 
@@ -1054,7 +1158,8 @@ footer {
 }
 
 .dev-project-row.active .dev-project-content {
-    max-height: 1000px; /* Un valor alto para que quepa todo */
+    max-height: 1000px;
+    /* Un valor alto para que quepa todo */
     padding-bottom: 30px;
     opacity: 1;
 }
@@ -1092,7 +1197,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .dev-grid-details { grid-template-columns: 1fr; }
+    .dev-grid-details {
+        grid-template-columns: 1fr;
+    }
 }
 
 .dev-filters-container {
@@ -1131,15 +1238,22 @@ footer {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ============================================================
    8. ESTILOS ESPECÍFICOS DE LA PÁGINA SOBRE MÍ
    ============================================================ */
 
-   .about-visual-container {
+.about-visual-container {
     position: relative;
     border: 1px solid rgba(82, 220, 223, 0.3);
     padding: 10px;
@@ -1156,7 +1270,10 @@ footer {
 
 .about-grid-overlay {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: radial-gradient(rgba(82, 220, 223, 0.15) 1px, transparent 1px);
     background-size: 20px 20px;
     pointer-events: none;
@@ -1166,6 +1283,12 @@ footer {
     background: rgba(255, 255, 255, 0.02);
     border-top: 1px solid rgba(82, 220, 223, 0.2);
     border-bottom: 1px solid rgba(82, 220, 223, 0.2);
+}
+
+.title-specs {
+    font-family: 'KeepCalm', sans-serif;
+    letter-spacing: 3px;
+    color: rgba(82, 220, 223, 1);
 }
 
 .spec-box h3 {
@@ -1187,4 +1310,42 @@ footer {
     font-size: 0.9rem;
 }
 
-.text-cyan { color: rgba(82, 220, 223, 1); }
+.text-cyan {
+    color: rgba(82, 220, 223, 1);
+}
+
+/* --- Soft Skills Styling --- */
+.soft-skills-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    padding: 6px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo resaltado para tus dos habilidades top */
+.skill-item.premium {
+    border-color: rgba(82, 220, 223, 0.6);
+    color: rgba(82, 220, 223, 1);
+    background: rgba(82, 220, 223, 0.08);
+    font-weight: 600;
+}
+
+/* Ajuste responsive para las 4 columnas de specs */
+@media (max-width: 768px) {
+    .spec-box {
+        margin-bottom: 30px;
+    }
+}
