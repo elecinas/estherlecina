@@ -158,7 +158,7 @@ header {
 }
 
 .top-section-container {
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
 /* ============================================================
@@ -970,6 +970,10 @@ footer {
    ============================================================ */
 
 @media screen and (min-width: 768px) {
+
+    .top-section-container {
+    padding: 100px 0px;
+}
 
     /* Galería en 2 o 3 columnas */
     .gallery-container {
