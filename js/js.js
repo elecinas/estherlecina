@@ -20,7 +20,7 @@ function showImg(img) {
 /*acceder a los datos de data.json */
 
 function readTextFile(data_type) {
-    const requestURL = 'data.json';
+    const requestURL = '../data/data.json';
 
     fetch(requestURL)
         .then(response => {
