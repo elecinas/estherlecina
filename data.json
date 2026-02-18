@@ -10,7 +10,7 @@
                 "Photoshop",
                 "Illustrator"
             ],
-            "description": "Historia autoconclusiva que forma parte de un recopilatorio de diversas autoras. El guión de esta historia es de la escritora e ilustradora Marta Bru.",
+            "description": "Historia para el recopilatorio Mil Brujas. El guión de esta historia es de la escritora e ilustradora Marta Bru.",
             "client": "Serendipia",
             "cardImg": {
                 "url": "img/ilustracion/cards/SERENDIPIA_brujas.webp",
@@ -582,7 +582,7 @@
                 "Tinta",
                 "Acuarela"
             ],
-            "description": "La revista Otaku Bunka publicó en un artículo, el proceso de realización de una ilustración a acuarela de una ilustración sobre el manga Erin. Posteriormente se sorteó el original.",
+            "description": "Proceso de realización de una ilustración a acuarela de una ilustración de Erin.",
             "client": "Otaku Bunka",
             "cardImg": {
                 "url": "img/ilustracion/cards/OTAKU_BUNKA_proceso_erin.webp",
@@ -1453,7 +1453,7 @@
                 "Indesign"
             ],
             "figmaUrl": "https://www.figma.com/design/ZQlMkpqRKZiYJnJYKQlgij/Ca-La-Mariona?node-id=0-1&t=zuSg8NHGArxC6xZf-1",
-            "description": "Diseño UX/UI para CaLaMariona. Cooperativa de productos de kilómetro 0.",
+            "description": "Diseño UX/UI para cooperativa de productos de kilómetro 0.",
             "client": "Proyecto formativo (UOC)",
             "cardImg": {
                 "url": "img/grafica/cards/gfc_UOC_UXUI_CalaMariona.webp",
@@ -1540,7 +1540,7 @@
                 "Digital",
                 "3D Studio Max"
             ],
-            "description": "Desarrollo 3D",
+            "description": "Barco vikingo creado en 3D Studio Max.",
             "client": "Proyecto formativo (UOC)",
             "cardImg": {
                 "url": "img/grafica/cards/gfc_UOC_3D.webp",
@@ -1564,7 +1564,7 @@
                 "Photoshop",
                 "Illustrator"
             ],
-            "description": "Diseño de interfaz gráfica para Pisaverde. Creado con Suite Adobe; programas como Figma y Adobe XD no se lanzaron hasta después de la realización de este proyecto.",
+            "description": "Interfaz gráfica para Pisaverde. Programas como Figma y Adobe XD no se lanzaron hasta después de la realización de este proyecto.",
             "client": "Proyecto formativo (UOC)",
             "cardImg": {
                 "url": "img/grafica/cards/UOC_uxui_pisaverde.webp",
@@ -1655,7 +1655,7 @@
                 "Digital",
                 "Illustrator"
             ],
-            "description": "Diseño UX/UI y arquitectura de la información. Con realización del árbol de contenidos y mockups para una web de aprendizaje online. ",
+            "description": "Diseño UX/UI y arquitectura de la información. Árbol de contenidos y mockups para una web de aprendizaje online. ",
             "client": "Proyecto formativo (UOC)",
             "cardImg": {
                 "url": "img/grafica/cards/gfc_UOC_arcinfo.webp",
@@ -1947,7 +1947,7 @@
         {
             "id": "gfc_ict_eic",
             "type": "print",
-            "title": "Imagen corporativa ICT y EIC",
+            "title": "Imagen corporativa",
             "category": "Imagen corporativa",
             "tags": [
                 "Print",
@@ -1956,7 +1956,7 @@
                 "Illustrator"
             ],
             "description": "Material corporativo para Institut Català de Tecnologia (ICT) y Enginyers Industrials de Catalunya (EIC)",
-            "client": "Institut Català de Tecnologia (ICT)",
+            "client": "ICT / EIC",
             "cardImg": {
                 "url": "img/grafica/cards/gfc_ing_img_corporativa.webp",
                 "alt": "Flyers y trípticos para la coral del EIC, con un diseño sobrio y profesional."
