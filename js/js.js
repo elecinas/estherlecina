@@ -1,113 +1,121 @@
 let currentProjectsData = []; // Proyectos de la página actual
-let activeImageIndex = 0;    // Índice de la imagen que se está viendo
+let activeImageIndex = 0; // Índice de la imagen que se está viendo
 
 /*muestra y oculta la imagen de la galería*/
 
 function showImg(img) {
-    activeImageIndex = 0;
-    let x = document.getElementById(img);
+  activeImageIndex = 0;
+  let x = document.getElementById(img);
 
-    if (x.style.display === "none" || x.style.display === "") {
-        x.style.display = "flex"; // CAMBIADO DE BLOCK A FLEX
-        document.body.classList.add("no_scroll");
-    } else {
-        x.style.display = "none";
-        document.body.classList.remove("no_scroll");
-    }
+  if (x.style.display === "none" || x.style.display === "") {
+    x.style.display = "flex"; // CAMBIADO DE BLOCK A FLEX
+    document.body.classList.add("no_scroll");
+  } else {
+    x.style.display = "none";
+    document.body.classList.remove("no_scroll");
+  }
 }
-
 
 /*acceder a los datos de data.json */
 
 function readTextFile(data_type) {
-    const requestURL = '../data/data.json';
+  const requestURL = "../data/data.json";
 
-    fetch(requestURL)
-        .then(response => {
-            if (!response.ok) throw new Error("Error al cargar el archivo JSON");
-            return response.json();
-        })
-        .then(data => {
-            currentProjectsData = data;
-            loadingFront(data, data_type);
-        })
-        .catch(error => {
-            console.error("Error:", error);
-        })
+  fetch(requestURL)
+    .then((response) => {
+      if (!response.ok) throw new Error("Error al cargar el archivo JSON");
+      return response.json();
+    })
+    .then((data) => {
+      currentProjectsData = data;
+      loadingFront(data, data_type);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 }
 
 /*enviando los datos de data.json al front con ordenación cronológica*/
 
 function loadingFront(data, data_type) {
-    const sectionData = data[data_type];
+  const sectionData = data[data_type];
 
-    // ORDENACIÓN: De más reciente a más antiguo
-    sectionData.sort((a, b) => {
-        // Función interna para sacar el año más alto de un string (ej: "2014-2020" -> 2020)
-        const getYear = (dateStr) => {
-            const years = dateStr.match(/\d{4}/g); // Busca grupos de 4 números
-            return years ? Math.max(...years.map(Number)) : 0;
-        };
+  // ORDENACIÓN: De más reciente a más antiguo
+  sectionData.sort((a, b) => {
+    // Función interna para sacar el año más alto de un string (ej: "2014-2020" -> 2020)
+    const getYear = (dateStr) => {
+      const years = dateStr.match(/\d{4}/g); // Busca grupos de 4 números
+      return years ? Math.max(...years.map(Number)) : 0;
+    };
 
-        const yearA = getYear(a.date);
-        const yearB = getYear(b.date);
+    const yearA = getYear(a.date);
+    const yearB = getYear(b.date);
 
-        return yearB - yearA; // Orden descendente
-    });
+    return yearB - yearA; // Orden descendente
+  });
 
-    currentProjectsData = sectionData;
-    makingFront(sectionData);
+  currentProjectsData = sectionData;
+  makingFront(sectionData);
 }
 function makingFront(section_array) {
-    const myarray = section_array;
-    for (i = 0; i < myarray.length; i++) {
-        makeCard(myarray[i]);
-        makeModal(myarray[i]);
-    }
+  const myarray = section_array;
+  for (i = 0; i < myarray.length; i++) {
+    makeCard(myarray[i]);
+    makeModal(myarray[i]);
+  }
 }
 
 function makeCard(card_data) {
-    const galleryContainer = document.querySelector(".gallery-container");
-    if (!galleryContainer) return;
+  const galleryContainer = document.querySelector(".gallery-container");
+  if (!galleryContainer) return;
 
-    // OPCIÓN A: Número fijo de columnas para que todas las cards sean iguales
-    const squaresX = 16;
-    const squareWidth = 100 / squaresX;
+  // OPCIÓN A: Número fijo de columnas para que todas las cards sean iguales
+  const squaresX = 16;
+  const squareWidth = 100 / squaresX;
 
-    // 1. RECTÁNGULO BASE: Bloque sólido inferior (75% del alto)
-    let svgContent = `<rect x="0" y="25%" width="100%" height="75%" fill="rgb(35, 35, 35)" stroke="none" />`;
+  // 1. RECTÁNGULO BASE: Bloque sólido inferior (75% del alto)
+  let svgContent = `<rect x="0" y="25%" width="100%" height="75%" fill="rgb(35, 35, 35)" stroke="none" />`;
 
-    // 2. FILA SUPERIOR: Cuadrados de transición con ritmo fijo
-    for (let col = 0; col < squaresX; col++) {
-        let fill = 'rgb(35, 35, 35)';
-        let opacity = 1;
+  // 2. FILA SUPERIOR: Cuadrados de transición con ritmo fijo
+  for (let col = 0; col < squaresX; col++) {
+    let fill = "rgb(35, 35, 35)";
+    let opacity = 1;
 
-        if (col === 0) {
-            fill = 'rgb(35, 35, 35)';
-        } else if (col === 1) {
-            fill = 'rgba(58, 127, 129, 1)';
-        } else if (col === 2) {
-            fill = 'rgba(82, 220, 223, 1)';
-        } else {
-            fill = 'rgba(82, 220, 223, 1)';
-            // Desvanecimiento: ajusta el 0.25 si quieres que el rastro sea más largo o corto
-            opacity = Math.max(0, 1 - ((col - 2) * 0.25));
-        }
-
-        svgContent += `<rect x="${col * squareWidth}%" y="0" width="${squareWidth}%" height="25%" fill="${fill}" fill-opacity="${opacity}" stroke="none" />`;
+    if (col === 0) {
+      fill = "rgb(35, 35, 35)";
+    } else if (col === 1) {
+      fill = "rgba(58, 127, 129, 1)";
+    } else if (col === 2) {
+      fill = "rgba(82, 220, 223, 1)";
+    } else {
+      fill = "rgba(82, 220, 223, 1)";
+      // Desvanecimiento: ajusta el 0.25 si quieres que el rastro sea más largo o corto
+      opacity = Math.max(0, 1 - (col - 2) * 0.25);
     }
 
-    // Generamos las etiquetas de técnica dinámicamente
-    const techTags = card_data.tags.map(t => `<span class="art-pill">${t}</span>`).join('');
+    svgContent += `<rect x="${col * squareWidth}%" y="0" width="${squareWidth}%" height="25%" fill="${fill}" fill-opacity="${opacity}" stroke="none" />`;
+  }
 
-    // Botón vínculo a Figma (si existe)
-    const figmaBtn = card_data.figmaUrl 
+  // Generamos las etiquetas de técnica dinámicamente
+  const techTags = card_data.tags
+    .map((t) => `<span class="art-pill">${t}</span>`)
+    .join("");
+
+  // Botón vínculo a Figma (si existe)
+  const figmaBtn = card_data.figmaUrl
     ? `<a href="${card_data.figmaUrl}" target="_blank" class="btn-terminal-style figma-btn" onclick="event.stopPropagation();">
         [ VER_EN_FIGMA ]
-       </a>` 
-    : '';
+       </a>`
+    : "";
 
-    const cardHTML = `
+  // Botón vínculo a Youtube y Vimeo (si existe)
+  const videoBtn = card_data.videoUrl
+    ? `<a href="${card_data.videoUrl}" target="_blank" class="btn-terminal-style video-btn" onclick="event.stopPropagation();">
+    [ VER_ANIMACION ]
+   </a>`
+    : "";
+
+  const cardHTML = `
         <div class="card-box" data-category="${card_data.category}" onclick="toggleCardFlip('${card_data.id}', event)">
             <div class="card-inner" id="inner-${card_data.id}">
                 <div class="card-face front">
@@ -133,38 +141,39 @@ function makeCard(card_data) {
         
                         <div class="button-wrapper">
                             ${figmaBtn}
-                            <button class="btn-terminal-style" 
-                                onclick="event.stopPropagation(); showImg('${card_data.id}')">
-                                [ VER_PROYECTO ]
-                            </button>
+                            ${videoBtn}
+                            ${card_data.images && card_data.images.length > 0 ? `<button class="btn-terminal-style" onclick="event.stopPropagation(); showImg('${card_data.id}')">[ VER_PROYECTO ]</button>` : ""}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     `;
-    galleryContainer.innerHTML += cardHTML;
+  galleryContainer.innerHTML += cardHTML;
 }
 // Función para girar la carta
 function toggleCardFlip(id, event) {
-    // Si clicamos el botón "VER PROYECTO" o cualquier cosa dentro de button-wrapper, NO giramos
-    if (event.target.closest('.button-wrapper') || event.target.closest('.btn-terminal-style')) {
-        return;
-    }
+  // Si clicamos el botón "VER PROYECTO" o cualquier cosa dentro de button-wrapper, NO giramos
+  if (
+    event.target.closest(".button-wrapper") ||
+    event.target.closest(".btn-terminal-style")
+  ) {
+    return;
+  }
 
-    const cardInner = document.getElementById(`inner-${id}`);
-    if (cardInner) {
-        cardInner.classList.toggle('switched');
-    }
+  const cardInner = document.getElementById(`inner-${id}`);
+  if (cardInner) {
+    cardInner.classList.toggle("switched");
+  }
 }
 
 function makeModal(project) {
-    const img_modales = document.querySelector(".img-modales");
-    if (!img_modales) return;
+  const img_modales = document.querySelector(".img-modales");
+  if (!img_modales) return;
 
-    const showControls = project.images.length > 1 ? '' : 'd-none';
+  const showControls = project.images.length > 1 ? "" : "d-none";
 
-    const modalHTML = `
+  const modalHTML = `
         <div id="${project.id}" class="modal-proyecto">
             <div class="contenedor-principal-modal">
                 <button class="nav-arrow ${showControls}" onclick="changeImg('${project.id}', -1)">&#10094;</button>
@@ -174,7 +183,7 @@ function makeModal(project) {
                     
                     <div class="modal-info-footer">
                         <h4>${project.title}</h4>
-                        <p id="caption-${project.id}">${project.images[0].caption || ''}</p>
+                        <p id="caption-${project.id}">${project.images[0].caption || ""}</p>
                         <small id="counter-${project.id}">${1} / ${project.images.length}</small>
                     </div>
                 </div>
@@ -186,96 +195,99 @@ function makeModal(project) {
         </div>
     `;
 
-    img_modales.innerHTML += modalHTML;
+  img_modales.innerHTML += modalHTML;
 }
 
 function changeImg(projectId, direction) {
-    // Encontrar el proyecto
-    const project = currentProjectsData.find(p => p.id === projectId);
-    if (!project) return;
+  // Encontrar el proyecto
+  const project = currentProjectsData.find((p) => p.id === projectId);
+  if (!project) return;
 
-    // Actualizar el índice, efecto bucle
-    activeImageIndex += direction;
-    if (activeImageIndex >= project.images.length) activeImageIndex = 0;
-    if (activeImageIndex < 0) activeImageIndex = project.images.length - 1;
+  // Actualizar el índice, efecto bucle
+  activeImageIndex += direction;
+  if (activeImageIndex >= project.images.length) activeImageIndex = 0;
+  if (activeImageIndex < 0) activeImageIndex = project.images.length - 1;
 
-    // Actualizar el DOM (Imagen, Caption y Contador)
-    document.getElementById(`img-${projectId}`).src = project.images[activeImageIndex].url;
-    document.getElementById(`caption-${projectId}`).innerText = project.images[activeImageIndex].caption || '';
-    document.getElementById(`counter-${projectId}`).innerText = `${activeImageIndex + 1} / ${project.images.length}`;
-    // document.activeElement.blur(); // quita el foco del botón
+  // Actualizar el DOM (Imagen, Caption y Contador)
+  document.getElementById(`img-${projectId}`).src =
+    project.images[activeImageIndex].url;
+  document.getElementById(`caption-${projectId}`).innerText =
+    project.images[activeImageIndex].caption || "";
+  document.getElementById(`counter-${projectId}`).innerText =
+    `${activeImageIndex + 1} / ${project.images.length}`;
+  // document.activeElement.blur(); // quita el foco del botón
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const page = window.location.pathname.split("/").pop();
+  const page = window.location.pathname.split("/").pop();
 
-    switch (page) {
-        case "art.html":
-            readTextFile('art'); 
-            break;
-        case "grafica.html":
-            readTextFile('graphic_design');
-            break;
-        case "web.html":
-            readTextFile('web');
-            break;
-        default:
-            break;
-    }
+  switch (page) {
+    case "art.html":
+      readTextFile("art");
+      break;
+    case "grafica.html":
+      readTextFile("graphic_design");
+      break;
+    case "web.html":
+      readTextFile("web");
+      break;
+    default:
+      break;
+  }
 });
 
 // Filtrado dinámico
 function filterArt(type) {
-    // Actualizar estado visual de los botones usando el atributo data-filter
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.classList.remove('active');
-        const filter = btn.dataset.filter || '';
-        if (filter === type || (type === 'all' && filter === 'all')) {
-            btn.classList.add('active');
-        }
-    });
+  // Actualizar estado visual de los botones usando el atributo data-filter
+  document.querySelectorAll(".filter-btn").forEach((btn) => {
+    btn.classList.remove("active");
+    const filter = btn.dataset.filter || "";
+    if (filter === type || (type === "all" && filter === "all")) {
+      btn.classList.add("active");
+    }
+  });
 
-    const gallery = document.querySelector(".gallery-container");
-    const modales = document.querySelector(".img-modales");
-    
-    // Limpiamos la vista actual
-    gallery.innerHTML = "";
-    modales.innerHTML = "";
+  const gallery = document.querySelector(".gallery-container");
+  const modales = document.querySelector(".img-modales");
 
-    // Filtramos los datos que ya tenemos en memoria
-    // currentProjectsData se llenó al hacer el primer fetch en readTextFile
-    const filteredData = type === 'all' 
-        ? currentProjectsData 
-        : currentProjectsData.filter(project => project.type === type);
+  // Limpiamos la vista actual
+  gallery.innerHTML = "";
+  modales.innerHTML = "";
 
-    // Renderizamos solo los filtrados
-    filteredData.forEach(project => {
-        makeCard(project);
-        makeModal(project);
-    });
+  // Filtramos los datos que ya tenemos en memoria
+  // currentProjectsData se llenó al hacer el primer fetch en readTextFile
+  const filteredData =
+    type === "all"
+      ? currentProjectsData
+      : currentProjectsData.filter((project) => project.type === type);
+
+  // Renderizamos solo los filtrados
+  filteredData.forEach((project) => {
+    makeCard(project);
+    makeModal(project);
+  });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.querySelector(".navbar-toggler");
+  const closeBtn = document.querySelector(".navbar-close");
+  const navMenu = document.querySelector(".navbar-collapse");
 
-document.addEventListener('DOMContentLoaded', () => {
-    const menuBtn = document.querySelector('.navbar-toggler');
-    const closeBtn = document.querySelector('.navbar-close');
-    const navMenu = document.querySelector('.navbar-collapse');
+  // Abrir menú
+  menuBtn?.addEventListener("click", () => {
+    navMenu.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
 
-    // Abrir menú
-    menuBtn?.addEventListener('click', () => {
-        navMenu.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    });
+  // Cerrar menú
+  const closeMenu = () => {
+    navMenu.classList.remove("active");
+    document.body.style.overflow = "auto";
+  };
 
-    // Cerrar menú
-    const closeMenu = () => {
-        navMenu.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    };
+  closeBtn?.addEventListener("click", closeMenu);
 
-    closeBtn?.addEventListener('click', closeMenu);
-
-    // Cerrar si se clica un enlace (útil para Single Page Apps o anclas)
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => link.addEventListener('click', closeMenu));
+  // Cerrar si se clica un enlace (útil para Single Page Apps o anclas)
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((link) => link.addEventListener("click", closeMenu));
 });

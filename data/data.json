@@ -1138,6 +1138,27 @@
                     "caption": "Quinta página del manga de Dark."
                 }
             ]
+        },
+        {
+            "id": "animacion presentacion",
+            "type": "animation",
+            "title": "Animación After Effects",
+            "category": "web",
+            "tags": [
+                "Digital",
+                "After Effects",
+                "Illustrator"
+            ],
+            "description": "Animation de presentación para mi web portfolio personal.",
+            "client": "UOC",
+            "cardImg": {
+                "url": "img/ilustracion/cards/art_video_me.webp",
+                "alt": "U"
+            },
+            "date": "2018",
+            "videoUrl": "https://youtu.be/9kPhW5B3lD4?si=VAPex82iAwOC8yHR",
+            "images": [
+            ]
         }
     ],
     "graphic_design": [
@@ -1831,6 +1852,22 @@
                 {
                     "url": "img/grafica/gfc_PngnRndmHs_Lidr_interior.webp",
                     "caption": "Realización del diseño y la maquetación del interior de la colección de libros Las ideas de Raquel."
+                },
+                {
+                    "url": "img/grafica/gfc_PngnRndmHs_Lidr_3.webp",
+                    "caption": "Doble página de cambio de capítulo."
+                },
+                {
+                    "url": "img/grafica/gfc_PngnRndmHs_Lidr_4.webp",
+                    "caption": "Comenzamiento de capítulo."
+                },
+                {
+                    "url": "img/grafica/gfc_PngnRndmHs_Lidr_5.webp",
+                    "caption": "Doble página con ilustración a media página y texto."
+                },
+                {
+                    "url": "img/grafica/gfc_PngnRndmHs_Lidr_8.webp",
+                    "caption": "Doble página con ilustración a página completa y texto."
                 }
             ]
         },
@@ -1851,7 +1888,7 @@
                 "url": "img/grafica/cards/gfc_bcnv_editorial.webp",
                 "alt": "Composición de los cuadernos para aprender a escribir Abecé."
             },
-            "date": "2007",
+            "date": "2005-2008",
             "images": [
                 {
                     "url": "img/grafica/gfc_bcnv_maDeu.webp",
@@ -1884,6 +1921,130 @@
             ]
         },
         {
+            "id": "gfc_santillana_editorial_design",
+            "type": "print",
+            "title": "Maquetación editorial",
+            "category": "Maquetación editorial",
+            "tags": [
+                "Print",
+                "Photoshop",
+                "Illustrator",
+                "Indesign"
+            ],
+            "description": "Maquetación editorial, libro de texto de plástica para editorial Santillana.",
+            "client": "Artimagos / Editorial Santillana",
+            "cardImg": {
+                "url": "img/grafica/cards/gfc_santillana_maquetacion.webp",
+                "alt": "Maqueta editorial"
+            },
+            "date": "2017-2019",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_santillana_plastica_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_santillana_plastica_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_santillana_plastica_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_santillana_plastica_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_santillana_plastica_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_santillana_plastica_06.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "gfc_sm_editorial_design",
+            "type": "print",
+            "title": "Maquetación editorial",
+            "category": "Maquetación editorial",
+            "tags": [
+                "Print",
+                "Indesign"
+            ],
+            "description": "Maquetación Guía editorial, método Rossetta, para editorial SM.",
+            "client": "Artimagos / Editorial SM",
+            "cardImg": {
+                "url": "img/grafica/cards/gfc_sm_maquetacion.webp",
+                "alt": "Maqueta editorial"
+            },
+            "date": "2019-2020",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_santillana_guia_rossetta_2.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_santillana_guia_rossetta_4.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_santillana_guia_rossetta_6.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_santillana_guia_rossetta_7.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "id": "gfc_URE_editorial_design",
+            "type": "print",
+            "title": "Maquetación revista",
+            "category": "Maquetación revista",
+            "tags": [
+                "Print",
+                "Indesign",
+                "Photoshop"
+            ],
+            "description": "Maquetación revista Radioaficionados, para la Unión de Radioaficionados Españoles (URE).",
+            "client": "InicioStudio / URE",
+            "cardImg": {
+                "url": "img/grafica/cards/gfc_URE_maquetacion.webp",
+                "alt": "Maqueta revista"
+            },
+            "date": "2010-2019",
+            "images": [
+                {
+                    "url": "img/grafica/gfc_URE_01.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_URE_02.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_URE_03.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_URE_04.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_URE_05.webp",
+                    "caption": ""
+                },
+                {
+                    "url": "img/grafica/gfc_URE_06.webp",
+                    "caption": ""
+                }
+            ]
+        },
+        {
             "id": "gfc_bcnv_cataleg_design",
             "type": "print",
             "title": "Catalogos Barcanova",
@@ -1900,7 +2061,7 @@
                 "url": "img/grafica/cards/gfc_bcnv.webp",
                 "alt": "Cátalogo de libros de texto de música."
             },
-            "date": "2007",
+            "date": "2005-2008",
             "images": [
                 {
                     "url": "img/grafica/gfc_bcnv_catalegmates.webp",
@@ -1936,7 +2097,7 @@
                 "url": "img/grafica/cards/gfc_bcnv_display.webp",
                 "alt": "Teatro montado con las obras de Caperucita roja y Hansel y Grettel, con un diseño infantil y colorido."
             },
-            "date": "2007",
+            "date": "2005-2008",
             "images": [
                 {
                     "url": "img/grafica/gfc_bcnv_teatre.webp",
