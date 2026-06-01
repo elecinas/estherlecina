@@ -1140,7 +1140,7 @@
             ]
         },
         {
-            "id": "animacion presentacion",
+            "id": "animacion_presentacion",
             "type": "animation",
             "title": "Animación After Effects",
             "category": "web",
@@ -1149,7 +1149,7 @@
                 "After Effects",
                 "Illustrator"
             ],
-            "description": "Animation de presentación para mi web portfolio personal.",
+            "description": "Animación de presentación para mi web portfolio personal.",
             "client": "UOC",
             "cardImg": {
                 "url": "img/ilustracion/cards/art_video_me.webp",

@@ -170,6 +170,9 @@ function toggleCardFlip(id, event) {
 function makeModal(project) {
   const img_modales = document.querySelector(".img-modales");
   if (!img_modales) return;
+  
+  // No crear modal si no hay imágenes
+  if (!project.images || project.images.length === 0) return;
 
   const showControls = project.images.length > 1 ? "" : "d-none";
 
