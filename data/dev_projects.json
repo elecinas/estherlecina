@@ -1,12 +1,40 @@
 [
   {
+    "id": "colors_of_talent_web",
+    "type": "frontend",
+    "title": "Colors of Talent: Corporate & Lead Gen",
+    "category": "Desarrollo Web & UI Design",
+    "year": "2021",
+    "status": "Finalizado",
+    "short_description": "Diseño y desarrollo integral de la web corporativa para agencia de educación. Enfocada en la captación de clientes potenciales y la presentación de servicios mediante una interfaz limpia y profesional.",
+    "tech_stack": [
+      "JavaScript (ES6+) Vanilla",
+      "HTML5 Semántico",
+      "CSS3 Avanzado (Flexbox & Grid)",
+      "Manipulación Dinámica del DOM",
+      "Diseño Gráfico con Adobe Illustrator"
+    ],
+    "key_features": [
+      "Arquitectura de frontend 'Single Page' con navegación fluida y gestión de eventos mediante JavaScript puro.",
+      "Implementación de lógica de validación de formularios personalizada para optimizar la conversión de clientes potenciales.",
+      "Diseño responsive adaptativo desarrollado con una estructura de CSS modular y limpia.",
+      "Creación de componentes interactivos como sliders de testimonios y menús de navegación dinámicos sin dependencias externas.",
+      "Integración de elementos visuales diseñados vectorialmente, garantizando una identidad de marca coherente y profesional.",
+      "Estructura de código organizada que facilita el mantenimiento y la escalabilidad del sitio corporativo."
+    ],
+    "github_url": "https://github.com/elecinas/colors-of-talent",
+    "live_url": "https://elecinas.github.io/colors-of-talent/",
+    "preview_img": "img/dev/colors_of_talent_web_screenchot.webp",
+    "deployment": "Web Corporativa Producción"
+  },
+  {
     "id": "portfolio_react_ts",
     "type": "frontend",
     "title": "Portfolio Engine v2.0 (WIP)",
-    "category": "Frontend Engineering & Design System",
+    "category": "Proyecto personal Frontend",
     "year": "2025-2026",
-    "status": "En Desarrollo (Beta)",
-    "short_description": "Migración de la arquitectura del portfolio hacia un entorno reactivo y tipado. Foco en la creación de un sistema de componentes reutilizables y escalables mediante React y TypeScript.",
+    "status": "En Desarrollo (Proyecto personal)",
+    "short_description": "Migración del portfolio hacia un entorno reactivo y tipado. Foco en la creación de componentes reutilizables mediante React y TypeScript.",
     "tech_stack": [
       "React 19",
       "TypeScript 5.8 (Strict Mode)",
@@ -32,7 +60,7 @@
     "id": "skipBalls",
     "type": "mobile",
     "title": "Skip Balls",
-    "category": "Hybrid Mobile Game",
+    "category": "Proyecto personal Mobile",
     "role": "Developer",
     "year": "2026",
     "status": "Publicado (v1.0)",
@@ -61,7 +89,7 @@
     "id": "timeRings",
     "type": "frontend",
     "title": "Time Rings",
-    "category": "Browser Extension",
+    "category": "Proyecto personal Frontend",
     "year": "2025",
     "status": "Finalizado (v1.0)",
     "short_description": "Extensión de productividad para Firefox que utiliza un reloj abstracto animado como temporizador Pomodoro. Enfocada en la persistencia de datos y visualización creativa.",
@@ -89,7 +117,7 @@
     "id": "dice_game_jwt",
     "type": "fullstack",
     "title": "Dice Game: Fullstack Auth API",
-    "category": "Fullstack Web App",
+    "category": "Proyecto formativo Fullstack",
     "year": "2021",
     "status": "Finalizado",
     "short_description": "Aplicación de juegos de azar con arquitectura monolítica en Laravel y frontend reactivo en Vue 3. Implementa un sistema de gestión de estadísticas y rankings con autenticación segura mediante JWT.",
@@ -118,7 +146,7 @@
     "id": "hotel_booking_system",
     "type": "fullstack",
     "title": "Hotel Management & Booking System",
-    "category": "Fullstack Web Application",
+    "category": "Proyecto formativo Fullstack",
     "year": "2021",
     "status": "Finalizado",
     "short_description": "Sistema de gestión de reservas hoteleras con control de inventario de habitaciones, gestión de clientes y sistema de roles de usuario.",
@@ -142,33 +170,5 @@
     "live_url": "",
     "preview_img": "img/dev/reservas_laravel_vue_screenshot.webp",
     "deployment": "Local Environment / Docker (Sail)"
-  },
-  {
-    "id": "colors_of_talent_web",
-    "type": "frontend",
-    "title": "Colors of Talent: Corporate & Lead Gen",
-    "category": "Desarrollo Web & UI Design",
-    "year": "2021",
-    "status": "Finalizado",
-    "short_description": "Diseño y desarrollo integral de la web corporativa para agencia de educación. Enfocada en la captación de clientes potenciales y la presentación de servicios mediante una interfaz limpia y profesional.",
-    "tech_stack": [
-      "JavaScript (ES6+) Vanilla",
-      "HTML5 Semántico",
-      "CSS3 Avanzado (Flexbox & Grid)",
-      "Manipulación Dinámica del DOM",
-      "Diseño Gráfico con Adobe Illustrator"
-    ],
-    "key_features": [
-      "Arquitectura de frontend 'Single Page' con navegación fluida y gestión de eventos mediante JavaScript puro.",
-      "Implementación de lógica de validación de formularios personalizada para optimizar la conversión de clientes potenciales.",
-      "Diseño responsive adaptativo desarrollado con una estructura de CSS modular y limpia.",
-      "Creación de componentes interactivos como sliders de testimonios y menús de navegación dinámicos sin dependencias externas.",
-      "Integración de elementos visuales diseñados vectorialmente, garantizando una identidad de marca coherente y profesional.",
-      "Estructura de código organizada que facilita el mantenimiento y la escalabilidad del sitio corporativo."
-    ],
-    "github_url": "https://github.com/elecinas/colors-of-talent",
-    "live_url": "https://elecinas.github.io/colors-of-talent/",
-    "preview_img": "img/dev/colors_of_talent_web_screenchot.webp",
-    "deployment": "Web Corporativa Producción"
   }
 ]

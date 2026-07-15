@@ -232,7 +232,6 @@ document.addEventListener("DOMContentLoaded", function () {
       readTextFile("graphic_design");
       break;
     case "web.html":
-      readTextFile("web");
       break;
     default:
       break;
